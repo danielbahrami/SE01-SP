@@ -2,7 +2,7 @@ package pandemic;
 
 public enum CommandWord
 {
-    GO("go"), QUIT("quit"), HELP("help"), PICKUP("pickup"), USE("use"), UNKNOWN("?");
+    GO("go"), QUIT("quit"), HELP("help"), PICKUP("pickup"), USE("use"), GIVE("give"), UNKNOWN("?");
     
     private String commandString;
     
