@@ -20,4 +20,9 @@ public class Inventory {
     {
         inventory.add(item);
     }
+    
+    public void removeFromInventory(Item item)
+    {
+        inventory.remove(item);
+    }
 }
