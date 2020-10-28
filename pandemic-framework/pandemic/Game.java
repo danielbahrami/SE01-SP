@@ -10,7 +10,9 @@ public class Game
     public Game() 
     {
         createRooms();
+        createNPC();
         parser = new Parser();
+        this.inventory = new Inventory();
     }
 
 
@@ -63,6 +65,15 @@ public class Game
 
         currentRoom = spawn;
     }
+    
+    private void createNPC()
+    {
+        NPC n1, n2, n3;
+        Item i1 = new Item("Disenfectant");
+
+        n1 = new NPC("Preben");
+        n1.setQuest("Find disinfectant!", i1);
+    }
 
     public void play() 
     {            
@@ -109,7 +120,15 @@ public class Game
         }
         else if (commandWord == CommandWord.PICKUP)
         {
-
+            pickUp(command);
+        }
+        else if (commandWord == CommandWord.USE)
+        {
+            useItem(command);
+        }
+        else if (commandWord == CommandWord.GIVE)
+        {
+            giveItem(command);
         }
         return wantToQuit;
     }
@@ -165,6 +184,26 @@ public class Game
     {
 
     }
+    
+    public void giveItem(Command command)
+    {
+        Item item = new Item("");
+
+        if (!command.hasSecondWord())
+        {
+            System.out.println("Give what?");
+            return;
+        }
+
+        if (command.hasSecondWord())
+        {
+            command.getSecondWord();
+            if (command.getSecondWord() == item.getName())
+            {
+                this.inventory.removeFromInventory(item);
+            }
+        }
+    }
 
     private boolean quit(Command command) 
     {
@@ -182,5 +221,15 @@ public class Game
         return this.currentRoom;
     }
 
+    private void completeQuest(NPC npc, Item item)
+    {
+        boolean done = npc.isQuestDone();
 
+        if (item.getName() == npc.getQuest())
+        {
+            done = true;
+        } else {
+            done = false;
+        }
+    }
 }
