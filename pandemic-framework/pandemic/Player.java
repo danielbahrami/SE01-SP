@@ -6,11 +6,10 @@ package pandemic;
 public class Player {
 
     private Room currentRoom;
-    private Room lastRoom;
 
     public Player()
     {
-
+        this.currentRoom = currentRoom.getCurrentRoom();
     }
 
     /* The move-method is used in JavaFX only!
