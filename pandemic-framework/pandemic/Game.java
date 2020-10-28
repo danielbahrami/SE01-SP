@@ -68,11 +68,14 @@ public class Game
     
     private void createNPC()
     {
+        // Syntax for creating NPC with quest.
+        
         NPC n1, n2, n3;
         Item i1 = new Item("Disenfectant");
 
         n1 = new NPC("Preben");
         n1.setQuest("Find disinfectant!", i1);
+        completeQuest(n1, i1);
     }
 
     public void play() 
