@@ -25,4 +25,14 @@ public class Inventory {
     {
         inventory.remove(item);
     }
+    
+    public void printInventory()
+    {
+        System.out.println("Items in your inventory: ");
+        
+        for (Item i : inventory)
+        {
+            System.out.println(i);
+        }
+    }
 }
