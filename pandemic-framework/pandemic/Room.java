@@ -55,6 +55,14 @@ public class Room
     {
         return exits.get(direction);
     }
+    
+    public Room getCurrentRoom()
+    {
+        String description = this.description;
+        int roomNumber = this.roomNumber;
+        Room currentRoom = new Room(description, roomNumber);
 
+        return currentRoom;
+    }
 }
 
