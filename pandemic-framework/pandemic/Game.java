@@ -137,6 +137,10 @@ public class Game
         {
             giveItem(command);
         }
+        else if (commandWord == CommandWord.SHOW)
+        {
+            showInventory();
+        }
         return wantToQuit;
     }
 
@@ -191,6 +195,31 @@ public class Game
     {
 
     }
+    
+    public void showInventory()
+    {
+        if (! command.hasSecondWord())
+        {
+            System.out.println("Show?");
+            return;
+        }
+        
+        if (command.hasSecondWord())
+        {
+            String secondWord = command.getSecondWord();
+            
+            if (secondWord == "inventory")
+            {
+                inventory.printInventory();
+                return;
+            } 
+            else 
+            {
+                System.out.println("Can't show: " + secondWord);
+            }
+        }
+    }
+                
     
     public void giveItem(Command command)
     {
