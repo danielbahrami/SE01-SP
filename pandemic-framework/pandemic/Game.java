@@ -62,6 +62,7 @@ public class Game
 
         room10.setExit("down", room7);
 
+        // roomNumber.addItemToRoom(< nameOfItem >, < itemDescription >;
 
         currentRoom = spawn;
     }
