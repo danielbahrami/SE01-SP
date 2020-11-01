@@ -39,7 +39,7 @@ public class Inventory {
         
         for (Item i : inventory)
         {
-            System.out.println(i);
+            System.out.println(i.toString());
         }
     }
     
