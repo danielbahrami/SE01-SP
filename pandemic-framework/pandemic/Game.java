@@ -139,7 +139,7 @@ public class Game
         }
         else if (commandWord == CommandWord.SHOW)
         {
-            showInventory();
+            showInventory(command);
         }
         return wantToQuit;
     }
@@ -191,12 +191,12 @@ public class Game
         }
     }
 
-    private void useItem()
+    private void useItem(Command command)
     {
 
     }
     
-    public void showInventory()
+    public void showInventory(Command command)
     {
         if (! command.hasSecondWord())
         {

@@ -3,13 +3,13 @@ package pandemic;
 public class NPC {
 
     private String name;
-
+    private Item questItem;
     private String quest;
 
     public NPC(String name)
     {
         this.name = name;
-        this.quest = getQuest;
+        this.quest = getQuest();
         NPCTalk();
         isQuestDone();
     }
@@ -19,10 +19,10 @@ public class NPC {
         return name;
     }
 
-    public void NPCTalk(String quest)
+    public void NPCTalk()
     {
         System.out.println(getQuest());
-        this.quest = quest;
+
     }
     
     public String getQuest()
