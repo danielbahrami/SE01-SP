@@ -144,7 +144,7 @@ public class Game
         {
             giveItem(command);
         }
-        else if (commandWord == CommandWord.SHOW)
+        else if (commandWord == CommandWord.INVENTORY)
         {
             showInventory(command);
         }
@@ -206,25 +206,14 @@ public class Game
     
     public void showInventory(Command command)
     {
-        if (! command.hasSecondWord())
-        {
-            System.out.println("Show?");
-            return;
-        }
-        
         if (command.hasSecondWord())
         {
-            String secondWord = command.getSecondWord();
-            
-            if (secondWord == "inventory")
-            {
-                inventory.printInventory();
-                return;
-            } 
-            else 
-            {
-                System.out.println("Can't show: " + secondWord);
-            }
+            System.out.println("Invalid command, only one word");
+            return;
+        }
+        else
+        {
+            inventory.printInventory();
         }
     }
                 
