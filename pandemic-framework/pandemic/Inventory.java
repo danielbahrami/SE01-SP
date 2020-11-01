@@ -41,7 +41,7 @@ public class Inventory {
         
         for (Item i : inventory)
         {
-            System.out.print(i.toString());
+            System.out.print(i.toString() + ", ");
         }
     }
     
