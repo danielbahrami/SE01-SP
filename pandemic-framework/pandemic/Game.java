@@ -223,20 +223,20 @@ public class Game
     
     public void giveItem(Command command)
     {
-        Item item = new Item("");
-
         if (!command.hasSecondWord())
         {
             System.out.println("Give what?");
             return;
         }
 
+        Item item = new Item(command.getSecondWord(), currentRoom.getItemDescription());
+
         if (command.hasSecondWord())
         {
-            command.getSecondWord();
-            if (command.getSecondWord() == item.getName())
+            if (command.getSecondWord().equals(item.getName()))
             {
-                this.inventory.removeFromInventory(item);
+                item = new Item(command.getSecondWord(), currentRoom.getItemDescription());
+                inventory.removeFromInventory(item);
             }
         }
     }
