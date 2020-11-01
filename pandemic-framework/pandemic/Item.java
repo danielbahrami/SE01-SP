@@ -26,7 +26,7 @@ public class Item {
 
 
     /* This is where we create items for the game.
-        itemList.put(String <name>, new Item <name, description>));
+        itemList.put(String <name>, new Item (<name, description>));
      */
     public void addItems()
     {
