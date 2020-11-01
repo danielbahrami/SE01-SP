@@ -192,10 +192,14 @@ public class Game
         Item item = currentRoom.getItemInRoom();
         this.item = item;
 
-        if (command.getSecondWord().equals(currentRoom.getItemInRoom().getName()))
+        try {
+            if (command.getSecondWord().equals(currentRoom.getItemInRoom().getName())) {
+                inventory.addToInventory(item);
+                System.out.println("picked up " + item.getName());
+            }
+        } catch (NullPointerException e)
         {
-            inventory.addToInventory(item);
-            System.out.println("picked up " + item.getName());
+            System.out.println("There is no " + command.getSecondWord() + " in the room");
         }
     }
 
