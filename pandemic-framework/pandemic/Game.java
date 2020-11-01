@@ -20,17 +20,17 @@ public class Game
     {
          Room spawn, room1, room2, room3, room4, room5, room6, room7, room8, room9, room10;
       
-        spawn = new Room("You are standing at the entrance");
-        room1 = new Room("room 1");
-        room2 = new Room("room 2 and inside this room you can see nothing");
-        room3 = new Room("room 3 and you can see an item (vitamin C) on the table");
-        room4 = new Room("reception and you can see the receptionist and an item (mask)");
-        room5 = new Room("room 5 and you see nothing of interest");
-        room6 = new Room("room 6 and you see a person");
-        room7 = new Room("room 7 and you see a person");
-        room8 = new Room("room 8 and you see nothing");
-        room9 = new Room("room 9 and you see a person");
-        room10 = new Room("room 10 and you see nothing");
+        spawn = new Room("You are standing at the entrance", 0);
+        room1 = new Room("room 1", 1);
+        room2 = new Room("room 2 and inside this room you can see nothing", 2);
+        room3 = new Room("room 3 and you can see an item (vitamin C) on the table", 3);
+        room4 = new Room("reception and you can see the receptionist and an item (mask)", 4);
+        room5 = new Room("room 5 and you see nothing of interest", 5);
+        room6 = new Room("room 6 and you see a person", 6);
+        room7 = new Room("room 7 and you see a person", 7);
+        room8 = new Room("room 8 and you see nothing", 8);
+        room9 = new Room("room 9 and you see a person", 9);
+        room10 = new Room("room 10 and you see nothing", 10);
 
 
         spawn.setExit("left", room1);
