@@ -190,11 +190,12 @@ public class Game
         }
 
         Item item = currentRoom.getItemInRoom();
-        String itemCommand = command.getSecondWord();
+        this.item = item;
 
-        if (itemCommand == item.getName())
+        if (command.getSecondWord() == currentRoom.getItemInRoom().getName())
         {
             inventory.addToInventory(item);
+            System.out.println("picked up " + item.getName());
         }
     }
 
