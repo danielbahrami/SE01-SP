@@ -32,13 +32,6 @@ public class Map {
             }
         }
 
-    public static void main(String[] args) {
-
-        Map map = new Map();
-        map.minimap(10,10);
-
-    }
-
     }
 
 
