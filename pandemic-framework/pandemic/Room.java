@@ -10,16 +10,8 @@ public class Room
     private HashMap<String, Room> exits;
     private HashMap<String, Item> itemList;
     private int roomNumber;
-    private Item item;
+    private String itemName;
     private String itemDescription;
-
-    public Room(String description, int roomNumber, Item item)
-    {
-        this.description = description;
-        exits = new HashMap<String, Room>();
-        this.roomNumber = roomNumber;
-        this.item = item;
-    }
 
     public Room(String description, int roomNumber)
     {
@@ -27,7 +19,7 @@ public class Room
         exits = new HashMap<String, Room>();
         itemList = new HashMap<String, Item>();
         this.roomNumber = roomNumber;
-        this.name = name;
+        this.itemName = itemName;
         this.itemDescription = getItemDescription();
     }
 
@@ -70,9 +62,9 @@ public class Room
         return currentRoom;
     }
     
-    public void addItemToRoom(String name, String itemDescription)
+    public void addItemToRoom(String itemName, String itemDescription)
     {
-        itemList.put(name, new Item(name, itemDescription));
+        itemList.put(itemName, new Item(itemName, itemDescription));
     }
     
     public String getItemDescription()
@@ -82,7 +74,7 @@ public class Room
     
     public Item getItemInRoom()
     {
-        return itemList.get(name);
+        return itemList.get(itemName);
     }
 }
 
