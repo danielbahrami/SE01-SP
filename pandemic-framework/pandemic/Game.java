@@ -189,8 +189,7 @@ public class Game
             return;
         }
 
-        Inventory inventory = null;
-        Item item = new Item("");
+        Item item = currentRoom.getItemInRoom();
         String itemCommand = command.getSecondWord();
 
         if (itemCommand == item.getName())
