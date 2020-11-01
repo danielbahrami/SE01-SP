@@ -10,6 +10,7 @@ public class Inventory {
     public Inventory(ArrayList<Item> inventory)
     {
         this.inventory = inventory;
+        this.item = new Item("", "");
     }
 
     public Inventory()
