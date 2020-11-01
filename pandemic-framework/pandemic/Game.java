@@ -18,30 +18,34 @@ public class Game
 
     private void createRooms()
     {
-         Room spawn, room2, room3, room4, room5, room6, room7, room8, room9, room10;
+         Room spawn, room1, room2, room3, room4, room5, room6, room7, room8, room9, room10;
       
-        spawn = new Room("Welcome to the nursing home", 0);
-        room2 = new Room("You've entered room 2 and inside this room you can see nothing", 1);
-        room3 = new Room("You've entered room 3 and you can see an item (vitamin C) on the table", 2);
-        room4 = new Room("You've entered room 4 and you can see a person and an item (mask)", 3);
-        room5 = new Room("You've entered room 5 and you see nothing of interest", 4);
-        room6 = new Room("You've entered room 6 and you see a person", 5);
-        room7 = new Room("You've entered room 7 and you see a person", 6);
-        room8 = new Room("You've entered room 8", 7);
-        room9 = new Room("You've entered room 9 and you see a person", 8);
-        room10 = new Room("You've entered room 10", 9);
+        spawn = new Room("You are standing at the entrance");
+        room1 = new Room("room 1");
+        room2 = new Room("room 2 and inside this room you can see nothing");
+        room3 = new Room("room 3 and you can see an item (vitamin C) on the table");
+        room4 = new Room("reception and you can see the receptionist and an item (mask)");
+        room5 = new Room("room 5 and you see nothing of interest");
+        room6 = new Room("room 6 and you see a person");
+        room7 = new Room("room 7 and you see a person");
+        room8 = new Room("room 8 and you see nothing");
+        room9 = new Room("room 9 and you see a person");
+        room10 = new Room("room 10 and you see nothing");
 
 
-        spawn.setExit("up", room4);
-        spawn.setExit("left", room2);
+        spawn.setExit("left", room1);
 
-        room2.setExit("right", spawn);
+        room1.setExit("right", spawn);
+        room1.setExit("up", room4);
+        room1.setExit("left", room2);
+
+        room2.setExit("right", room1);
         room2.setExit("up", room5);
 
         room3.setExit("left", room4);
         room3.setExit("up", room6);
 
-        room4.setExit("down", spawn);
+        room4.setExit("down", room1);
         room4.setExit("right", room3);
         room4.setExit("left", room5);
 
@@ -61,6 +65,7 @@ public class Game
         room9.setExit("right", room8);
 
         room10.setExit("down", room7);
+
 
         // roomNumber.addItemToRoom(< nameOfItem >, < itemDescription >;
 
