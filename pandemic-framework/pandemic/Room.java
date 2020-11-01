@@ -79,5 +79,10 @@ public class Room
     {
         return itemDescription;
     }
+    
+    public Item getItemInRoom()
+    {
+        return itemList.get(name);
+    }
 }
 
