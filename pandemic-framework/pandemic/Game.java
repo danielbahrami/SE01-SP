@@ -192,7 +192,7 @@ public class Game
         Item item = currentRoom.getItemInRoom();
         this.item = item;
 
-        if (command.getSecondWord() == currentRoom.getItemInRoom().getName())
+        if (command.getSecondWord().equals(currentRoom.getItemInRoom().getName()))
         {
             inventory.addToInventory(item);
             System.out.println("picked up " + item.getName());
