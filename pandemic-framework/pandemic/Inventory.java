@@ -18,7 +18,14 @@ public class Inventory {
 
     public void addToInventory(Item item)
     {
-        inventory.add(item);
+        if (inventory.size() > 5)
+        {
+            System.out.println("Can't carry any more!");
+        }
+        else
+        {
+            inventory.add(item);
+        }
     }
     
     public void removeFromInventory(Item item)
@@ -34,5 +41,13 @@ public class Inventory {
         {
             System.out.println(i);
         }
+    }
+    
+    @Override
+    public String toString()
+    {
+        String s = item.getName();
+
+        return s;
     }
 }
