@@ -104,11 +104,12 @@ public class Game
     private void printWelcome()
     {
         System.out.println();
-        System.out.println("Welcome to the World of Zuul!");
-        System.out.println("World of Zuul is a new, incredibly boring adventure game.");
+        System.out.println("Welcome to Pandemic Prevention!");
+        System.out.println("A virus has spread throughout the world and you must stop the dispersion.\nIn the beginning you'll have to cure the residents of a nursing home.");
         System.out.println("Type '" + CommandWord.HELP + "' if you need help.");
         System.out.println();
-        System.out.println(currentRoom.getLongDescription());
+        System.out.println("You have entered the nursing home.");
+        System.out.println(currentRoom.getShortDescription());
     }
 
     private boolean processCommand(Command command) 
@@ -152,8 +153,9 @@ public class Game
 
     private void printHelp() 
     {
-        System.out.println("You are lost. You are alone. You wander");
-        System.out.println("around at the university.");
+        System.out.println("Your objective is to cure the deceased people in the nursing home.");
+        System.out.println("By looking around the rooms, you'll be able to find several objects.");
+        System.out.println("Talking to the people may give you an idea of how to cure them");
         System.out.println();
         System.out.println("Your command words are:");
         parser.showCommands();
