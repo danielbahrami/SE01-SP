@@ -69,12 +69,12 @@ public class Game
 
         // roomNumber.addItemToRoom(< nameOfItem >, < itemDescription >;
 
-        room4.addItemToRoom("mask", "a mask to protect your face");
-        room1.addItemToRoom("soap", "soap to wash your hands");
+        lounge.addItemToRoom("mask", "a mask to protect your face");
+        reception.addItemToRoom("soap", "soap to wash your hands");
 
         // roomNumber.addNPCToRoom(< NPCName >, < quest >, < questItem >)
         NPC1.setQuestItem(new Item("mask", "a mask"));
-        room1.addNPCToRoom("Bo", "I need mask", NPC1.getQuestItem());
+        reception.addNPCToRoom("Bo", "I need mask", NPC1.getQuestItem());
 
         currentRoom = spawn;
     }
