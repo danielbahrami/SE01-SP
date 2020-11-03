@@ -6,21 +6,40 @@ import java.util.HashMap;
 
 public class Room 
 {
+    // Room attributes
     private String description;
     private HashMap<String, Room> exits;
     private HashMap<String, Item> itemList;
+    private HashMap<String, NPC> NPCList;
     private int roomNumber;
+
+    // Item attributes
     private String itemName;
     private String itemDescription;
 
+    // NPC attributes
+    private String NPCName;
+    private String quest;
+    private Item questItem;
+
+
+    // Create rooms
     public Room(String description, int roomNumber)
     {
         this.description = description;
         exits = new HashMap<String, Room>();
         itemList = new HashMap<String, Item>();
+        NPCList = new HashMap<String, NPC>();
+
+
         this.roomNumber = roomNumber;
         this.itemName = itemName;
         this.itemDescription = getItemDescription();
+
+
+        this.NPCName = NPCName;
+        this.quest = quest;
+        this.questItem = questItem;
     }
 
     public void setExit(String direction, Room neighbor) 
@@ -61,7 +80,10 @@ public class Room
 
         return currentRoom;
     }
-    
+
+
+
+    // Item methods to Room
     public void addItemToRoom(String itemName, String itemDescription)
     {
         itemList.put(itemName, new Item(itemName, itemDescription));
@@ -76,5 +98,22 @@ public class Room
     {
         return itemList.get(itemName);
     }
-}
 
+
+
+    // NPC methods to Room
+    public void addNPCToRoom(String NPCName, String quest, Item questItem)
+    {
+        NPCList.put(NPCName, new NPC(NPCName, quest, questItem));
+    }
+
+    public String getQuest()
+    {
+        return quest;
+    }
+
+    public NPC getNPCInRoom()
+    {
+        return NPCList.get(NPCName);
+    }
+}
