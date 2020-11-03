@@ -35,23 +35,23 @@ public class Game
 
         spawn.setExit("left", room1);
 
-        room1.setExit("right", spawn);
-        room1.setExit("up", room4);
-        room1.setExit("left", room2);
+        lobby.setExit("right", spawn);
+        lobby.setExit("up", room4);
+        lobby.setExit("left", room2);
 
-        room2.setExit("right", room1);
-        room2.setExit("up", room5);
+        reception.setExit("right", room1);
+        reception.setExit("up", room5);
 
-        room3.setExit("left", room4);
-        room3.setExit("up", room6);
+        pharmacy.setExit("left", room4);
+        pharmacy.setExit("up", room6);
 
-        room4.setExit("down", room1);
-        room4.setExit("right", room3);
-        room4.setExit("left", room5);
+        lounge.setExit("down", room1);
+        lounge.setExit("right", room3);
+        lounge.setExit("left", room5);
 
-        room5.setExit("down", room2);
-        room5.setExit("right", room4);
-        room5.setExit("up", room7);
+        cafeteria.setExit("down", room2);
+        cafeteria.setExit("right", room4);
+        cafeteria.setExit("up", room7);
 
         room6.setExit("up", room8);
         room6.setExit("down", room3);
