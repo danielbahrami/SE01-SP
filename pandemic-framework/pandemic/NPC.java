@@ -1,17 +1,30 @@
 package pandemic;
 
+import java.util.HashMap;
+
 public class NPC {
 
     private String name;
     private Item questItem;
     private String quest;
+    private HashMap<String, NPC> NPCList;
 
-    public NPC(String name)
+    public NPC(String name, String quest, Item questItem)
     {
         this.name = name;
-        this.quest = getQuest();
-        NPCTalk();
-        isQuestDone();
+        this.quest = quest;
+        this.questItem = questItem;
+        NPCList = new HashMap<String, NPC>();
+    }
+
+    public void addNPCs()
+    {
+        NPCList.put("Bo", new NPC("Bo", "I have problem pls fix", getQuestItem()));
+    }
+
+    public String getQuest()
+    {
+        return quest;
     }
 
     public String getName()
@@ -19,35 +32,13 @@ public class NPC {
         return name;
     }
 
-    public void NPCTalk()
+    public Item getQuestItem()
     {
-        System.out.println(getQuest());
-
+        return questItem;
     }
-    
-    public String getQuest()
-    {
-        return quest + questItem;
-    }
-    
-    public String getQuestItem()
-    {
-        return questItem.toString();
-    }
-    
-    public boolean isQuestDone()
-    {
-        boolean done = false;
 
-        if (done)
-        {
-            getQuest();
-            done = false;
-        } else if (!done) {
-            System.out.println("Quest complete!");
-            done = true;
-        }
-
-        return false;
+    public void setQuestItem(Item item)
+    {
+        questItem = new Item(null,null);
     }
 }
