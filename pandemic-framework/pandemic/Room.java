@@ -86,6 +86,7 @@ public class Room
     // Item methods to Room
     public void addItemToRoom(String itemName, String itemDescription)
     {
+        this.itemName = itemName;
         itemList.put(itemName, new Item(itemName, itemDescription));
     }
     
@@ -104,6 +105,9 @@ public class Room
     // NPC methods to Room
     public void addNPCToRoom(String NPCName, String quest, Item questItem)
     {
+        this.NPCName = NPCName;
+        this.quest = quest;
+        this.questItem = questItem;
         NPCList.put(NPCName, new NPC(NPCName, quest, questItem));
     }
 
