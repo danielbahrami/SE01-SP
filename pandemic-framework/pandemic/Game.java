@@ -18,7 +18,7 @@ public class Game
 
     private void createRooms()
     {
-         Room spawn, room1, room2, room3, room4, room5, room6, room7, room8, room9, room10;
+         Room lobby, reception, pharmacy, southHallway, lounge, cafeteria, midHallway, toilet, northHallway, office, secretRoom;
       
         lobby = new Room("You are standing in the lobby", 0);
         reception = new Room("the reception and behind the is a woman", 1);
@@ -33,38 +33,38 @@ public class Game
         secretRoom = new Room("room 10 and you see nothing", 10);
 
 
-        spawn.setExit("left", room1);
+        lobby.setExit("left", reception);
 
-        lobby.setExit("right", spawn);
-        lobby.setExit("up", room4);
-        lobby.setExit("left", room2);
+        reception.setExit("right", lobby);
+        reception.setExit("up", lounge);
+        reception.setExit("left", pharmacy);
 
-        reception.setExit("right", room1);
-        reception.setExit("up", room5);
+        pharmacy.setExit("right", reception);
+        pharmacy.setExit("up", cafeteria);
 
-        pharmacy.setExit("left", room4);
-        pharmacy.setExit("up", room6);
+        southHallway.setExit("left", lounge);
+        southHallway.setExit("up", midHallway);
 
-        lounge.setExit("down", room1);
-        lounge.setExit("right", room3);
-        lounge.setExit("left", room5);
+        lounge.setExit("down", reception);
+        lounge.setExit("right", southHallway);
+        lounge.setExit("left", cafeteria);
 
-        cafeteria.setExit("down", room2);
-        cafeteria.setExit("right", room4);
-        cafeteria.setExit("up", room7);
+        cafeteria.setExit("down", pharmacy);
+        cafeteria.setExit("right", lounge);
+        cafeteria.setExit("up", toilet);
 
-        room6.setExit("up", room8);
-        room6.setExit("down", room3);
+        midHallway.setExit("up", northHallway);
+        midHallway.setExit("down", southHallway);
 
-        room7.setExit("down", room5);
-        room7.setExit("up", room10);
+        toilet.setExit("down", cafeteria);
+        toilet.setExit("up", secretRoom);
 
-        room8.setExit("down", room6);
-        room8.setExit("left", room9);
+        northHallway.setExit("down", midHallway);
+        northHallway.setExit("left", office);
 
-        room9.setExit("right", room8);
+        office.setExit("right", northHallway);
 
-        room10.setExit("down", room7);
+        secretRoom.setExit("down", toilet);
 
 
         // roomNumber.addItemToRoom(< nameOfItem >, < itemDescription >;
