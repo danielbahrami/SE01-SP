@@ -69,6 +69,8 @@ public class Game
 
         // roomNumber.addItemToRoom(< nameOfItem >, < itemDescription >;
 
+        room1.addItemToRoom("soap", "soap to wash your hands");
+
         currentRoom = spawn;
     }
     

@@ -31,7 +31,7 @@ public class Item {
     public void addItems()
     {
         itemList.put("mask", new Item("mask", "a mask made to protecc"));
-    }
+        itemList.put("soap", new Item ("soap", "soap to wash your hands")); }
 
     public String getItemDescription()
     {
