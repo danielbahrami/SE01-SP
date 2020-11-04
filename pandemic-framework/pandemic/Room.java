@@ -12,6 +12,7 @@ public class Room
     private HashMap<String, Item> itemList;
     private HashMap<String, NPC> NPCList;
     private int roomNumber;
+    private Item key;
 
     // Item attributes
     private String itemName;
