@@ -220,14 +220,19 @@ public class Game
             return;
         }
 
-        Item item = new Item(command.getSecondWord(), currentRoom.getItemDescription());
+        Item item = roomNPC.getQuestItem();
 
         if (command.hasSecondWord())
         {
             if (command.getSecondWord().equals(item.getName()))
             {
-                item = new Item(command.getSecondWord(), currentRoom.getItemDescription());
                 inventory.removeFromInventory(item);
+                System.out.println("Gave " + item.getName() + " to " + roomNPC.getName()
+                                    + "\nQuest complete!");
+            }
+            else
+            {
+                System.out.println("I don't need that.");
             }
         }
     }
