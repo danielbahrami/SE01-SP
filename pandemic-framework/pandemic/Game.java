@@ -226,7 +226,8 @@ public class Game
         {
             if (command.getSecondWord().equals(inventory.getItem().getName()))
             {
-                if (command.getSecondWord().equals(item.getName())) {
+                if (command.getSecondWord().equals(item.getName())) 
+                {
                     inventory.removeFromInventory(item);
                     System.out.println("Gave " + item.getName() + " to " + currentRoom.getNPCInRoom().getName()
                             + "\nQuest complete!");
