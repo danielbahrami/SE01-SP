@@ -52,6 +52,11 @@ public class Inventory {
         }
     }
     
+    public Item getItem()
+    {
+        return item;
+    }
+    
     @Override
     public String toString()
     {
