@@ -49,7 +49,7 @@ public class Room
 
     public String getShortDescription()
     {
-        return description;
+        return description + ".\n" + getExitString();
     }
 
     public String getLongDescription()
