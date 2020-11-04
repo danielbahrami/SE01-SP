@@ -41,6 +41,12 @@ public class Room
         this.quest = quest;
         this.questItem = questItem;
     }
+    
+    public Room(String description, int roomNumber, Item key)
+    {
+        this(description, roomNumber);
+        this.key = key;
+    }
 
     public void setExit(String direction, Room neighbor) 
     {
@@ -80,7 +86,16 @@ public class Room
 
         return currentRoom;
     }
+    
+    public void setKey(Item key)
+    {
+        this.key = key;
+    }
 
+    public Item getKey()
+    {
+        return key;
+    }
 
 
     // Item methods to Room
