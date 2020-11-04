@@ -239,6 +239,28 @@ public class Game
             }
         }
     }
+    
+    private void unlockRoom(Command command)
+    {
+        if (!command.hasSecondWord())
+        {
+            System.out.println("Unlock what?");
+            return;
+        }
+
+        Item key = currentRoom.getKey();
+
+        if (currentRoom.roomIsLocked(true))
+        {
+            System.out.println("The room is locked, do you have the key?");
+            if (inventory.getItem().getName().equals(currentRoom.getKey().getName()))
+            {
+                System.out.println("Room unlocked");
+                inventory.removeFromInventory(key);
+                currentRoom.roomIsLocked(false);
+            }
+        }
+    }
 
     private boolean quit(Command command) 
     {
