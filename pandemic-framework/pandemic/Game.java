@@ -250,9 +250,4 @@ public class Game
             return true;
         }
     }
-
-    public Room getCurrentRoom()
-    {
-        return this.currentRoom;
-    }
 }
