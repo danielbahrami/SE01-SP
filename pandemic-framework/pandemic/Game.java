@@ -75,7 +75,7 @@ public class Game
         NPC1.setQuestItem(new Item("mask", "a mask"));
         reception.addNPCToRoom("Bo", "I need mask", NPC1.getQuestItem());
 
-        currentRoom = spawn;
+        currentRoom = lobby;
     }
 
     public void play() 
