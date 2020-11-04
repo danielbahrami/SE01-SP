@@ -138,6 +138,10 @@ public class Game
         {
             showInventory(command);
         }
+        else if (commandWord == CommandWord.UNLOCK)
+        {
+            unlockRoom(command);
+        }
         return wantToQuit;
     }
 
