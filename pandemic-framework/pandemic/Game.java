@@ -72,8 +72,8 @@ public class Game
         reception.addItemToRoom("soap", "soap to wash your hands");
 
         // roomNumber.addNPCToRoom(< NPCName >, < quest >, < questItem >)
-        NPC1.setQuestItem(new Item("mask", "a mask"));
-        reception.addNPCToRoom("Bo", "I need mask", NPC1.getQuestItem());
+
+        
 
         currentRoom = lobby;
     }
