@@ -10,7 +10,6 @@ public class Game
     public Game() 
     {
         createRooms();
-        createNPC();
         parser = new Parser();
         this.inventory = new Inventory();
     }
@@ -77,22 +76,6 @@ public class Game
         reception.addNPCToRoom("Bo", "I need mask", NPC1.getQuestItem());
 
         currentRoom = spawn;
-    }
-    
-    private void createNPC()
-    {
-        /* SYNTAX for createNPC()
-            NPC a, b, c... ;
-            Item x, y, z... ;
-
-            a = new NPC("someName");
-            x = new Item("itemName");
-
-            a.setQuest("questName", x);
-            completeQuest(a, x);
-         */
-        
-        
     }
 
     public void play() 
