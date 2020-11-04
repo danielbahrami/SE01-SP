@@ -31,7 +31,12 @@ public class Item {
     public void addItems()
     {
         itemList.put("mask", new Item("mask", "a mask made to protecc"));
-        itemList.put("soap", new Item ("soap", "soap to wash your hands")); }
+        itemList.put("soap", new Item ("soap", "soap to wash your hands"));
+        itemList.put("hand sanitizer", new Item("hand sanitizer", "hand sanitizer to disinfect your hands"));
+        itemList.put("paracetamol", new Item("paracetamol", "paracetamol to treat pain anf fever"));
+
+    }
+
 
     public String getItemDescription()
     {
