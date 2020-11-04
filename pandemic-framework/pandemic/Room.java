@@ -87,6 +87,19 @@ public class Room
         return currentRoom;
     }
     
+    public boolean roomIsLocked(boolean bool)
+    {
+        if (bool)
+        {
+            System.out.println("The room is locked!");
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    
     public void setKey(Item key)
     {
         this.key = key;
