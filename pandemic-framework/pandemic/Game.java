@@ -252,16 +252,4 @@ public class Game
     {
         return this.currentRoom;
     }
-
-    private void completeQuest(NPC npc, Item item)
-    {
-        boolean done = npc.isQuestDone();
-
-        if (item.getName() == npc.getQuest())
-        {
-            done = true;
-        } else {
-            done = false;
-        }
-    }
 }
