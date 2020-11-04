@@ -41,7 +41,14 @@ public class Inventory {
         
         for (Item i : inventory)
         {
-            System.out.print(i.getName() + ", ");
+            if (inventory.size() > 1)
+            {
+                System.out.print(i.getName() + ", ");
+            }
+            else
+            {
+                System.out.print(i.getName());
+            }
         }
     }
     
