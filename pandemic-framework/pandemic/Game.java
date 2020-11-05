@@ -77,8 +77,8 @@ public class Game
 
 
         // roomNumber.addNPCToRoom(< NPCName >, < quest >, < questItem >)
-        reception.addNPCToRoom("Bo", "I need a mask", new Item("mask", "a mask to protect your face"));
-        office.addNPCToRoom("Karen", "I need to talk to the manager", new Item("manager", "a manager to satisfy Karen"));
+        reception.addNPCToRoom("bo", "I need a mask", new Item("mask", "a mask to protect your face"));
+        office.addNPCToRoom("karen", "I need to talk to the manager", new Item("manager", "a manager to satisfy Karen"));
 
         currentRoom = lobby;
     }
@@ -192,7 +192,7 @@ public class Game
     {
         if (!command.hasSecondWord())
         {
-            System.out.println("Take what?");
+            System.out.println("Pick up what?");
             return;
         }
 
@@ -202,7 +202,7 @@ public class Game
         try {
             if (command.getSecondWord().equals(currentRoom.getItemInRoom().getName())) {
                 inventory.addToInventory(item);
-                System.out.println("You took " + item.getName());
+                System.out.println("picked up " + item.getName());
             }
         } catch (NullPointerException e)
         {
@@ -239,22 +239,17 @@ public class Game
 
         try
         {
-            if (command.getSecondWord().equals(inventory.getItem().getName())) 
+            if (command.getSecondWord().equals(currentRoom.getNPCInRoom().getQuestItem().getName()))
             {
-                if (command.getSecondWord().equals(currentRoom.getNPCInRoom().getQuestItem().getName())) 
-                {
-                    inventory.removeFromInventory(item);
-                    System.out.println("Gave " + item.getName() + " to " + currentRoom.getNPCInRoom().getName()
-                            + "\nQuest complete!");
-                } 
-                else if (!command.getSecondWord().equals(inventory.getItem().getName()))
-                {
-                    System.out.println("You don't have " + command.getSecondWord() + " in your inventory.");
-                }
-                else
-                {
-                    System.out.println("I don't need that.");
-                }
+                System.out.println("Gave " + item.getName() + " to " + currentRoom.getNPCInRoom().getName()
+                        + "\nQuest complete!");
+                inventory.removeFromInventory(item);
+                return;
+
+            }
+            else
+            {
+                System.out.println("I don't need that.");
             }
         }
         catch (NullPointerException e)
