@@ -22,7 +22,7 @@ public class Game
         lobby = new Room("You are standing in the lobby", 0);
         reception = new Room("the reception, and behind the desk there is a receptionist named Bo, whom you can talk with", 1);
         pharmacy = new Room("the pharmacy, and you see an item (paracetamol) on the counter", 2);
-        southHallway = new Room("south hallway, and you can see an item (hand sanitizer) on the table", 3);
+        southHallway = new Room("south hallway, and you can see an item (hand-sanitizer) on the table", 3);
         lounge = new Room("a beautiful lounge and you can see an item (plant)", 4);
         cafeteria = new Room("the cafeteria, and you can see an item (citronmåne) ", 5);
         midHallway = new Room("room 6 and you see a person", 6);
@@ -69,10 +69,11 @@ public class Game
 
         lounge.addItemToRoom("mask", "a mask to protect your face");
         toilet.addItemToRoom("soap", "soap to wash your hands");
-        southHallway.addItemToRoom("hand sanitizer", "hand sanitizer to disinfect your hands");
+        southHallway.addItemToRoom("hand-sanitizer", "hand-sanitizer to disinfect your hands");
         pharmacy.addItemToRoom("paracetamol", "paracetamol to treat pain and fever");
         secretRoom.addItemToRoom("manager", "a manager to satisfy Karen");
         cafeteria.addItemToRoom("citronmåne", "a delicious cake made by Dan Cake");
+        lounge.addItemToRoom("plant", "a beautiful plant from Plantorama");
 
         // roomNumber.addNPCToRoom(< NPCName >, < quest >, < questItem >)
         reception.addNPCToRoom("bo", "I need a mask", new Item("mask", "a mask to protect your face"));

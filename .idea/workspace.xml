@@ -20,8 +20,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d8010f4-f255-4f34-99d3-a610e16ed2e4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Pandemic/pandemic/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pandemic/pandemic/Game.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pandemic-framework/pandemic/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/pandemic-framework/pandemic/Game.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -121,29 +119,29 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1398" height="207" key="GridCell.Tab.0.bottom" timestamp="1604575774941">
+    <state width="1398" height="207" key="GridCell.Tab.0.bottom" timestamp="1604576138320">
       <screen x="0" y="23" width="1440" height="805" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604237913101" />
-    <state width="1398" height="207" key="GridCell.Tab.0.bottom/0.23.1440.805@0.23.1440.805" timestamp="1604575774941" />
+    <state width="1398" height="207" key="GridCell.Tab.0.bottom/0.23.1440.805@0.23.1440.805" timestamp="1604576138320" />
     <state width="1638" height="280" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1604573325461" />
-    <state width="1398" height="207" key="GridCell.Tab.0.center" timestamp="1604575774940">
+    <state width="1398" height="207" key="GridCell.Tab.0.center" timestamp="1604576138319">
       <screen x="0" y="23" width="1440" height="805" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604237913101" />
-    <state width="1398" height="207" key="GridCell.Tab.0.center/0.23.1440.805@0.23.1440.805" timestamp="1604575774940" />
+    <state width="1398" height="207" key="GridCell.Tab.0.center/0.23.1440.805@0.23.1440.805" timestamp="1604576138319" />
     <state width="1638" height="280" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1604573325459" />
-    <state width="1398" height="207" key="GridCell.Tab.0.left" timestamp="1604575774939">
+    <state width="1398" height="207" key="GridCell.Tab.0.left" timestamp="1604576138318">
       <screen x="0" y="23" width="1440" height="805" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604237913100" />
-    <state width="1398" height="207" key="GridCell.Tab.0.left/0.23.1440.805@0.23.1440.805" timestamp="1604575774939" />
+    <state width="1398" height="207" key="GridCell.Tab.0.left/0.23.1440.805@0.23.1440.805" timestamp="1604576138318" />
     <state width="1638" height="280" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1604573325458" />
-    <state width="1398" height="207" key="GridCell.Tab.0.right" timestamp="1604575774941">
+    <state width="1398" height="207" key="GridCell.Tab.0.right" timestamp="1604576138319">
       <screen x="0" y="23" width="1440" height="805" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604237913101" />
-    <state width="1398" height="207" key="GridCell.Tab.0.right/0.23.1440.805@0.23.1440.805" timestamp="1604575774941" />
+    <state width="1398" height="207" key="GridCell.Tab.0.right/0.23.1440.805@0.23.1440.805" timestamp="1604576138319" />
     <state width="1638" height="280" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1604573325460" />
     <state x="461" y="165" key="SettingsEditor" timestamp="1604502496807">
       <screen x="0" y="0" width="1920" height="1040" />
