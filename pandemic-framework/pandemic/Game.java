@@ -21,7 +21,7 @@ public class Game
       
         lobby = new Room("You are standing in the lobby", 0);
         reception = new Room("the reception and behind the is a woman", 1);
-        pharmacy = new Room("pharmacy and you see different types of medication", 2);
+        pharmacy = new Room("pharmacy and you see paracetamol", 2);
         southHallway = new Room("room 3 and you can see an item (vitamin C) on the table", 3);
         lounge = new Room("reception and you can see the receptionist and an item (mask)", 4);
         cafeteria = new Room("room 5 and you see nothing of interest", 5);
@@ -70,10 +70,12 @@ public class Game
 
         lounge.addItemToRoom("mask", "a mask to protect your face");
         reception.addItemToRoom("soap", "soap to wash your hands");
+        pharmacy.addItemToRoom("paracetamol", "paracetamol to treat pain and fever");
+        secretRoom.addItemToRoom("manager", "a manager to satisfy Karen");
 
         // roomNumber.addNPCToRoom(< NPCName >, < quest >, < questItem >)
         reception.addNPCToRoom("Bo", "I need a mask", new Item("mask", "a mask to protect your face"));
-        
+        office.addNPCToRoom("Karen", "I need to talk to the manager", new Item("manager", "a manager to satisfy Karen"));
 
         currentRoom = lobby;
     }
