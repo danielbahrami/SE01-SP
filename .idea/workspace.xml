@@ -22,11 +22,6 @@
     <list default="true" id="8d8010f4-f255-4f34-99d3-a610e16ed2e4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Pandemic/pandemic/Bot.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Pandemic/pandemic/Game.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Pandemic/pandemic/NPC.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pandemic/pandemic/NPC.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Pandemic/pandemic/Room.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pandemic/pandemic/Room.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pandemic-framework/pandemic/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/pandemic-framework/pandemic/Game.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,17 +57,6 @@
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RunManager" selected="Application.Start">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Map" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pandemic.Map" />
       <module name="Pandemic" />
@@ -115,6 +99,7 @@
       <option name="presentableId" value="Default" />
       <updated>1604228627510</updated>
       <workItem from="1604412908171" duration="814000" />
+      <workItem from="1604569205528" duration="284000" />
     </task>
     <servers />
   </component>
