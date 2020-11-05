@@ -67,13 +67,14 @@ public class Game
 
         // roomNumber.addItemToRoom(< nameOfItem >, < itemDescription >;
 
-        lounge.addItemToRoom("mask", "a mask to protect your face");
         toilet.addItemToRoom("soap", "soap to wash your hands");
         southHallway.addItemToRoom("hand-sanitizer", "hand-sanitizer to disinfect your hands");
         pharmacy.addItemToRoom("paracetamol", "paracetamol to treat pain and fever");
         secretRoom.addItemToRoom("manager", "a manager to satisfy Karen");
         cafeteria.addItemToRoom("citronmåne", "a delicious cake made by Dan Cake");
         lounge.addItemToRoom("plant", "a beautiful plant from Plantorama");
+        lounge.addItemToRoom("mask", "a mask to protect your face");
+
 
         // roomNumber.addNPCToRoom(< NPCName >, < quest >, < questItem >)
         reception.addNPCToRoom("bo", "I need a mask", new Item("mask", "a mask to protect your face"));
