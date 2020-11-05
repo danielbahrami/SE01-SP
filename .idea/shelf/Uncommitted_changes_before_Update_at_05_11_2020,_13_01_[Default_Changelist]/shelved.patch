@@ -1,0 +1,81 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"BranchesTreeState\">\n    <expand>\n      <path>\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"LOCAL_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n      </path>\n      <path>\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n      </path>\n      <path>\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"GROUP_NODE:origin\" type=\"e8cecc67:BranchNodeDescriptor\" />\n      </path>\n    </expand>\n    <select />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"8d8010f4-f255-4f34-99d3-a610e16ed2e4\" name=\"Default Changelist\" comment=\"\">\n      <change beforePath=\"$PROJECT_DIR$/pandemic-framework/pandemic/Game.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/pandemic-framework/pandemic/Game.java\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"CodeStyleSettingsInfer\">\n    <option name=\"done\" value=\"true\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Class\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"ProjectCodeStyleSettingsMigration\">\n    <option name=\"version\" value=\"1\" />\n  </component>\n  <component name=\"ProjectId\" id=\"1jgbLZyj8a87dtuOvb45k2l2Vsf\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\n    <property name=\"aspect.path.notification.shown\" value=\"true\" />\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$\" />\n    <property name=\"settings.editor.selected.configurable\" value=\"org.jetbrains.plugins.github.ui.GithubSettingsConfigurable\" />\n  </component>\n  <component name=\"RunManager\" selected=\"Application.Start\">\n    <configuration name=\"Map\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"pandemic.Map\" />\n      <module name=\"Pandemic\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"pandemic.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"Start\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"pandemic.Start\" />\n      <module name=\"Pandemic\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"pandemic.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"Application.Start\" />\n        <item itemvalue=\"Application.Map\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"8d8010f4-f255-4f34-99d3-a610e16ed2e4\" name=\"Default Changelist\" comment=\"\" />\n      <created>1604228627510</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1604228627510</updated>\n      <workItem from=\"1604412908171\" duration=\"814000\" />\n      <workItem from=\"1604569205528\" duration=\"284000\" />\n      <workItem from=\"1604571879773\" duration=\"1718000\" />\n      <workItem from=\"1604576897003\" duration=\"383000\" />\n    </task>\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n    <option name=\"oldMeFiltersMigrated\" value=\"true\" />\n  </component>\n  <component name=\"WindowStateProjectService\">\n    <state width=\"1638\" height=\"280\" key=\"GridCell.Tab.0.bottom\" timestamp=\"1604577109123\">\n      <screen x=\"0\" y=\"23\" width=\"1680\" height=\"1027\" />\n    </state>\n    <state width=\"1877\" height=\"282\" key=\"GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040\" timestamp=\"1604237913101\" />\n    <state width=\"1398\" height=\"207\" key=\"GridCell.Tab.0.bottom/0.23.1440.805@0.23.1440.805\" timestamp=\"1604576138320\" />\n    <state width=\"1638\" height=\"280\" key=\"GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027\" timestamp=\"1604577109123\" />\n    <state width=\"1638\" height=\"280\" key=\"GridCell.Tab.0.center\" timestamp=\"1604577109122\">\n      <screen x=\"0\" y=\"23\" width=\"1680\" height=\"1027\" />\n    </state>\n    <state width=\"1877\" height=\"282\" key=\"GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040\" timestamp=\"1604237913101\" />\n    <state width=\"1398\" height=\"207\" key=\"GridCell.Tab.0.center/0.23.1440.805@0.23.1440.805\" timestamp=\"1604576138319\" />\n    <state width=\"1638\" height=\"280\" key=\"GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027\" timestamp=\"1604577109122\" />\n    <state width=\"1638\" height=\"280\" key=\"GridCell.Tab.0.left\" timestamp=\"1604577109121\">\n      <screen x=\"0\" y=\"23\" width=\"1680\" height=\"1027\" />\n    </state>\n    <state width=\"1877\" height=\"282\" key=\"GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040\" timestamp=\"1604237913100\" />\n    <state width=\"1398\" height=\"207\" key=\"GridCell.Tab.0.left/0.23.1440.805@0.23.1440.805\" timestamp=\"1604576138318\" />\n    <state width=\"1638\" height=\"280\" key=\"GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027\" timestamp=\"1604577109121\" />\n    <state width=\"1638\" height=\"280\" key=\"GridCell.Tab.0.right\" timestamp=\"1604577109122\">\n      <screen x=\"0\" y=\"23\" width=\"1680\" height=\"1027\" />\n    </state>\n    <state width=\"1877\" height=\"282\" key=\"GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040\" timestamp=\"1604237913101\" />\n    <state width=\"1398\" height=\"207\" key=\"GridCell.Tab.0.right/0.23.1440.805@0.23.1440.805\" timestamp=\"1604576138319\" />\n    <state width=\"1638\" height=\"280\" key=\"GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027\" timestamp=\"1604577109122\" />\n    <state x=\"461\" y=\"165\" key=\"SettingsEditor\" timestamp=\"1604502496807\">\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\n    </state>\n    <state x=\"461\" y=\"165\" key=\"SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040\" timestamp=\"1604502496807\" />\n    <state x=\"192\" y=\"201\" key=\"Vcs.Push.Dialog.v2\" timestamp=\"1604413774482\">\n      <screen x=\"0\" y=\"23\" width=\"1440\" height=\"877\" />\n    </state>\n    <state x=\"192\" y=\"201\" key=\"Vcs.Push.Dialog.v2/1440.23.1102.719/0.23.1440.877@0.23.1440.877\" timestamp=\"1604413774482\" />\n    <state x=\"638\" y=\"457\" key=\"com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2\" timestamp=\"1604577148471\">\n      <screen x=\"0\" y=\"23\" width=\"1680\" height=\"1027\" />\n    </state>\n    <state x=\"638\" y=\"457\" key=\"com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1680.1027@0.23.1680.1027\" timestamp=\"1604577148471\" />\n    <state x=\"505\" y=\"260\" key=\"search.everywhere.popup\" timestamp=\"1604412931349\">\n      <screen x=\"0\" y=\"23\" width=\"1680\" height=\"1027\" />\n    </state>\n    <state x=\"505\" y=\"260\" key=\"search.everywhere.popup/0.23.1680.1027@0.23.1680.1027\" timestamp=\"1604412931349\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(revision 36298bf45377e850cad0a5bbdb9fa41998b46b1c)
++++ .idea/workspace.xml	(date 1604577711429)
+@@ -19,9 +19,7 @@
+     <select />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="8d8010f4-f255-4f34-99d3-a610e16ed2e4" name="Default Changelist" comment="">
+-      <change beforePath="$PROJECT_DIR$/pandemic-framework/pandemic/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/pandemic-framework/pandemic/Game.java" afterDir="false" />
+-    </list>
++    <list default="true" id="8d8010f4-f255-4f34-99d3-a610e16ed2e4" name="Default Changelist" comment="" />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -100,7 +98,7 @@
+       <workItem from="1604412908171" duration="814000" />
+       <workItem from="1604569205528" duration="284000" />
+       <workItem from="1604571879773" duration="1718000" />
+-      <workItem from="1604576897003" duration="383000" />
++      <workItem from="1604576897003" duration="813000" />
+     </task>
+     <servers />
+   </component>
+@@ -120,30 +118,30 @@
+     <option name="oldMeFiltersMigrated" value="true" />
+   </component>
+   <component name="WindowStateProjectService">
+-    <state width="1638" height="280" key="GridCell.Tab.0.bottom" timestamp="1604577109123">
++    <state width="1638" height="280" key="GridCell.Tab.0.bottom" timestamp="1604577282179">
+       <screen x="0" y="23" width="1680" height="1027" />
+     </state>
+     <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604237913101" />
+     <state width="1398" height="207" key="GridCell.Tab.0.bottom/0.23.1440.805@0.23.1440.805" timestamp="1604576138320" />
+-    <state width="1638" height="280" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1604577109123" />
+-    <state width="1638" height="280" key="GridCell.Tab.0.center" timestamp="1604577109122">
++    <state width="1638" height="280" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1604577282179" />
++    <state width="1638" height="280" key="GridCell.Tab.0.center" timestamp="1604577282179">
+       <screen x="0" y="23" width="1680" height="1027" />
+     </state>
+     <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604237913101" />
+     <state width="1398" height="207" key="GridCell.Tab.0.center/0.23.1440.805@0.23.1440.805" timestamp="1604576138319" />
+-    <state width="1638" height="280" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1604577109122" />
+-    <state width="1638" height="280" key="GridCell.Tab.0.left" timestamp="1604577109121">
++    <state width="1638" height="280" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1604577282179" />
++    <state width="1638" height="280" key="GridCell.Tab.0.left" timestamp="1604577282178">
+       <screen x="0" y="23" width="1680" height="1027" />
+     </state>
+     <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604237913100" />
+     <state width="1398" height="207" key="GridCell.Tab.0.left/0.23.1440.805@0.23.1440.805" timestamp="1604576138318" />
+-    <state width="1638" height="280" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1604577109121" />
+-    <state width="1638" height="280" key="GridCell.Tab.0.right" timestamp="1604577109122">
++    <state width="1638" height="280" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1604577282178" />
++    <state width="1638" height="280" key="GridCell.Tab.0.right" timestamp="1604577282179">
+       <screen x="0" y="23" width="1680" height="1027" />
+     </state>
+     <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604237913101" />
+     <state width="1398" height="207" key="GridCell.Tab.0.right/0.23.1440.805@0.23.1440.805" timestamp="1604576138319" />
+-    <state width="1638" height="280" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1604577109122" />
++    <state width="1638" height="280" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1604577282179" />
+     <state x="461" y="165" key="SettingsEditor" timestamp="1604502496807">
+       <screen x="0" y="0" width="1920" height="1040" />
+     </state>
+@@ -152,10 +150,10 @@
+       <screen x="0" y="23" width="1440" height="877" />
+     </state>
+     <state x="192" y="201" key="Vcs.Push.Dialog.v2/1440.23.1102.719/0.23.1440.877@0.23.1440.877" timestamp="1604413774482" />
+-    <state x="638" y="457" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604577148471">
++    <state x="638" y="457" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604577711416">
+       <screen x="0" y="23" width="1680" height="1027" />
+     </state>
+-    <state x="638" y="457" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1680.1027@0.23.1680.1027" timestamp="1604577148471" />
++    <state x="638" y="457" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1680.1027@0.23.1680.1027" timestamp="1604577711416" />
+     <state x="505" y="260" key="search.everywhere.popup" timestamp="1604412931349">
+       <screen x="0" y="23" width="1680" height="1027" />
+     </state>

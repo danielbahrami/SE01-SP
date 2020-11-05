@@ -77,8 +77,8 @@ public class Game
 
 
         // roomNumber.addNPCToRoom(< NPCName >, < quest >, < questItem >)
-        reception.addNPCToRoom("bo", "I need a mask", new Item("mask", "a mask to protect your face"));
-        office.addNPCToRoom("karen", "I need to talk to the manager", new Item("manager", "a manager to satisfy Karen"));
+        reception.addNPCToRoom("Bo", "I need a mask", new Item("mask", "a mask to protect your face"));
+        office.addNPCToRoom("Karen", "I need to talk to the manager", new Item("manager", "a manager to satisfy Karen"));
 
         currentRoom = lobby;
     }
