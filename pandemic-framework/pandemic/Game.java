@@ -73,7 +73,7 @@ public class Game
         secretRoom.addItemToRoom("manager", "a manager to satisfy Karen");
         cafeteria.addItemToRoom("citronmåne", "a delicious cake made by Dan Cake");
         lounge.addItemToRoom("plant", "a beautiful plant from Plantorama");
-        lounge.addItemToRoom("mask", "a mask to protect your face");
+        midHallway.addItemToRoom("mask", "a mask to protect your face");
 
 
         // roomNumber.addNPCToRoom(< NPCName >, < quest >, < questItem >)
