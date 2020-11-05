@@ -26,7 +26,7 @@ public class Game
         lounge = new Room("a beautiful lounge and you can see an item (plant)", 4);
         cafeteria = new Room("cafeteria and here can you see an item (bacon kylling sandwich) ", 5);
         midHallway = new Room("room 6 and you see a person", 6);
-        toilet = new Room("room 7 and you see a person", 7);
+        toilet = new Room("the toilet where you can see an item (soap) ", 7);
         northHallway = new Room("room 8 and you see nothing", 8);
         office = new Room("room 9 and you see a person", 9);
         secretRoom = new Room("the secret room, where you can see and item (Manager)", 10);
