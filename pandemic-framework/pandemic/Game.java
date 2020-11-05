@@ -69,6 +69,7 @@ public class Game
 
         lounge.addItemToRoom("mask", "a mask to protect your face");
         reception.addItemToRoom("soap", "soap to wash your hands");
+        southHallway.addItemToRoom("hand sanitizer", "hand sanitizer to disinfect your hands");
         pharmacy.addItemToRoom("paracetamol", "paracetamol to treat pain and fever");
         secretRoom.addItemToRoom("manager", "a manager to satisfy Karen");
 
