@@ -24,7 +24,7 @@ public class Game
         pharmacy = new Room("pharmacy and you can see different types of medication", 2);
         southHallway = new Room("south hallway and you can see an item (handsanitizer) on the table", 3);
         lounge = new Room("a beautiful lounge and you can see an item (plant)", 4);
-        cafeteria = new Room("cafeteria and here can you see an item (bacon kylling sandwich) ", 5);
+        cafeteria = new Room("cafeteria and here can you see an item (bacon chicken sandwich) ", 5);
         midHallway = new Room("room 6 and you see a person", 6);
         toilet = new Room("the toilet where you can see an item (soap) ", 7);
         northHallway = new Room("room 8 and you see nothing", 8);
