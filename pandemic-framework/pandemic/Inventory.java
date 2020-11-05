@@ -30,9 +30,18 @@ public class Inventory {
         }
     }
     
+  
     public void removeFromInventory(Item item)
     {
-        inventory.remove(item);
+        this.item = item;
+
+        for (int i = 0; i < inventory.size(); i++)
+        {
+            if (inventory.get(i) == item)
+            {
+                inventory.remove(item);
+            }
+        }
     }
     
     public void printInventory()
