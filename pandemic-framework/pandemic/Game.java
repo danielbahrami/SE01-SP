@@ -72,7 +72,7 @@ public class Game
         reception.addItemToRoom("soap", "soap to wash your hands");
 
         // roomNumber.addNPCToRoom(< NPCName >, < quest >, < questItem >)
-
+        reception.addNPCToRoom("Bo", "I need a mask", new Item("mask", "a mask to protect your face"));
         
 
         currentRoom = lobby;
@@ -141,6 +141,10 @@ public class Game
         else if (commandWord == CommandWord.UNLOCK)
         {
             unlockRoom(command);
+        }
+        else if (commandWord == CommandWord.TALK)
+        {
+            talkNPC(command);
         }
         return wantToQuit;
     }
