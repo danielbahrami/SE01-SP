@@ -302,6 +302,7 @@ public class Game
         if (!command.hasSecondWord())
         {
             System.out.println("Talk to who?");
+            return;
         }
         
         String name = currentRoom.getNPCInRoom().getName();
