@@ -61,6 +61,11 @@ public class Room
 
     public String getLongDescription()
     {
+        if (NPCName == null)
+        {
+            return description + ".\n" + getExitString();
+        }
+        
         return "You are in " + description + ".\n" + getExitString();
     }
 
