@@ -33,15 +33,9 @@ public class Inventory {
   
     public void removeFromInventory(Item item)
     {
-        this.item = item;
-
-        for (int i = 0; i < inventory.size(); i++)
-        {
-            if (inventory.get(i) == item)
-            {
-                inventory.remove(item);
-            }
-        }
+        System.out.println(inventory.size());
+        this.inventory.remove(item);
+        System.out.println(inventory.size());
     }
     
     public void printInventory()
