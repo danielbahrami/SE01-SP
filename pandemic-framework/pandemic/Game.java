@@ -271,6 +271,27 @@ public class Game
             }
         }
     }
+    
+    private void talkNPC(Command command)
+    {
+        if (!command.hasSecondWord())
+        {
+            System.out.println("Talk to who?");
+        }
+        
+        String name = currentRoom.getNPCInRoom().getName();
+        
+        try {
+            if (command.getSecondWord().equals(name)) 
+            {
+                System.out.println(currentRoom.getNPCInRoom().getQuest());
+            }
+        } 
+        catch (NullPointerException e)
+        {
+            System.out.println(currentRoom.getNPCInRoom().getName() + " is not in the room");
+        }
+    }
 
     private boolean quit(Command command) 
     {
