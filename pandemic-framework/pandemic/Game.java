@@ -192,7 +192,7 @@ public class Game
     {
         if (!command.hasSecondWord())
         {
-            System.out.println("Pick up what?");
+            System.out.println("Take what?");
             return;
         }
 
@@ -202,7 +202,7 @@ public class Game
         try {
             if (command.getSecondWord().equals(currentRoom.getItemInRoom().getName())) {
                 inventory.addToInventory(item);
-                System.out.println("picked up " + item.getName());
+                System.out.println("You took " + item.getName());
             }
         } catch (NullPointerException e)
         {
