@@ -19,7 +19,7 @@ public class NPC {
 
     public void addNPCs()
     {
-        NPCList.put("Bo", new NPC("Bo", "I have problem pls fix", getQuestItem()));
+        NPCList.put(name, new NPC(name, quest, getQuestItem()));
     }
 
     public String getQuest()
