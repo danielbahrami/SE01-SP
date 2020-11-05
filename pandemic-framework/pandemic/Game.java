@@ -20,7 +20,7 @@ public class Game
          Room lobby, reception, pharmacy, southHallway, lounge, cafeteria, midHallway, toilet, northHallway, office, secretRoom;
 
         lobby = new Room("You are standing in the lobby", 0);
-        reception = new Room("the reception, and behind the desk there is a receptionist named Bo, whom you can talk with", 1);
+        reception = new Room("the reception, and behind the desk there is a receptionist named ", 1);
         pharmacy = new Room("the pharmacy, and you see an item (paracetamol) on the counter", 2);
         southHallway = new Room("south hallway, and you can see an item (hand-sanitizer) on the table", 3);
         lounge = new Room("a beautiful lounge and you can see an item (plant)", 4);
