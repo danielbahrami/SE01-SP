@@ -20,7 +20,7 @@ public class Inventory {
 
     public void addToInventory(Item item)
     {
-        if (inventory.size() > 5)
+        if (inventory.size() >= 5)
         {
             System.out.println("Can't carry any more!");
         }
