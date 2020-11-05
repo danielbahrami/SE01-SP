@@ -205,6 +205,7 @@ public class Game
             if (command.getSecondWord().equals(currentRoom.getItemInRoom().getName())) {
                 inventory.addToInventory(item);
                 System.out.println("You took " + item.getName());
+                currentRoom.removeItemFromRoom(currentRoom.getItemInRoom().getName());
             }
         } catch (NullPointerException e)
         {
