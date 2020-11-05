@@ -66,7 +66,7 @@ public class Room
             return "You are in " + description + ".\n" + getExitString();
         }
         
-        return "You are in " + description + NPCName + getExitString();
+        return "You are in " + description + NPCName + ".\n" + getExitString();
     }
 
     private String getExitString()
