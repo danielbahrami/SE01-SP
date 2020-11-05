@@ -18,19 +18,18 @@ public class Game
     private void createRooms()
     {
          Room lobby, reception, pharmacy, southHallway, lounge, cafeteria, midHallway, toilet, northHallway, office, secretRoom;
-      
+
         lobby = new Room("You are standing in the lobby", 0);
-        reception = new Room("the reception and behind the is a woman", 1);
-        pharmacy = new Room("pharmacy and you see paracetamol", 2);
-        southHallway = new Room("room 3 and you can see an item (vitamin C) on the table", 3);
-        lounge = new Room("reception and you can see the receptionist and an item (mask)", 4);
-        cafeteria = new Room("room 5 and you see nothing of interest", 5);
+        reception = new Room("the reception and behind there is a receptionist", 1);
+        pharmacy = new Room("pharmacy and you can see different types of medication", 2);
+        southHallway = new Room("south hallway and you can see an item (handsanitizer) on the table", 3);
+        lounge = new Room("a beautiful lounge and you can see an item (plant)", 4);
+        cafeteria = new Room("cafeteria and here can you see an item (bacon kylling sandwich) ", 5);
         midHallway = new Room("room 6 and you see a person", 6);
         toilet = new Room("room 7 and you see a person", 7);
         northHallway = new Room("room 8 and you see nothing", 8);
         office = new Room("room 9 and you see a person", 9);
-        secretRoom = new Room("room 10 and you see nothing", 10);
-
+        secretRoom = new Room("the secret room, where you can see and item (Manager)", 10);
 
         lobby.setExit("left", reception);
 
