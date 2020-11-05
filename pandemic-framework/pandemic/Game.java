@@ -239,25 +239,19 @@ public class Game
         }
 
         Item item = currentRoom.getNPCInRoom().getQuestItem();
+        Item item2 = inventory.getItem();
 
         try
         {
-            if (command.getSecondWord().equals(inventory.getItem().getName())) 
+            if (command.getSecondWord().equals(currentRoom.getNPCInRoom().getQuestItem().getName()))
             {
-                if (command.getSecondWord().equals(currentRoom.getNPCInRoom().getQuestItem().getName())) 
-                {
-                    inventory.removeFromInventory(item);
-                    System.out.println("Gave " + item.getName() + " to " + currentRoom.getNPCInRoom().getName()
-                            + "\nQuest complete!");
-                } 
-                else if (!command.getSecondWord().equals(inventory.getItem().getName()))
-                {
-                    System.out.println("You don't have " + command.getSecondWord() + " in your inventory.");
-                }
-                else
-                {
-                    System.out.println("I don't need that.");
-                }
+                System.out.println("Gave " + item.getName() + " to " + currentRoom.getNPCInRoom().getName()
+                        + "\nQuest complete!");
+                inventory.removeFromInventory(item2);
+            }
+            else
+            {
+                System.out.println("I don't need that.");
             }
         }
         catch (NullPointerException e)
