@@ -216,31 +216,29 @@ public class Game
     }
                 
     
-    public void giveItem(Command command)
-    {
-        if (!command.hasSecondWord())
-        {
+    public void giveItem(Command command) {
+        if (!command.hasSecondWord()) {
             System.out.println("Give what?");
             return;
         }
 
         Item item = currentRoom.getNPCInRoom().getQuestItem();
 
-        if (command.hasSecondWord())
+        try
         {
-            if (command.getSecondWord().equals(inventory.getItem().getName()))
-            {
-                if (command.getSecondWord().equals(item.getName())) 
-                {
+            if (command.getSecondWord().equals(inventory.getItem().getName())) {
+                if (command.getSecondWord().equals(item.getName())) {
                     inventory.removeFromInventory(item);
                     System.out.println("Gave " + item.getName() + " to " + currentRoom.getNPCInRoom().getName()
                             + "\nQuest complete!");
-                }
-                else
-                {
+                } else {
                     System.out.println("I don't need that.");
                 }
             }
+        }
+        catch (NullPointerException e)
+        {
+            System.out.println("No one is in the room.");
         }
     }
     
