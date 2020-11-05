@@ -147,6 +147,10 @@ public class Game
         {
             talkNPC(command);
         }
+        else if (commandWord == CommandWord.DROP)
+        {
+            dropItem(command);
+        }
         return wantToQuit;
     }
 
@@ -252,6 +256,22 @@ public class Game
         catch (NullPointerException e)
         {
             System.out.println("No one is in the room.");
+        }
+    }
+    
+    private void dropItem(Command command)
+    {
+        if (!command.hasSecondWord())
+        {
+            System.out.println("Drop what?");
+        }
+
+        Item item = inventory.getItem();
+
+        if (inventory.isInInventory(item))
+        {
+            inventory.removeFromInventory(item);
+            System.out.println("Dropped " + item.getName());
         }
     }
     
