@@ -52,6 +52,11 @@ public class Inventory {
         }
     }
     
+    public boolean isInInventory(Item item)
+    {
+        return inventory.contains(item);
+    }
+    
     public Item getItem()
     {
         return item;
