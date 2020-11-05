@@ -125,7 +125,7 @@ public class Game
         else if (commandWord == CommandWord.QUIT) {
             wantToQuit = quit(command);
         }
-        else if (commandWord == CommandWord.PICKUP)
+        else if (commandWord == CommandWord.TAKE)
         {
             pickUp(command);
         }
