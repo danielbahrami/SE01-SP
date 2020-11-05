@@ -124,6 +124,12 @@ public class Room
         itemList.put(itemName, new Item(itemName, itemDescription));
     }
     
+    public void removeItemFromRoom(String itemName)
+    {
+        this.itemName = itemName;
+        itemList.remove(itemName);
+    }
+    
     public String getItemDescription()
     {
         return itemDescription;
