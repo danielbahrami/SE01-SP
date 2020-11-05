@@ -20,11 +20,11 @@ public class Game
          Room lobby, reception, pharmacy, southHallway, lounge, cafeteria, midHallway, toilet, northHallway, office, secretRoom;
 
         lobby = new Room("You are standing in the lobby", 0);
-        reception = new Room("the reception and behind the desk there is a receptionist named Bo whom you can talk with ", 1);
-        pharmacy = new Room("pharmacy and you can see different types of medication", 2);
-        southHallway = new Room("south hallway and you can see an item (handsanitizer) on the table", 3);
+        reception = new Room("the reception, and behind the desk there is a receptionist named Bo, whom you can talk with", 1);
+        pharmacy = new Room("pharmacy and you see an item (paracetamol) on the counter", 2);
+        southHallway = new Room("south hallway and you can see an item (hand sanitizer) on the table", 3);
         lounge = new Room("a beautiful lounge and you can see an item (plant)", 4);
-        cafeteria = new Room("cafeteria and here can you see an item (bacon chicken sandwich) ", 5);
+        cafeteria = new Room("cafeteria and you can see an item (bacon chicken sandwich) ", 5);
         midHallway = new Room("room 6 and you see a person", 6);
         toilet = new Room("the toilet where you can see an item (soap) ", 7);
         northHallway = new Room("room 8 and you see nothing", 8);
@@ -68,7 +68,7 @@ public class Game
         // roomNumber.addItemToRoom(< nameOfItem >, < itemDescription >;
 
         lounge.addItemToRoom("mask", "a mask to protect your face");
-        reception.addItemToRoom("soap", "soap to wash your hands");
+        toilet.addItemToRoom("soap", "soap to wash your hands");
         southHallway.addItemToRoom("hand sanitizer", "hand sanitizer to disinfect your hands");
         pharmacy.addItemToRoom("paracetamol", "paracetamol to treat pain and fever");
         secretRoom.addItemToRoom("manager", "a manager to satisfy Karen");
