@@ -226,12 +226,20 @@ public class Game
 
         try
         {
-            if (command.getSecondWord().equals(inventory.getItem().getName())) {
-                if (command.getSecondWord().equals(item.getName())) {
+            if (command.getSecondWord().equals(inventory.getItem().getName())) 
+            {
+                if (command.getSecondWord().equals(currentRoom.getNPCInRoom().getQuestItem().getName())) 
+                {
                     inventory.removeFromInventory(item);
                     System.out.println("Gave " + item.getName() + " to " + currentRoom.getNPCInRoom().getName()
                             + "\nQuest complete!");
-                } else {
+                } 
+                else if (!command.getSecondWord().equals(inventory.getItem().getName()))
+                {
+                    System.out.println("You don't have " + command.getSecondWord() + " in your inventory.");
+                }
+                else
+                {
                     System.out.println("I don't need that.");
                 }
             }
