@@ -269,15 +269,29 @@ public class Game
             return;
         }
 
-        Item item = currentRoom.getNPCInRoom().getQuestItem();
-        System.out.println(item.getName());
         try
         {
+            Item item = currentRoom.getNPCInRoom().getQuestItem();
+            Item questItem;
+            
             if (command.getSecondWord().equals(currentRoom.getNPCInRoom().getQuestItem().getName()))
             {
                 System.out.println("Gave " + item.getName() + " to " + currentRoom.getNPCInRoom().getName()
                         + "\nQuest complete!");
-                inventory.removeFromInventory(item);
+
+                if (this.itemList.containsKey(command.getSecondWord()))
+                {
+                    questItem = itemList.get(command.getSecondWord());
+
+                    if (this.inventory.isInInventory(questItem))
+                    {
+                        this.inventory.removeFromInventory(questItem);
+                    }
+                }
+                else
+                {
+                    System.out.println("You don't have that item.");
+                }
             }
             else
             {
