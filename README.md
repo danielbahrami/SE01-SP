@@ -6,3 +6,7 @@ Vi fik afklaret nogle spørgsmål fra Karl-Jørgen.
 4/11-2020: Vi har udarbejdet yderligere med de problemer vi havde fundet frem sidste gang og vi har aftalt at vi fortsætter med at arbejde imorgen med det.
 
 5/11-2020: Vi har programmeret, herunder tilføjet funktionaliteter til vores spil samt arbejdet på at løse bugs.
+
+6/11-2020: Vi har fået løst alle vores funktioner og er nu med et færdigtgjort tekstbaseret spil men nogle enkelte formuleringsfejl/strukturfejl.
+
+Spørgsmål til Karl-Jørgen: Hvordan kan man optimere vores item kode på ? i stedet for hardcode metoden ?
