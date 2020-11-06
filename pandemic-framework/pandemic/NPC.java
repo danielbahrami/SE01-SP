@@ -14,31 +14,31 @@ public class NPC {
         this.name = name;
         this.quest = quest;
         this.questItem = questItem;
-        NPCList = new HashMap<String, NPC>();
+        this.NPCList = new HashMap<String, NPC>();
     }
 
     public void addNPCs()
     {
-        NPCList.put(name, new NPC(name, quest, getQuestItem()));
+        this.NPCList.put(this.name, new NPC(this.name, this.quest, getQuestItem()));
     }
 
     public String getQuest()
     {
-        return quest;
+        return this.quest;
     }
 
     public String getName()
     {
-        return name;
+        return this.name;
     }
 
     public Item getQuestItem()
     {
-        return questItem;
+        return this.questItem;
     }
 
     public void setQuestItem(Item item)
     {
-        questItem = new Item(null,null);
+        this.questItem = new Item(null,null);
     }
 }

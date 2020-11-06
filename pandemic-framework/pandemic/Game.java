@@ -1,4 +1,6 @@
 package pandemic;
+import java.util.ArrayList;
+import java.util.HashMap;
 
 public class Game 
 {
@@ -6,11 +8,12 @@ public class Game
     private Room currentRoom;
     private Item item;
     private Inventory inventory;
+    private HashMap<String, Item> itemList = new HashMap<String, Item>();
 
     public Game() 
     {
         createRooms();
-        parser = new Parser();
+        this.parser = new Parser();
         this.inventory = new Inventory();
     }
 
@@ -67,15 +70,23 @@ public class Game
 
         // roomNumber.addItemToRoom(< nameOfItem >, < itemDescription >;
 
-        toilet.addItemToRoom("soap", "soap to wash your hands");
+        /*toilet.addItemToRoom("soap", "soap to wash your hands");
         southHallway.addItemToRoom("hand-sanitizer", "hand-sanitizer to disinfect your hands");
-        pharmacy.addItemToRoom("paracetamol", "paracetamol to treat pain and fever");
+        office.addItemToRoom("inhaler", "an inhaler to lung patients");
         secretRoom.addItemToRoom("manager", "a manager to satisfy Karen");
         cafeteria.addItemToRoom("citronmåne", "a delicious cake made by Dan Cake");
         lounge.addItemToRoom("plant", "a beautiful plant from Plantorama");
         midHallway.addItemToRoom("mask", "a mask to protect your face");
-        office.addItemToRoom("inhaler", "an inhaler to lung patients");
+        pharmacy.addItemToRoom("paracetamol", "paracetamol to treat pain and fever");
+        */
 
+        Item para = new Item ("paracetamol", "paracetamol to treat pain and fever");
+        pharmacy.addItemToRoom(para);
+        Item lol = new Item("lol", "lolleren");
+        pharmacy.addItemToRoom(lol);
+
+        this.itemList.put(para.getName(), para);
+        this.itemList.put(lol.getName(), lol);
 
         // roomNumber.addNPCToRoom(< NPCName >, < quest >, < questItem >)
         reception.addNPCToRoom("Bo", "I need a mask", new Item("mask", "a mask to protect your face"));
@@ -83,6 +94,11 @@ public class Game
         northHallway.addNPCToRoom("Flemming", "I need my inhaler", new Item("inhaler","an inhaler to lung patients"));
 
         currentRoom = lobby;
+    }
+
+    public void addItems(Item item)
+    {
+        this.itemList.put(item.getName(), item);
     }
 
     public void play() 
@@ -198,19 +214,21 @@ public class Game
             return;
         }
 
-        Item item = currentRoom.getItemInRoom();
-        this.item = item;
-
-        try {
-            if (command.getSecondWord().equals(currentRoom.getItemInRoom().getName())) {
-                inventory.addToInventory(item);
-                System.out.println("You took " + item.getName());
-                currentRoom.removeItemFromRoom(currentRoom.getItemInRoom().getName());
-            }
-        } catch (NullPointerException e)
+        ArrayList<Item> itemArray = currentRoom.getItemInRoom();
+        for (Item i : itemArray)
         {
-            System.out.println("There is no " + command.getSecondWord() + " in the room");
+            try {
+                if (command.getSecondWord().equals(i.getName())) {
+                    inventory.addToInventory(i);
+                    System.out.println("You took " + i.getName());
+                    currentRoom.removeItemFromRoom(i.getName()); //vi kunne break den her
+                }
+            } catch (NullPointerException e)
+            {
+                System.out.println("There is no " + command.getSecondWord() + " in the room");
+            }
         }
+
     }
 
     private void useItem(Command command)
@@ -239,15 +257,14 @@ public class Game
         }
 
         Item item = currentRoom.getNPCInRoom().getQuestItem();
-        Item item2 = inventory.getItem();
-
+        System.out.println(item.getName());
         try
         {
             if (command.getSecondWord().equals(currentRoom.getNPCInRoom().getQuestItem().getName()))
             {
                 System.out.println("Gave " + item.getName() + " to " + currentRoom.getNPCInRoom().getName()
                         + "\nQuest complete!");
-                inventory.removeFromInventory(item2);
+                inventory.removeFromInventory(item);
             }
             else
             {
@@ -262,13 +279,15 @@ public class Game
     
     private void dropItem(Command command)
     {
+        Item item = null;
         if (!command.hasSecondWord())
         {
             System.out.println("Drop what?");
         }
-
-        Item item = inventory.getItem();
-
+        if (itemList.containsKey(command.getSecondWord()))
+        {
+            item = itemList.get(command.getSecondWord());
+        }
         if (inventory.isInInventory(item))
         {
             inventory.removeFromInventory(item);
@@ -278,24 +297,6 @@ public class Game
     
     private void unlockRoom(Command command)
     {
-        if (!command.hasSecondWord())
-        {
-            System.out.println("Unlock what?");
-            return;
-        }
-
-        Item key = currentRoom.getKey();
-
-        if (currentRoom.roomIsLocked(true))
-        {
-            System.out.println("The room is locked, do you have the key?");
-            if (inventory.getItem().getName().equals(currentRoom.getKey().getName()))
-            {
-                System.out.println("Room unlocked");
-                inventory.removeFromInventory(key);
-                currentRoom.roomIsLocked(false);
-            }
-        }
     }
     
     private void talkNPC(Command command)

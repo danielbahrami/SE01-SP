@@ -1,8 +1,11 @@
 package pandemic;
 
+import java.awt.image.AreaAveragingScaleFilter;
+import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.Set;
 import java.util.HashMap;
-
+import java.util.*;
 
 public class Room 
 {
@@ -14,9 +17,6 @@ public class Room
     private int roomNumber;
     private Item key;
 
-    // Item attributes
-    private String itemName;
-    private String itemDescription;
 
     // NPC attributes
     private String NPCName;
@@ -32,11 +32,7 @@ public class Room
         itemList = new HashMap<String, Item>();
         NPCList = new HashMap<String, NPC>();
 
-
         this.roomNumber = roomNumber;
-        this.itemName = itemName;
-        this.itemDescription = getItemDescription();
-
 
         this.NPCName = NPCName;
         this.quest = quest;
@@ -118,28 +114,21 @@ public class Room
 
 
     // Item methods to Room
-    public void addItemToRoom(String itemName, String itemDescription)
+    public void addItemToRoom(Item item)
     {
-        this.itemName = itemName;
-        itemList.put(itemName, new Item(itemName, itemDescription));
+
+        itemList.put(item.getName(), item);
     }
     
     public void removeItemFromRoom(String itemName)
     {
-        this.itemName = itemName;
         itemList.remove(itemName);
     }
-    
-    public String getItemDescription()
-    {
-        return itemDescription;
-    }
-    
-    public Item getItemInRoom()
-    {
-        return itemList.get(itemName);
-    }
 
+    
+    public ArrayList<Item> getItemInRoom() {
+        return new ArrayList<>(itemList.values());
+    }
 
 
     // NPC methods to Room
@@ -148,7 +137,7 @@ public class Room
         this.NPCName = NPCName;
         this.quest = quest;
         this.questItem = questItem;
-        NPCList.put(NPCName, new NPC(NPCName, quest, questItem));
+        this.NPCList.put(NPCName, new NPC(NPCName, quest, questItem));
     }
 
     public String getQuest()

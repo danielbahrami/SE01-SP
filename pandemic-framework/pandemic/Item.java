@@ -1,7 +1,5 @@
 package pandemic;
 
-import java.util.HashMap;
-
 /* This is the class for an item.
     The function of this is to let the game know
     what the name and function of the item is
@@ -10,9 +8,7 @@ public class Item {
 
     private String name;
     private String function;
-    private Item item;
     private String itemDescription;
-    private HashMap<String, Item> itemList;
 
 
     public Item(String name, String itemDescription)
@@ -20,28 +16,16 @@ public class Item {
         this.function = getItemFunction();
         this.name = name;
         this.itemDescription = itemDescription;
-        itemList = new HashMap<String, Item>();
-    }
-
-
-
-    /* This is where we create items for the game.
-        itemList.put(String <name>, new Item (<name, description>));
-     */
-    public void addItems()
-    {
-        itemList.put(name, new Item(null, null));
-
     }
 
 
     public String getItemDescription()
     {
-        return itemDescription;
+        return this.itemDescription;
     }
 
     public String getName() {
-        return name;
+        return this.name;
     }
 
     /* The function method is build up by if-statements.
@@ -54,12 +38,7 @@ public class Item {
 
     public String getItemFunction()
     {
-        return function;
+        return this.function;
     }
 
-
-    public Item getItem()
-    {
-        return item;
-    }
 }
