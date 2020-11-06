@@ -9,18 +9,18 @@ public class Item {
     private String name;
     private String function;
     private String itemDescription;
+    private String category;
 
 
-    public Item(String name, String itemDescription)
-    {
+    public Item(String name, String itemDescription, String category) {
         this.function = getItemFunction();
         this.name = name;
         this.itemDescription = itemDescription;
+        this.category = category;
     }
 
 
-    public String getItemDescription()
-    {
+    public String getItemDescription() {
         return this.itemDescription;
     }
 
@@ -31,14 +31,16 @@ public class Item {
     /* The function method is build up by if-statements.
         For each case we need to return another method fx shoot
      */
-    public void setItemFunction(CommandWord function)
-    {
+    public void setItemFunction(CommandWord function) {
 
     }
 
-    public String getItemFunction()
-    {
+    public String getItemFunction() {
         return this.function;
     }
 
+
+    public String getItemCategory() {
+        return this.category;
+    }
 }

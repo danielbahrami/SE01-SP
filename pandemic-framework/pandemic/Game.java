@@ -70,31 +70,21 @@ public class Game
 
         // roomNumber.addItemToRoom(< nameOfItem >, < itemDescription >;
 
-        /*toilet.addItemToRoom("soap", "soap to wash your hands");
-        southHallway.addItemToRoom("hand-sanitizer", "hand-sanitizer to disinfect your hands");
-        office.addItemToRoom("inhaler", "an inhaler to lung patients");
-        secretRoom.addItemToRoom("manager", "a manager to satisfy Karen");
-        cafeteria.addItemToRoom("citronmåne", "a delicious cake made by Dan Cake");
-        lounge.addItemToRoom("plant", "a beautiful plant from Plantorama");
-        midHallway.addItemToRoom("mask", "a mask to protect your face");
-        pharmacy.addItemToRoom("paracetamol", "paracetamol to treat pain and fever");
-        */
-
-        Item para = new Item ("paracetamol", "paracetamol to treat pain and fever");
+        Item para = new Item ("paracetamol", "paracetamol to treat pain and fever", "item");
         pharmacy.addItemToRoom(para);
-        Item soap = new Item("soap", "soap to wash your hands");
+        Item soap = new Item("soap", "soap to wash your hands", "item");
         pharmacy.addItemToRoom(soap);
-        Item handsanitizer = new Item ("handsanitizer", "handsanitizer to disinfect your hands");
+        Item handsanitizer = new Item ("handsanitizer", "handsanitizer to disinfect your hands", "item");
         southHallway.addItemToRoom(handsanitizer);
-        Item inhaler = new Item("inhaler", "an inhaler to lung patients");
+        Item inhaler = new Item("inhaler", "an inhaler to lung patients", "item");
         office.addItemToRoom(inhaler);
-        Item manager = new Item("manager", "a manager to satisfy Karen");
+        Item manager = new Item("manager", "a manager to satisfy Karen", "item");
         secretRoom.addItemToRoom(manager);
-        Item lemoncake = new Item("lemoncake", "a delicious cake made by Dan Cake");
+        Item lemoncake = new Item("lemoncake", "a delicious cake made by Dan Cake", "food");
         cafeteria.addItemToRoom(lemoncake);
-        Item plant = new Item("plant", "a beautiful plant from plantorama");
+        Item plant = new Item("plant", "a beautiful plant from plantorama", "item");
         lounge.addItemToRoom(plant);
-        Item mask = new Item("mask", "a mask to protect your face");
+        Item mask = new Item("mask", "a mask to protect your face", "item");
         midHallway.addItemToRoom(mask);
 
         this.itemList.put(para.getName(), para);
@@ -108,9 +98,9 @@ public class Game
 
 
         // roomNumber.addNPCToRoom(< NPCName >, < quest >, < questItem >)
-        reception.addNPCToRoom("Bo", "I need a mask", new Item("mask", "a mask to protect your face"));
-        office.addNPCToRoom("Karen", "I need to talk to the manager", new Item("manager", "a manager to satisfy Karen"));
-        northHallway.addNPCToRoom("Flemming", "I need my inhaler", new Item("inhaler","an inhaler to lung patients"));
+        reception.addNPCToRoom("Bo", "I need a mask", new Item("mask", "a mask to protect your face", "item"));
+        office.addNPCToRoom("Karen", "I need to talk to the manager", new Item("manager", "a manager to satisfy Karen", "item"));
+        northHallway.addNPCToRoom("Flemming", "I need my inhaler", new Item("inhaler","an inhaler to lung patients", "item"));
 
         currentRoom = lobby;
     }
@@ -191,6 +181,10 @@ public class Game
         else if (commandWord == CommandWord.DROP)
         {
             dropItem(command);
+        }
+        else if (commandWord == CommandWord.EAT)
+        {
+            eatFood(command);
         }
         return wantToQuit;
     }
@@ -370,5 +364,29 @@ public class Game
                 }
             }
         }
+    }
+    private void eatFood(Command command)
+    {
+        Item item = null;
+
+        if (!command.hasSecondWord())
+        {
+            System.out.println("Eat what?");
+            return;
+        }
+        if (itemList.containsKey(command.getSecondWord()))
+        {
+            item = itemList.get(command.getSecondWord());
+        }
+        if (item.getItemCategory() == "food")
+        {
+            inventory.removeFromInventory(item);
+            System.out.println("Ate " + item.getName());
+        }
+        else
+        {
+            System.out.println("You can't eat that");
+        }
+
     }
 }
