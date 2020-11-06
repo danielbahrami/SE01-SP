@@ -295,10 +295,6 @@ public class Game
         }
     }
     
-    private void unlockRoom(Command command)
-    {
-    }
-    
     private void talkNPC(Command command)
     {
         if (!command.hasSecondWord())
@@ -329,6 +325,31 @@ public class Game
         }
         else {
             return true;
+        }
+    }
+    
+    private void unlockRoom(Command command)
+    {
+        if (!command.hasSecondWord())
+        {
+            System.out.println("Unlock what?");
+            return;
+        }
+
+        Item key = currentRoom.getKey();
+
+        if (command.getSecondWord().equals(currentRoom.getKey().getName()))
+        {
+            if (currentRoom.roomIsLocked(true))
+            {
+                System.out.println("The room is locked, do you have the key?");
+                if (this.inventory.isInInventory(key))
+                {
+                    System.out.println("Room unlocked");
+                    inventory.removeFromInventory(key);
+                    currentRoom.roomIsLocked(false);
+                }
+            }
         }
     }
 }
