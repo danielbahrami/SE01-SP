@@ -82,11 +82,30 @@ public class Game
 
         Item para = new Item ("paracetamol", "paracetamol to treat pain and fever");
         pharmacy.addItemToRoom(para);
-        Item lol = new Item("lol", "lolleren");
-        pharmacy.addItemToRoom(lol);
+        Item soap = new Item("soap", "soap to wash your hands");
+        pharmacy.addItemToRoom(soap);
+        Item handsanitizer = new Item ("handsanitizer", "handsanitizer to disinfect your hands");
+        southHallway.addItemToRoom(handsanitizer);
+        Item inhaler = new Item("inhaler", "an inhaler to lung patients");
+        office.addItemToRoom(inhaler);
+        Item manager = new Item("manager", "a manager to satisfy Karen");
+        secretRoom.addItemToRoom(manager);
+        Item lemoncake = new Item("lemoncake", "a delicious cake made by Dan Cake");
+        cafeteria.addItemToRoom(lemoncake);
+        Item plant = new Item("plant", "a beautiful plant from plantorama");
+        lounge.addItemToRoom(plant);
+        Item mask = new Item("mask", "a mask to protect your face");
+        midHallway.addItemToRoom(mask);
 
         this.itemList.put(para.getName(), para);
-        this.itemList.put(lol.getName(), lol);
+        this.itemList.put(soap.getName(), soap);
+        this.itemList.put(handsanitizer.getName(), handsanitizer);
+        this.itemList.put(inhaler.getName(), inhaler);
+        this.itemList.put(manager.getName(), inhaler);
+        this.itemList.put(lemoncake.getName(), lemoncake);
+        this.itemList.put(plant.getName(), plant);
+        this.itemList.put(mask.getName(), mask);
+
 
         // roomNumber.addNPCToRoom(< NPCName >, < quest >, < questItem >)
         reception.addNPCToRoom("Bo", "I need a mask", new Item("mask", "a mask to protect your face"));
