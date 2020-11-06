@@ -259,6 +259,7 @@ public class Game
         else
         {
             inventory.printInventory();
+            System.out.println();
         }
     }
                 
