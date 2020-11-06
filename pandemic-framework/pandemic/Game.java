@@ -275,11 +275,11 @@ public class Game
             return;
         }
 
-        Item item = currentRoom.getNPCInRoom().getQuestItem();
-        Item questItem;
-
         try
         {
+            Item item = currentRoom.getNPCInRoom().getQuestItem();
+            Item questItem;
+            
             if (command.getSecondWord().equals(currentRoom.getNPCInRoom().getQuestItem().getName()))
             {
                 System.out.println("Gave " + item.getName() + " to " + currentRoom.getNPCInRoom().getName()
