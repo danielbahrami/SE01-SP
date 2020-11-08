@@ -380,6 +380,7 @@ public class Game
             }
         }
     }
+
     private void eatFood(Command command)
     {
         Item item = null;
