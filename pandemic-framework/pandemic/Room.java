@@ -162,7 +162,7 @@ public class Room
     public String itemsInRoom()
     {
         String itemNames = "You see ";
-        itemNames += itemList.keySet().toString();
+        itemNames += itemList.keySet();
         itemNames += " in the room";
 
         return itemNames;
