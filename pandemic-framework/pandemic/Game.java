@@ -25,14 +25,14 @@ public class Game
         lobby = new Room("You are standing in the lobby", 0);
         reception = new Room("the reception, and behind the desk there is a receptionist named ", 1);
         pharmacy = new Room("the pharmacy, and you see an item (paracetamol) on the counter", 2);
-        southHallway = new Room("south hallway, and you can see an item (hand-sanitizer) on the table", 3);
+        southHallway = new Room("south hallway, and you can see an item (handsanitizer) on the table", 3);
         lounge = new Room("a beautiful lounge and you can see an item (plant)", 4);
         cafeteria = new Room("the cafeteria, and you can see an item (citronmåne) ", 5);
-        midHallway = new Room("room 6 and you see a person", 6);
+        midHallway = new Room("the middle of the hallway, you see an item (mask) on a small table", 6);
         toilet = new Room("the toilet where you can see an item (soap) ", 7);
-        northHallway = new Room("room 8 and you see nothing", 8);
-        office = new Room("room 9 and you see a person", 9);
-        secretRoom = new Room("the secret room, where you can see and item (Manager)", 10);
+        northHallway = new Room("north hallway and you see nothing of interest", 8);
+        office = new Room("an office and you see a person ", 9);
+        secretRoom = new Room("the secret room, where you can see an item (Manager)", 10);
 
         lobby.setExit("left", reception);
 
@@ -74,7 +74,7 @@ public class Game
         pharmacy.addItemToRoom(para);
         Item soap = new Item("soap", "soap to wash your hands", "item");
         pharmacy.addItemToRoom(soap);
-        Item handsanitizer = new Item ("handsanitizer", "handsanitizer to disinfect your hands", "item");
+        Item handsanitizer = new Item ("handsanitizer", "handsanitizer to disinfect your hands", "food");
         southHallway.addItemToRoom(handsanitizer);
         Item inhaler = new Item("inhaler", "an inhaler to lung patients", "item");
         office.addItemToRoom(inhaler);
@@ -185,6 +185,9 @@ public class Game
         else if (commandWord == CommandWord.EAT)
         {
             eatFood(command);
+            if (command.getSecondWord().equals("handsanitizer")){
+                wantToQuit = true;
+            }
         }
         return wantToQuit;
     }
@@ -398,6 +401,11 @@ public class Game
         {
             inventory.removeFromInventory(item);
             System.out.println("Ate " + item.getName());
+
+            if (command.getSecondWord().equals("handsanitizer"))
+            {
+                System.out.println("Too bad you died!\n");
+            }
         }
         else
         {
