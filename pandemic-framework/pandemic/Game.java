@@ -2,15 +2,14 @@ package pandemic;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class Game 
+public class Game
 {
     private Parser parser;
     private Room currentRoom;
-    private Item item;
     private Inventory inventory;
     private HashMap<String, Item> itemList = new HashMap<String, Item>();
 
-    public Game() 
+    public Game()
     {
         createRooms();
         this.parser = new Parser();
@@ -110,11 +109,11 @@ public class Game
         this.itemList.put(item.getName(), item);
     }
 
-    public void play() 
-    {            
+    public void play()
+    {
         printWelcome();
 
-                
+
         boolean finished = false;
         while (! finished) {
             Command command = parser.getCommand();
@@ -134,7 +133,7 @@ public class Game
         System.out.println(currentRoom.getShortDescription());
     }
 
-    private boolean processCommand(Command command) 
+    private boolean processCommand(Command command)
     {
         boolean wantToQuit = false;
 
@@ -189,10 +188,14 @@ public class Game
                 wantToQuit = true;
             }
         }
+        else if (commandWord == CommandWord.EXAMINE)
+        {
+            examine(command);
+        }
         return wantToQuit;
     }
 
-    private void printHelp() 
+    private void printHelp()
     {
         System.out.println("Your objective is to cure the deceased people in the nursing home.");
         System.out.println("By looking around the rooms, you'll be able to find several objects.");
@@ -202,7 +205,7 @@ public class Game
         parser.showCommands();
     }
 
-    private void goRoom(Command command) 
+    private void goRoom(Command command)
     {
         if(!command.hasSecondWord()) {
             System.out.println("Go where?");
@@ -251,7 +254,7 @@ public class Game
     {
 
     }
-    
+
     public void showInventory(Command command)
     {
         if (command.hasSecondWord())
@@ -265,8 +268,8 @@ public class Game
             System.out.println();
         }
     }
-                
-    
+
+
     public void giveItem(Command command) {
         if (!command.hasSecondWord()) {
             System.out.println("Give what?");
@@ -277,7 +280,7 @@ public class Game
         {
             Item item = currentRoom.getNPCInRoom().getQuestItem();
             Item questItem;
-            
+
             if (command.getSecondWord().equals(currentRoom.getNPCInRoom().getQuestItem().getName()))
             {
                 System.out.println("Gave " + item.getName() + " to " + currentRoom.getNPCInRoom().getName()
@@ -307,7 +310,7 @@ public class Game
             System.out.println("No one is in the room.");
         }
     }
-    
+
     private void dropItem(Command command)
     {
         Item item = null;
@@ -327,7 +330,7 @@ public class Game
             this.currentRoom.addItemToRoom(item);
         }
     }
-    
+
     private void talkNPC(Command command)
     {
         if (!command.hasSecondWord())
@@ -335,22 +338,22 @@ public class Game
             System.out.println("Talk to who?");
             return;
         }
-        
+
         String name = currentRoom.getNPCInRoom().getName();
-        
+
         try {
-            if (command.getSecondWord().equals(name)) 
+            if (command.getSecondWord().equals(name))
             {
                 System.out.println(currentRoom.getNPCInRoom().getQuest());
             }
-        } 
+        }
         catch (NullPointerException e)
         {
             System.out.println(currentRoom.getNPCInRoom().getName() + " is not in the room");
         }
     }
 
-    private boolean quit(Command command) 
+    private boolean quit(Command command)
     {
         if(command.hasSecondWord()) {
             System.out.println("Quit what?");
@@ -360,7 +363,7 @@ public class Game
             return true;
         }
     }
-    
+
     private void unlockRoom(Command command)
     {
         if (!command.hasSecondWord())
@@ -413,6 +416,27 @@ public class Game
         {
             System.out.println("You can't eat that");
         }
+    }
 
+    private void examine(Command command)
+    {
+        if (!command.hasSecondWord())
+        {
+            System.out.println("Not valid command");
+            return;
+        }
+
+        try {
+            if (command.hasSecondWord())
+            {
+                if (command.getSecondWord().equals("room"))
+                {
+                    System.out.println(currentRoom.itemsInRoom());
+                }
+            }
+        } catch (NullPointerException e)
+        {
+            System.out.println("There is nothing of interest in the room");
+        }
     }
 }

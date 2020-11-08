@@ -56,7 +56,7 @@ public class Room
     {
         if (NPCName == null)
         {
-            return "You are in " + description + getItemInRoom().toString() + ".\n" + getExitString();
+            return "You are in " + description + ".\n" + getExitString();
         }
         if (getItemInRoom().size() == 0)
         {
@@ -67,7 +67,7 @@ public class Room
             return "You are in " + description + ".\n" + getExitString();
         }
         
-        return "You are in " + description + getItemInRoom().toString() + NPCName + ".\n" + getExitString();
+        return "You are in " + description + NPCName + ".\n" + getExitString();
     }
 
     private String getExitString()
@@ -159,9 +159,12 @@ public class Room
         this.description = description;
     }
 
-    @Override
-    public String toString()
+    public String itemsInRoom()
     {
+        String itemNames = "You see ";
+        itemNames += itemList.keySet().toString();
+        itemNames += " in the room";
 
+        return itemNames;
     }
 }
