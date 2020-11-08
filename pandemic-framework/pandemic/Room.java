@@ -56,10 +56,18 @@ public class Room
     {
         if (NPCName == null)
         {
+            return "You are in " + description + itemList.toString() + ".\n" + getExitString();
+        }
+        if (getItemInRoom().size() == 0)
+        {
+            return "You are in " + description + NPCName + ".\n" + getExitString();
+        }
+        if (getItemInRoom().size() == 0 && NPCName == null)
+        {
             return "You are in " + description + ".\n" + getExitString();
         }
         
-        return "You are in " + description + NPCName + ".\n" + getExitString();
+        return "You are in " + description + itemList.toString() + NPCName + ".\n" + getExitString();
     }
 
     private String getExitString()
@@ -113,7 +121,6 @@ public class Room
     // Item methods to Room
     public void addItemToRoom(Item item)
     {
-
         itemList.put(item.getName(), item);
     }
     
@@ -145,5 +152,16 @@ public class Room
     public NPC getNPCInRoom()
     {
         return NPCList.get(NPCName);
+    }
+
+    public void setRoomDescription(String description)
+    {
+        this.description = description;
+    }
+
+    @Override
+    public String toString()
+    {
+        
     }
 }

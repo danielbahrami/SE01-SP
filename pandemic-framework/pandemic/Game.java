@@ -30,7 +30,7 @@ public class Game
         cafeteria = new Room("the cafeteria, and you can see an item (citronmåne) ", 5);
         midHallway = new Room("the middle of the hallway, you see an item (mask) on a small table", 6);
         toilet = new Room("the toilet where you can see an item (soap) ", 7);
-        northHallway = new Room("north hallway and you see nothing of interest", 8);
+        northHallway = new Room("north hallway and you see a person ", 8);
         office = new Room("an office and you see a person ", 9);
         secretRoom = new Room("the secret room, where you can see an item (Manager)", 10);
 
@@ -323,6 +323,8 @@ public class Game
         {
             inventory.removeFromInventory(item);
             System.out.println("Dropped " + item.getName());
+
+            this.currentRoom.addItemToRoom(item);
         }
     }
     
