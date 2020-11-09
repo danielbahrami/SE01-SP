@@ -347,17 +347,19 @@ public class Game
             return;
         }
 
-        String name = currentRoom.getNPCInRoom().getName();
-
-        if (command.getSecondWord().equals(name))
+        try
         {
-            System.out.println(currentRoom.getNPCInRoom().getQuest());
+            String name = currentRoom.getNPCInRoom().getName();
 
+            if (command.getSecondWord().equals(name))
+            {
+                System.out.println(currentRoom.getNPCInRoom().getQuest());
+
+            }
         }
-
-        if (currentRoom.getNPCInRoom() == null)
+        catch (NullPointerException e)
         {
-            System.out.println(command.getSecondWord() + " is not in the room.");
+            System.out.println("No one is in the room.");
         }
     }
 
