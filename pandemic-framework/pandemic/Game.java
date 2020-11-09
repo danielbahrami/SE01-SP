@@ -22,16 +22,16 @@ public class Game
          Room lobby, reception, pharmacy, southHallway, lounge, cafeteria, midHallway, toilet, northHallway, office, secretRoom;
 
         lobby = new Room("You are standing in the lobby", 0);
-        reception = new Room("the reception, and behind the desk there is a receptionist named ", 1);
-        pharmacy = new Room("the pharmacy, and you see an item (paracetamol) on the counter", 2);
-        southHallway = new Room("south hallway, and you can see an item (handsanitizer) on the table", 3);
-        lounge = new Room("a beautiful lounge and you can see an item (plant)", 4);
-        cafeteria = new Room("the cafeteria, and you can see an item (citronmåne) ", 5);
-        midHallway = new Room("the middle of the hallway, you see an item (mask) on a small table", 6);
-        toilet = new Room("the toilet where you can see an item (soap) ", 7);
-        northHallway = new Room("north hallway and you see a person ", 8);
-        office = new Room("an office and you see a person ", 9);
-        secretRoom = new Room("the secret room, where you can see an item (Manager)", 10);
+        reception = new Room("the reception", 1);
+        pharmacy = new Room("the pharmacy", 2);
+        southHallway = new Room("southern part of the hallway", 3);
+        lounge = new Room("a lounge", 4);
+        cafeteria = new Room("the cafeteria", 5);
+        midHallway = new Room("the middle part of the hallway", 6);
+        toilet = new Room("the toilet", 7);
+        northHallway = new Room("northern part of the hallway ", 8);
+        office = new Room("an office", 9);
+        secretRoom = new Room("the secret room", 10);
 
         lobby.setExit("left", reception);
 
@@ -451,7 +451,7 @@ public class Game
     {
         if (!command.hasSecondWord())
         {
-            System.out.println("Not valid command");
+            System.out.println("Examine what?");
             return;
         }
 
