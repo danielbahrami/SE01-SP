@@ -412,8 +412,12 @@ public class Game
         {
             item = itemList.get(command.getSecondWord());
         }
-
-        if (item.getItemCategory() == "food")
+        if (!inventory.isInInventory(item))
+        {
+            System.out.println("You don't have that item");
+            return;
+        }
+        if (item.getItemCategory().equals("food") && inventory.isInInventory(item))
         {
             inventory.removeFromInventory(item);
             System.out.println("Ate " + item.getName());
