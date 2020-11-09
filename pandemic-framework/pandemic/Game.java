@@ -223,40 +223,34 @@ public class Game
         }
     }
 
-    public void pickUp(Command command)
-    {
-        if (!command.hasSecondWord())
-        {
+    public void pickUp(Command command) {
+        if (!command.hasSecondWord()) {
             System.out.println("Take what?");
             return;
         }
 
-        ArrayList<Item> itemArray = currentRoom.getItemInRoom();
-        for (Item i : itemArray)
-        {
-            if (command.getSecondWord().equals(i.getName()))
-            {
-                inventory.addToInventory(i);
-                System.out.println("You took " + i.getName());
-                currentRoom.removeItemFromRoom(i.getName()); //vi kunne break den her
+        try {
+            ArrayList<Item> itemArray = currentRoom.getItemInRoom();
+            for (Item i : itemArray) {
+                if (command.getSecondWord().equals(i.getName())) {
+                    inventory.addToInventory(i);
+                    System.out.println("You took " + i.getName());
+                    currentRoom.removeItemFromRoom(i.getName()); //vi kunne break den her
+                }
+
+                if (currentRoom.itemsInRoom() == null) {
+                    System.out.println("Item is not in the room.");
+                }
             }
 
-            if (currentRoom.itemsInRoom() == null)
-            {
-                System.out.println("Item is not in the room.");
-            }
-        }
-
-        try
-        {
-            if (command.getSecondWord().equals(currentRoom.getNPCInRoom().getName()))
-            {
+            if (command.getSecondWord().equals(currentRoom.getNPCInRoom().getName())) {
                 System.out.println("Can't take " + command.getSecondWord());
             }
+
         }
         catch (NullPointerException e)
         {
-            System.out.println("Can't take " + command.getSecondWord());
+            System.out.println(command.getSecondWord() + " is not in the room.");
         }
     }
 
