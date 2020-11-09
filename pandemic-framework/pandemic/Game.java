@@ -69,21 +69,21 @@ public class Game
 
         // roomNumber.addItemToRoom(< nameOfItem >, < itemDescription >;
 
-        Item para = new Item ("paracetamol", "paracetamol to treat pain and fever", "item");
+        Item para = new Item ("paracetamol", "Paracetamol to treat pain and fever", "item");
         pharmacy.addItemToRoom(para);
-        Item soap = new Item("soap", "soap to wash your hands", "item");
+        Item soap = new Item("soap", "Soap to wash your hands", "item");
         pharmacy.addItemToRoom(soap);
-        Item handsanitizer = new Item ("handsanitizer", "handsanitizer to disinfect your hands", "poison");
+        Item handsanitizer = new Item ("handsanitizer", "Handsanitizer to disinfect your hands", "poison");
         southHallway.addItemToRoom(handsanitizer);
-        Item inhaler = new Item("inhaler", "an inhaler to lung patients", "item");
+        Item inhaler = new Item("inhaler", "An inhaler to lung patients", "item");
         office.addItemToRoom(inhaler);
-        Item manager = new Item("manager", "a manager to satisfy Karen", "item");
+        Item manager = new Item("manager", "A manager to satisfy Karen", "item");
         secretRoom.addItemToRoom(manager);
-        Item lemoncake = new Item("lemoncake", "a delicious cake made by Dan Cake", "food");
+        Item lemoncake = new Item("lemoncake", "A delicious cake made by Dan Cake", "food");
         cafeteria.addItemToRoom(lemoncake);
-        Item plant = new Item("plant", "a beautiful plant from plantorama", "item");
+        Item plant = new Item("plant", "A beautiful plant from Plantorama", "item");
         lounge.addItemToRoom(plant);
-        Item mask = new Item("mask", "a mask to protect your face", "item");
+        Item mask = new Item("mask", "A mask to protect your face", "item");
         midHallway.addItemToRoom(mask);
 
         this.itemList.put(para.getName(), para);
@@ -481,7 +481,7 @@ public class Game
                 }
                 else if (inventory.isInInventory(item))
                 {
-                    System.out.println("You examine " + command.getSecondWord() +
+                    System.out.println("You examined " + command.getSecondWord() +
                             ".\nThe item: " + item.getItemDescription());
                 }
                 else
