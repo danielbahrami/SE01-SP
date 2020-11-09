@@ -234,18 +234,29 @@ public class Game
         ArrayList<Item> itemArray = currentRoom.getItemInRoom();
         for (Item i : itemArray)
         {
-            try
+            if (command.getSecondWord().equals(i.getName()))
             {
-                if (command.getSecondWord().equals(i.getName()))
-                {
-                    inventory.addToInventory(i);
-                    System.out.println("You took " + i.getName());
-                    currentRoom.removeItemFromRoom(i.getName()); //vi kunne break den her
-                }
-            } catch (NullPointerException e)
-            {
-                System.out.println("There is no " + command.getSecondWord() + " in the room");
+                inventory.addToInventory(i);
+                System.out.println("You took " + i.getName());
+                currentRoom.removeItemFromRoom(i.getName()); //vi kunne break den her
             }
+
+            if (currentRoom.itemsInRoom() == null)
+            {
+                System.out.println("Item is not in the room.");
+            }
+        }
+
+        try
+        {
+            if (command.getSecondWord().equals(currentRoom.getNPCInRoom().getName()))
+            {
+                System.out.println("Can't take " + command.getSecondWord());
+            }
+        }
+        catch (NullPointerException e)
+        {
+            System.out.println("Can't take " + command.getSecondWord());
         }
     }
 
@@ -354,8 +365,8 @@ public class Game
             if (command.getSecondWord().equals(name))
             {
                 System.out.println(currentRoom.getNPCInRoom().getQuest());
-
             }
+
             else if (!command.getSecondWord().equals(name))
             {
                 System.out.println("the person in this room isn't called that");
