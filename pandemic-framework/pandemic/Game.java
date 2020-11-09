@@ -321,16 +321,22 @@ public class Game
         {
             System.out.println("Drop what?");
         }
+
         if (itemList.containsKey(command.getSecondWord()))
         {
             item = itemList.get(command.getSecondWord());
         }
+
         if (inventory.isInInventory(item))
         {
             inventory.removeFromInventory(item);
             System.out.println("Dropped " + item.getName());
 
             this.currentRoom.addItemToRoom(item);
+        }
+        else
+        {
+            System.out.println("You don't have that in your inventory.");
         }
     }
 
