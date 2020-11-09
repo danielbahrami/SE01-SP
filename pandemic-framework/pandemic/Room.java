@@ -60,14 +60,14 @@ public class Room
         }
         if (getItemInRoom().size() == 0)
         {
-            return "You are in " + description + NPCName + ".\n" + getExitString();
+            return "You are in " + description + ".\n" + getExitString();
         }
         if (getItemInRoom().size() == 0 && NPCName == null)
         {
             return "You are in " + description + ".\n" + getExitString();
         }
         
-        return "You are in " + description + NPCName + ".\n" + getExitString();
+        return "You are in " + description + ".\n" + getExitString();
     }
 
     private String getExitString()

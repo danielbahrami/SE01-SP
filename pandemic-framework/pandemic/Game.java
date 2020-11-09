@@ -475,7 +475,7 @@ public class Game
                     }
                     else
                     {
-                        System.out.println("You see a person " + currentRoom.getNPCInRoom().getName() + " in the room.");
+                        System.out.println("You see a person named " + currentRoom.getNPCInRoom().getName() + " in the room.");
                     }
 
                 }
