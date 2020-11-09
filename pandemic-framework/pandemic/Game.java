@@ -427,11 +427,27 @@ public class Game
         }
 
         try {
+            Item item = null;
+
+            if (itemList.containsKey(command.getSecondWord()))
+            {
+                item = itemList.get(command.getSecondWord());
+            }
+
             if (command.hasSecondWord())
             {
                 if (command.getSecondWord().equals("room"))
                 {
                     System.out.println(currentRoom.itemsInRoom());
+                }
+                else if (inventory.isInInventory(item))
+                {
+                    System.out.println("You examine " + command.getSecondWord() +
+                            ".\nThe item" + item.getItemDescription());
+                }
+                else
+                {
+                    System.out.println("Can't examine that.");
                 }
             }
         } catch (NullPointerException e)
