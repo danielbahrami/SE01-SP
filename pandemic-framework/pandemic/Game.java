@@ -231,8 +231,10 @@ public class Game
 
         try {
             ArrayList<Item> itemArray = currentRoom.getItemInRoom();
-            for (Item i : itemArray) {
-                if (command.getSecondWord().equals(i.getName())) {
+            for (Item i : itemArray)
+            {
+                if (command.getSecondWord().equals(i.getName()))
+                {
                     inventory.addToInventory(i);
                     System.out.println("You took " + i.getName());
                     currentRoom.removeItemFromRoom(i.getName()); //vi kunne break den her
@@ -243,14 +245,15 @@ public class Game
                 }
             }
 
-            if (command.getSecondWord().equals(currentRoom.getNPCInRoom().getName())) {
+            if (command.getSecondWord().equals(currentRoom.getNPCInRoom().getName()))
+            {
                 System.out.println("Can't take " + command.getSecondWord());
             }
 
         }
         catch (NullPointerException e)
         {
-            System.out.println(command.getSecondWord() + " is not in the room.");
+            System.out.print("");
         }
     }
 
