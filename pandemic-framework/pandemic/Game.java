@@ -283,22 +283,25 @@ public class Game
 
             if (command.getSecondWord().equals(currentRoom.getNPCInRoom().getQuestItem().getName()))
             {
-                System.out.println("Gave " + item.getName() + " to " + currentRoom.getNPCInRoom().getName()
-                        + "\nQuest complete!");
-
                 if (this.itemList.containsKey(command.getSecondWord()))
                 {
                     questItem = itemList.get(command.getSecondWord());
+
+                    if (inventory.isInInventory(questItem))
+                        System.out.println("Gave " + item.getName() + " to " + currentRoom.getNPCInRoom().getName()
+                                + "\nQuest complete!");
+
+                    else
+                    {
+                        System.out.println("You don't have that in your inventory.");
+                    }
 
                     if (this.inventory.isInInventory(questItem))
                     {
                         this.inventory.removeFromInventory(questItem);
                     }
                 }
-                else
-                {
-                    System.out.println("You don't have that item.");
-                }
+
             }
             else
             {
@@ -443,7 +446,7 @@ public class Game
                 else if (inventory.isInInventory(item))
                 {
                     System.out.println("You examine " + command.getSecondWord() +
-                            ".\nThe item" + item.getItemDescription());
+                            ".\nThe item: " + item.getItemDescription());
                 }
                 else
                 {
