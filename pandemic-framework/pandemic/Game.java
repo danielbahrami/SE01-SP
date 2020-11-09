@@ -184,9 +184,7 @@ public class Game
         else if (commandWord == CommandWord.EAT)
         {
             eatFood(command);
-            if (command.getSecondWord().equals("handsanitizer")){
-                wantToQuit = true;
-            }
+            wantToQuit = atePoison(command);
         }
         else if (commandWord == CommandWord.EXAMINE)
         {
@@ -236,8 +234,10 @@ public class Game
         ArrayList<Item> itemArray = currentRoom.getItemInRoom();
         for (Item i : itemArray)
         {
-            try {
-                if (command.getSecondWord().equals(i.getName())) {
+            try
+            {
+                if (command.getSecondWord().equals(i.getName()))
+                {
                     inventory.addToInventory(i);
                     System.out.println("You took " + i.getName());
                     currentRoom.removeItemFromRoom(i.getName()); //vi kunne break den her
@@ -247,7 +247,6 @@ public class Game
                 System.out.println("There is no " + command.getSecondWord() + " in the room");
             }
         }
-
     }
 
     private void useItem(Command command)
@@ -350,15 +349,15 @@ public class Game
 
         String name = currentRoom.getNPCInRoom().getName();
 
-        try {
-            if (command.getSecondWord().equals(name))
-            {
-                System.out.println(currentRoom.getNPCInRoom().getQuest());
-            }
-        }
-        catch (NullPointerException e)
+        if (command.getSecondWord().equals(name))
         {
-            System.out.println(currentRoom.getNPCInRoom().getName() + " is not in the room");
+            System.out.println(currentRoom.getNPCInRoom().getQuest());
+
+        }
+
+        if (currentRoom.getNPCInRoom() == null)
+        {
+            System.out.println(command.getSecondWord() + " is not in the room.");
         }
     }
 
@@ -368,7 +367,8 @@ public class Game
             System.out.println("Quit what?");
             return false;
         }
-        else {
+        else
+        {
             return true;
         }
     }
@@ -407,10 +407,12 @@ public class Game
             System.out.println("Eat what?");
             return;
         }
+
         if (itemList.containsKey(command.getSecondWord()))
         {
             item = itemList.get(command.getSecondWord());
         }
+
         if (item.getItemCategory() == "food")
         {
             inventory.removeFromInventory(item);
@@ -463,5 +465,10 @@ public class Game
         {
             System.out.println("There is nothing of interest in the room");
         }
+    }
+
+    private boolean atePoison(Command command)
+    {
+        return command.hasSecondWord() && command.getSecondWord().equals("handsanitizer");
     }
 }

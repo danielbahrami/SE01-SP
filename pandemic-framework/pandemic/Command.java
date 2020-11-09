@@ -49,5 +49,10 @@ public class Command
     {
         return (this.secondWord != null);
     }
+
+    public void setCommandWord(CommandWord commandWord)
+    {
+        this.commandWord = commandWord;
+    }
 }
 
