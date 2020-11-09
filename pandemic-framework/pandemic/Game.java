@@ -73,7 +73,7 @@ public class Game
         pharmacy.addItemToRoom(para);
         Item soap = new Item("soap", "soap to wash your hands", "item");
         pharmacy.addItemToRoom(soap);
-        Item handsanitizer = new Item ("handsanitizer", "handsanitizer to disinfect your hands", "food");
+        Item handsanitizer = new Item ("handsanitizer", "handsanitizer to disinfect your hands", "poison");
         southHallway.addItemToRoom(handsanitizer);
         Item inhaler = new Item("inhaler", "an inhaler to lung patients", "item");
         office.addItemToRoom(inhaler);
@@ -417,16 +417,19 @@ public class Game
             System.out.println("You don't have that item");
             return;
         }
+
         if (item.getItemCategory().equals("food") && inventory.isInInventory(item))
         {
             inventory.removeFromInventory(item);
             System.out.println("Ate " + item.getName());
-
-            if (command.getSecondWord().equals("handsanitizer"))
-            {
-                System.out.println("Too bad you died!\n");
-            }
         }
+
+        if (item.getItemCategory().equals("poison") && inventory.isInInventory(item))
+        {
+            inventory.removeFromInventory(item);
+            System.out.println("Ate " + item.getName() + "\nToo bad, you died!");
+        }
+
         else
         {
             System.out.println("You can't eat that");
