@@ -356,6 +356,10 @@ public class Game
                 System.out.println(currentRoom.getNPCInRoom().getQuest());
 
             }
+            else if (!command.getSecondWord().equals(name))
+            {
+                System.out.println("the person in this room isn't called that");
+            }
         }
         catch (NullPointerException e)
         {
