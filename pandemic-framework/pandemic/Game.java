@@ -468,6 +468,16 @@ public class Game
                 if (command.getSecondWord().equals("room"))
                 {
                     System.out.println(currentRoom.itemsInRoom());
+
+                    if (currentRoom.getNPCInRoom() == null)
+                    {
+                        System.out.println("There is no one in the room.");
+                    }
+                    else
+                    {
+                        System.out.println("You see a person " + currentRoom.getNPCInRoom().getName() + " in the room.");
+                    }
+
                 }
                 else if (inventory.isInInventory(item))
                 {
