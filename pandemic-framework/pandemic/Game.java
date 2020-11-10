@@ -67,12 +67,12 @@ public class Game
         secretRoom.setExit("down", toilet);
 
 
-        // roomNumber.addItemToRoom(< nameOfItem >, < itemDescription >;
+        // roomNumber.addItemToRoom(< nameOfItem >, < itemDescription >, < category >;
 
         Item para = new Item ("paracetamol", "Paracetamol to treat pain and fever", "item");
         pharmacy.addItemToRoom(para);
         Item soap = new Item("soap", "Soap to wash your hands", "item");
-        pharmacy.addItemToRoom(soap);
+        toilet.addItemToRoom(soap);
         Item handsanitizer = new Item ("handsanitizer", "Handsanitizer to disinfect your hands", "poison");
         southHallway.addItemToRoom(handsanitizer);
         Item inhaler = new Item("inhaler", "An inhaler to lung patients", "item");
@@ -85,6 +85,8 @@ public class Game
         lounge.addItemToRoom(plant);
         Item mask = new Item("mask", "A mask to protect your face", "item");
         midHallway.addItemToRoom(mask);
+
+        //add item to the itemList hashmap
 
         this.itemList.put(para.getName(), para);
         this.itemList.put(soap.getName(), soap);
@@ -99,7 +101,7 @@ public class Game
         // roomNumber.addNPCToRoom(< NPCName >, < quest >, < questItem >)
         reception.addNPCToRoom("Bo", "I forgot my mask, but i was told I can find one in another room. Would you fetch me a mask?", new Item("mask", "a mask to protect your face", "item"));
         office.addNPCToRoom("Karen", "I need to talk to the manager", new Item("manager", "a manager to satisfy Karen", "item"));
-        northHallway.addNPCToRoom("Flemming", "I lost my inhaler and i can't remember in which room... Would you plese help me find it?", new Item("inhaler","an inhaler for lung patients", "item"));
+        northHallway.addNPCToRoom("Flemming", "I lost my inhaler and i can't remember in which room... Would you please help me find it?", new Item("inhaler","an inhaler for lung patients", "item"));
 
         currentRoom = lobby;
     }
@@ -228,6 +230,7 @@ public class Game
             System.out.println("Take what?");
             return;
         }
+        // checks if an item is in the current room and makes it possible to only pick up items in rooms with items
 
         try {
             ArrayList<Item> itemArray = currentRoom.getItemInRoom();
@@ -237,13 +240,14 @@ public class Game
                 {
                     inventory.addToInventory(i);
                     System.out.println("You took " + i.getName());
-                    currentRoom.removeItemFromRoom(i.getName()); //vi kunne break den her
+                    currentRoom.removeItemFromRoom(i.getName());
                 }
 
                 if (currentRoom.itemsInRoom() == null) {
                     System.out.println("Item is not in the room.");
                 }
             }
+            //if the second word is the same as the NPC in the room, you won't be able to pick the NPC up
 
             if (command.getSecondWord().equals(currentRoom.getNPCInRoom().getName()))
             {
@@ -283,6 +287,7 @@ public class Game
             return;
         }
 
+        //checks if the NPC is in the room you're in and checks if you have the correct item. only then is it able to give an item
         try
         {
             Item item = currentRoom.getNPCInRoom().getQuestItem();
@@ -329,11 +334,13 @@ public class Game
             System.out.println("Drop what?");
         }
 
+        //checks if out itemList contains the second word given and if it's true, gives "item" a value.
         if (itemList.containsKey(command.getSecondWord()))
         {
             item = itemList.get(command.getSecondWord());
         }
 
+        //if the if "item" is assigned a value, then it proceeds to execute the following if statement
         if (inventory.isInInventory(item))
         {
             inventory.removeFromInventory(item);
@@ -421,6 +428,7 @@ public class Game
             System.out.println("Eat what?");
             return;
         }
+
 
         if (itemList.containsKey(command.getSecondWord()))
         {
