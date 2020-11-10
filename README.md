@@ -9,4 +9,3 @@ Vi fik afklaret nogle spørgsmål fra Karl-Jørgen.
 
 6/11-2020: Vi har fået løst alle vores funktioner og er nu med et færdigtgjort tekstbaseret spil men nogle enkelte formuleringsfejl/strukturfejl.
 
-Spørgsmål til Karl-Jørgen: Hvordan kan man optimere vores item kode på ? i stedet for hardcode metoden ?
