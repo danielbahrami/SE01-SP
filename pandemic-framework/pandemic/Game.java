@@ -21,7 +21,7 @@ public class Game
     {
          Room lobby, reception, pharmacy, southHallway, lounge, cafeteria, midHallway, toilet, northHallway, office, secretRoom;
 
-        lobby = new Room("You are standing in the lobby", 0);
+        lobby = new Room("the lobby", 0);
         reception = new Room("the reception", 1);
         pharmacy = new Room("the pharmacy", 2);
         southHallway = new Room("southern part of the hallway", 3);
@@ -97,9 +97,9 @@ public class Game
 
 
         // roomNumber.addNPCToRoom(< NPCName >, < quest >, < questItem >)
-        reception.addNPCToRoom("Bo", "I need a mask", new Item("mask", "a mask to protect your face", "item"));
+        reception.addNPCToRoom("Bo", "I forgot my mask, but i was told I can find one in another room. Would you fetch me a mask?", new Item("mask", "a mask to protect your face", "item"));
         office.addNPCToRoom("Karen", "I need to talk to the manager", new Item("manager", "a manager to satisfy Karen", "item"));
-        northHallway.addNPCToRoom("Flemming", "I need my inhaler", new Item("inhaler","an inhaler to lung patients", "item"));
+        northHallway.addNPCToRoom("Flemming", "I lost my inhaler and i can't remember in which room... Would you plese help me find it?", new Item("inhaler","an inhaler for lung patients", "item"));
 
         currentRoom = lobby;
     }
