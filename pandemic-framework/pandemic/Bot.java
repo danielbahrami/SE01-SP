@@ -1,5 +1,7 @@
 package pandemic;
 
+import javafx.scene.image.Image;
+
 import java.util.Random;
 
 public class Bot {
@@ -8,15 +10,13 @@ public class Bot {
     private Room[] rooms;
     private int rng;
 
+    private Image botSprite;
+
     public Bot()
     {
+        this.botSprite = new Image("botSpritePath.png");
 
-        rooms = new Room[10];
 
-        for (int i = 0; i < rooms.length; i++)
-        {
-
-        }
     }
 
     public int RNG()

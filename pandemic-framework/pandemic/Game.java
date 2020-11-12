@@ -1,4 +1,5 @@
 package pandemic;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -135,61 +136,40 @@ public class Game
         System.out.println(currentRoom.getShortDescription());
     }
 
-    private boolean processCommand(Command command)
-    {
+    private boolean processCommand(Command command) {
         boolean wantToQuit = false;
 
         CommandWord commandWord = command.getCommandWord();
 
-        if(commandWord == CommandWord.UNKNOWN) {
+        if (commandWord == CommandWord.UNKNOWN) {
             System.out.println("I don't know what you mean...");
             return false;
         }
 
         if (commandWord == CommandWord.HELP) {
             printHelp();
-        }
-        else if (commandWord == CommandWord.GO) {
+        } else if (commandWord == CommandWord.GO) {
             goRoom(command);
-        }
-        else if (commandWord == CommandWord.QUIT) {
+        } else if (commandWord == CommandWord.QUIT) {
             wantToQuit = quit(command);
-        }
-        else if (commandWord == CommandWord.TAKE)
-        {
+        } else if (commandWord == CommandWord.TAKE) {
             pickUp(command);
-        }
-        else if (commandWord == CommandWord.USE)
-        {
+        } else if (commandWord == CommandWord.USE) {
             useItem(command);
-        }
-        else if (commandWord == CommandWord.GIVE)
-        {
+        } else if (commandWord == CommandWord.GIVE) {
             giveItem(command);
-        }
-        else if (commandWord == CommandWord.INVENTORY)
-        {
+        } else if (commandWord == CommandWord.INVENTORY) {
             showInventory(command);
-        }
-        else if (commandWord == CommandWord.UNLOCK)
-        {
+        } else if (commandWord == CommandWord.UNLOCK) {
             unlockRoom(command);
-        }
-        else if (commandWord == CommandWord.TALK)
-        {
+        } else if (commandWord == CommandWord.TALK) {
             talkNPC(command);
-        }
-        else if (commandWord == CommandWord.DROP)
-        {
+        } else if (commandWord == CommandWord.DROP) {
             dropItem(command);
-        }
-        else if (commandWord == CommandWord.EAT)
-        {
+        } else if (commandWord == CommandWord.EAT) {
             eatFood(command);
             wantToQuit = atePoison(command);
-        }
-        else if (commandWord == CommandWord.EXAMINE)
-        {
+        } else if (commandWord == CommandWord.EXAMINE) {
             examine(command);
         }
         return wantToQuit;
@@ -458,10 +438,8 @@ public class Game
         }
     }
 
-    private void examine(Command command)
-    {
-        if (!command.hasSecondWord())
-        {
+    private void examine(Command command) {
+        if (!command.hasSecondWord()) {
             System.out.println("Examine what?");
             return;
         }
@@ -469,39 +447,28 @@ public class Game
         try {
             Item item = null;
 
-            if (itemList.containsKey(command.getSecondWord()))
-            {
+            if (itemList.containsKey(command.getSecondWord())) {
                 item = itemList.get(command.getSecondWord());
             }
 
-            if (command.hasSecondWord())
-            {
-                if (command.getSecondWord().equals("room"))
-                {
+            if (command.hasSecondWord()) {
+                if (command.getSecondWord().equals("room")) {
                     System.out.println(currentRoom.itemsInRoom());
 
-                    if (currentRoom.getNPCInRoom() == null)
-                    {
+                    if (currentRoom.getNPCInRoom() == null) {
                         System.out.println("There is no one in the room.");
-                    }
-                    else
-                    {
+                    } else {
                         System.out.println("You see a person named " + currentRoom.getNPCInRoom().getName() + " in the room.");
                     }
 
-                }
-                else if (inventory.isInInventory(item))
-                {
+                } else if (inventory.isInInventory(item)) {
                     System.out.println("You examined " + command.getSecondWord() +
                             ".\nThe item: " + item.getItemDescription());
-                }
-                else
-                {
+                } else {
                     System.out.println("Can't examine that.");
                 }
             }
-        } catch (NullPointerException e)
-        {
+        } catch (NullPointerException e) {
             System.out.println("There is nothing of interest in the room");
         }
     }
