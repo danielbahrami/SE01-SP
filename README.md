@@ -9,3 +9,7 @@ Vi fik afklaret nogle spørgsmål fra Karl-Jørgen.
 
 6/11-2020: Vi har fået løst alle vores funktioner og er nu med et færdigtgjort tekstbaseret spil men nogle enkelte formuleringsfejl/strukturfejl.
 
+Spørgsmål til Karl-Jørgen:
+Burde vi lave et resumé af første iteration i rapporten?
+Bør vi lave GUI i Java eller FXML?
+Er det tilladt at bruge FXGL, og hvis ja, hvordan man sætter man Maven compileren op?
