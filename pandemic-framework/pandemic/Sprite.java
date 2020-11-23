@@ -31,7 +31,7 @@ public class Sprite {
 
     public void setImage(String filename)
     {
-        Image image = new Image(filename);
+        Image image = new Image(getClass().getResourceAsStream(filename));
         setImage(image);
     }
 

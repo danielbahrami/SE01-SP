@@ -20,8 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d8010f4-f255-4f34-99d3-a610e16ed2e4" name="Default Changelist" comment="commit">
-      <change beforePath="$PROJECT_DIR$/pandemic-framework/pandemic/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/pandemic-framework/pandemic/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pandemic-framework/pandemic/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/pandemic-framework/pandemic/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pandemic-framework/pandemic/Sprite.java" beforeDir="false" afterPath="$PROJECT_DIR$/pandemic-framework/pandemic/Sprite.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +135,7 @@
       <workItem from="1605617187478" duration="561000" />
       <workItem from="1605622335554" duration="11000" />
       <workItem from="1606061940714" duration="246000" />
-      <workItem from="1606130724336" duration="3435000" />
+      <workItem from="1606130724336" duration="3583000" />
     </task>
     <task id="LOCAL-00001" summary="Sprite class">
       <created>1606132039491</created>
@@ -166,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606135162139</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="commit">
+      <created>1606135629107</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1606135629107</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,10 +256,10 @@
     </state>
     <state x="346" y="25" width="1024" height="790" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1606133706374" />
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605176610798" />
-    <state x="192" y="183" key="Vcs.Push.Dialog.v2" timestamp="1606135168055">
+    <state x="192" y="183" key="Vcs.Push.Dialog.v2" timestamp="1606135632415">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="192" y="183" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1606135168055" />
+    <state x="192" y="183" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1606135632415" />
     <state x="192" y="201" key="Vcs.Push.Dialog.v2/1440.23.1102.719/0.23.1440.877@0.23.1440.877" timestamp="1604413774482" />
     <state x="547" y="380" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606131992908">
       <screen x="0" y="0" width="1440" height="900" />
