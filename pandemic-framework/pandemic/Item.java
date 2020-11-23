@@ -10,6 +10,7 @@ public class Item {
     private String function;
     private String itemDescription;
     private String category;
+    private Sprite sprite;
 
 
     public Item(String name, String itemDescription, String category) {
@@ -17,6 +18,14 @@ public class Item {
         this.name = name;
         this.itemDescription = itemDescription;
         this.category = category;
+    }
+
+    public Item(String name, String itemDescription, String category, Sprite sprite) {
+        this.function = getItemFunction();
+        this.name = name;
+        this.itemDescription = itemDescription;
+        this.category = category;
+        this.sprite = sprite;
     }
 
 
