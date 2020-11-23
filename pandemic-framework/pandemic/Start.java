@@ -15,5 +15,6 @@ public class Start extends Application {
     {
         Game game = new Game();
         game.play();
+        launch(args);
     }
 }
