@@ -20,8 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d8010f4-f255-4f34-99d3-a610e16ed2e4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/pandemic-framework/pandemic/Sprite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Pandemic/pandemic/Bot.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pandemic/pandemic/Bot.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Pandemic/pandemic/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pandemic/pandemic/Game.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Pandemic/pandemic/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pandemic/pandemic/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Pandemic/pandemic/Start.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pandemic/pandemic/Start.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pandemic-framework/pandemic/PandemicController.java" beforeDir="false" afterPath="$PROJECT_DIR$/pandemic-framework/pandemic/PandemicController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pandemic-framework/pandemic/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/pandemic-framework/pandemic/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pandemic-framework/pandemic/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/pandemic-framework/pandemic/Start.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,8 +43,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaFXApplication" />
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -79,7 +87,7 @@
     <configuration name="Start" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pandemic.Start" />
       <module name="Pandemic" />
-      <option name="VM_PARAMETERS" value="--module-path C:\Users\nicol\javafxsdk15\javafx-sdk-15.0.1\lib --add-modules javafx.controls,javafx.fxml" />
+      <option name="VM_PARAMETERS" value="--module-path $PROJECT_DIR$/../../JetBrainsSDKs/javafx-sdk-15.0.1/lib --add-modules javafx.controls,javafx.fxml" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="pandemic.*" />
@@ -130,6 +138,13 @@
       <workItem from="1605013997924" duration="6015000" />
       <workItem from="1605171668188" duration="1496000" />
       <workItem from="1605173316077" duration="3010000" />
+      <workItem from="1605526450873" duration="27000" />
+      <workItem from="1605601785491" duration="1689000" />
+      <workItem from="1605615674035" duration="1093000" />
+      <workItem from="1605617187478" duration="561000" />
+      <workItem from="1605622335554" duration="11000" />
+      <workItem from="1606061940714" duration="246000" />
+      <workItem from="1606130724336" duration="1003000" />
     </task>
     <servers />
   </component>
@@ -153,9 +168,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="440" y="94" key="#Project_Structure/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1604590090839" />
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605172502633">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="311" y="151" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605601898379">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state x="311" y="151" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1605601898379" />
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605172502633" />
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605174703318">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -166,41 +182,46 @@
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605173163806" />
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1604590273181" />
-    <state width="1493" height="171" key="GridCell.Tab.0.bottom" timestamp="1604995311329">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1605602543641">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1605602543641" />
     <state width="1493" height="171" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604995311329" />
     <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604928673491" />
     <state width="1877" height="258" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1604920120472" />
     <state width="1398" height="207" key="GridCell.Tab.0.bottom/0.23.1440.805@0.23.1440.805" timestamp="1604577570756" />
     <state width="1638" height="280" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1604655797304" />
-    <state width="1493" height="171" key="GridCell.Tab.0.center" timestamp="1604995311329">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1605602543639">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1605602543639" />
     <state width="1493" height="171" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604995311329" />
     <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604928673491" />
     <state width="1877" height="258" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1604920120472" />
     <state width="1398" height="207" key="GridCell.Tab.0.center/0.23.1440.805@0.23.1440.805" timestamp="1604577570755" />
     <state width="1638" height="280" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1604655797303" />
-    <state width="1493" height="171" key="GridCell.Tab.0.left" timestamp="1604995311329">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1605602543638">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1605602543638" />
     <state width="1493" height="171" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604995311329" />
     <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604928673491" />
     <state width="1877" height="258" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1604920120472" />
     <state width="1398" height="207" key="GridCell.Tab.0.left/0.23.1440.805@0.23.1440.805" timestamp="1604577570754" />
     <state width="1638" height="280" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1604655797303" />
-    <state width="1493" height="171" key="GridCell.Tab.0.right" timestamp="1604995311329">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1605602543640">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1605602543640" />
     <state width="1493" height="171" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604995311329" />
     <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604928673491" />
     <state width="1877" height="258" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1604920120472" />
     <state width="1398" height="207" key="GridCell.Tab.0.right/0.23.1440.805@0.23.1440.805" timestamp="1604577570755" />
     <state width="1638" height="280" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1604655797304" />
-    <state x="461" y="165" key="SettingsEditor" timestamp="1605176610798">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="346" y="57" key="SettingsEditor" timestamp="1605602302327">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state x="346" y="57" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1605602302327" />
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605176610798" />
     <state x="192" y="201" key="Vcs.Push.Dialog.v2" timestamp="1604413774482">
       <screen x="0" y="23" width="1440" height="877" />
@@ -210,9 +231,10 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="638" y="457" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1680.1027@0.23.1680.1027" timestamp="1604654073710" />
-    <state x="597" y="140" key="new project wizard" timestamp="1604590280145">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="208" y="121" key="new project wizard" timestamp="1605617204400">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state x="208" y="121" key="new project wizard/0.0.1440.900@0.0.1440.900" timestamp="1605617204400" />
     <state x="597" y="140" key="new project wizard/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1604590280145" />
     <state x="505" y="260" key="search.everywhere.popup" timestamp="1604412931349">
       <screen x="0" y="23" width="1680" height="1027" />
