@@ -6,8 +6,11 @@ package pandemic;
 */
 public class Player {
 
+    private Sprite sprite = new Sprite();
+
     public Player()
     {
+        this.sprite.setImage("");
 
     }
 
