@@ -20,11 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d8010f4-f255-4f34-99d3-a610e16ed2e4" name="Default Changelist" comment="commit">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pandemic-framework/pandemic/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/pandemic-framework/pandemic/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pandemic-framework/pandemic/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/pandemic-framework/pandemic/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pandemic-framework/pandemic/NPC.java" beforeDir="false" afterPath="$PROJECT_DIR$/pandemic-framework/pandemic/NPC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pandemic-framework/pandemic/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/pandemic-framework/pandemic/Room.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +53,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -82,24 +80,13 @@
     <configuration name="Start" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pandemic.Start" />
       <module name="Pandemic" />
-      <option name="VM_PARAMETERS" value="--module-path $PROJECT_DIR$/../../JetBrainsSDKs/javafx-sdk-15.0.1/lib --add-modules javafx.controls,javafx.fxml" />
+      <option name="VM_PARAMETERS" value="--module-path $PROJECT_DIR$/../javafx-sdk-15.0.1/lib --add-modules javafx.controls,javafx.fxml" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="pandemic.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -205,11 +192,12 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="440" y="94" key="#Project_Structure/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1604590090839" />
-    <state x="311" y="151" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605601898379">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="311" y="133" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606212062492">
+      <screen x="0" y="25" width="1440" height="790" />
     </state>
     <state x="311" y="151" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1605601898379" />
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605172502633" />
+    <state x="311" y="133" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1440.790@0.25.1440.790" timestamp="1606212062492" />
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605174703318">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -255,11 +243,12 @@
     <state width="1877" height="258" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1604920120472" />
     <state width="1398" height="207" key="GridCell.Tab.0.right/0.23.1440.805@0.23.1440.805" timestamp="1604577570755" />
     <state width="1638" height="280" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1604655797304" />
-    <state x="346" y="25" width="1024" height="790" key="SettingsEditor" timestamp="1606133706374">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="346" y="47" width="1024" height="790" key="SettingsEditor" timestamp="1606212036287">
+      <screen x="0" y="25" width="1440" height="790" />
     </state>
     <state x="346" y="25" width="1024" height="790" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1606133706374" />
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605176610798" />
+    <state x="346" y="47" key="SettingsEditor/0.25.1440.790@0.25.1440.790" timestamp="1606212036287" />
     <state x="192" y="183" key="Vcs.Push.Dialog.v2" timestamp="1606135632415">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
