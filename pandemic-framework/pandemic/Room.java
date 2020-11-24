@@ -19,7 +19,7 @@ public class Room
     private String NPCName;
     private String quest;
     private Item questItem;
-
+    private String NPCSprite;
 
     // Create rooms
     public Room(String description, int roomNumber)
@@ -136,12 +136,13 @@ public class Room
 
 
     // NPC methods to Room
-    public void addNPCToRoom(String NPCName, String quest, Item questItem)
+    public void addNPCToRoom(String NPCName, String quest, Item questItem, String NPCSprite)
     {
         this.NPCName = NPCName;
         this.quest = quest;
         this.questItem = questItem;
-        this.NPCList.put(NPCName, new NPC(NPCName, quest, questItem));
+        this.NPCSprite = NPCSprite;
+        this.NPCList.put(NPCName, new NPC(NPCName, quest, questItem, NPCSprite));
     }
 
     public String getQuest()

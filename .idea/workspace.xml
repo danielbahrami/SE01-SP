@@ -20,7 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d8010f4-f255-4f34-99d3-a610e16ed2e4" name="Default Changelist" comment="commit">
-      <change beforePath="$PROJECT_DIR$/pandemic-framework/pandemic/Sprite.java" beforeDir="false" afterPath="$PROJECT_DIR$/pandemic-framework/pandemic/Sprite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pandemic-framework/pandemic/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/pandemic-framework/pandemic/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pandemic-framework/pandemic/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/pandemic-framework/pandemic/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pandemic-framework/pandemic/NPC.java" beforeDir="false" afterPath="$PROJECT_DIR$/pandemic-framework/pandemic/NPC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pandemic-framework/pandemic/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/pandemic-framework/pandemic/Room.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

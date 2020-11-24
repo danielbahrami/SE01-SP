@@ -11,6 +11,7 @@ public class Item {
     private String itemDescription;
     private String category;
     private Sprite sprite;
+    private String spriteName;
 
 
     public Item(String name, String itemDescription, String category) {
@@ -20,12 +21,15 @@ public class Item {
         this.category = category;
     }
 
-    public Item(String name, String itemDescription, String category, Sprite sprite) {
+    public Item(String name, String itemDescription, String category, String spriteName) {
         this.function = getItemFunction();
         this.name = name;
         this.itemDescription = itemDescription;
         this.category = category;
-        this.sprite = sprite;
+        this.spriteName = spriteName;
+
+        this.sprite = new Sprite();
+        sprite.setImage(spriteName);
     }
 
 
