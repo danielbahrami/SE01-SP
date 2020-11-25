@@ -6,12 +6,11 @@ package pandemic;
 */
 public class Player {
 
-    private Sprite sprite = new Sprite();
+    private Sprite sprite;
 
     public Player()
     {
-        this.sprite.setImage("");
-
+        this.sprite = new Sprite();
     }
 
     /* The move-method is used in JavaFX only!
@@ -20,5 +19,16 @@ public class Player {
     public void move()
     {
 
+    }
+
+    public Sprite getSprite()
+    {
+        return this.sprite;
+    }
+
+    public void setSprite(String spriteName)
+    {
+        this.sprite = new Sprite();
+        sprite.setImage(spriteName);
     }
 }
