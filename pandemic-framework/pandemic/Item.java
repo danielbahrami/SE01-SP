@@ -13,13 +13,14 @@ public class Item {
     private Sprite sprite;
     private String spriteName;
 
-
+    /*
     public Item(String name, String itemDescription, String category) {
         this.function = getItemFunction();
         this.name = name;
         this.itemDescription = itemDescription;
         this.category = category;
     }
+    */
 
     public Item(String name, String itemDescription, String category, String spriteName) {
         this.function = getItemFunction();

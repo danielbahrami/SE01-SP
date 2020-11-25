@@ -45,6 +45,6 @@ public class NPC {
 
     public void setQuestItem(Item item)
     {
-        this.questItem = new Item(null,null, null);
+        this.questItem = new Item(null,null, null, "");
     }
 }

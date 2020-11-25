@@ -142,6 +142,10 @@ public class Room
         this.quest = quest;
         this.questItem = questItem;
         this.NPCSprite = NPCSprite;
+        
+        Sprite sprite = new Sprite();
+        sprite.setImage(NPCSprite);
+
         this.NPCList.put(NPCName, new NPC(NPCName, quest, questItem, NPCSprite));
     }
 

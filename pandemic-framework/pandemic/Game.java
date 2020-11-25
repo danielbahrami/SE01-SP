@@ -72,19 +72,19 @@ public class Game
 
         Item para = new Item ("paracetamol", "Paracetamol to treat pain and fever", "item", "");
         pharmacy.addItemToRoom(para);
-        Item soap = new Item("soap", "Soap to wash your hands", "item");
+        Item soap = new Item("soap", "Soap to wash your hands", "item", "");
         toilet.addItemToRoom(soap);
-        Item handsanitizer = new Item ("handsanitizer", "Handsanitizer to disinfect your hands", "poison");
+        Item handsanitizer = new Item ("handsanitizer", "Handsanitizer to disinfect your hands", "poison", "");
         southHallway.addItemToRoom(handsanitizer);
-        Item inhaler = new Item("inhaler", "An inhaler to lung patients", "item");
+        Item inhaler = new Item("inhaler", "An inhaler to lung patients", "item", "");
         office.addItemToRoom(inhaler);
-        Item manager = new Item("manager", "A manager to satisfy Karen", "item");
+        Item manager = new Item("manager", "A manager to satisfy Karen", "item", "");
         secretRoom.addItemToRoom(manager);
-        Item lemoncake = new Item("lemoncake", "A delicious cake made by Dan Cake", "food");
+        Item lemoncake = new Item("lemoncake", "A delicious cake made by Dan Cake", "food", "");
         cafeteria.addItemToRoom(lemoncake);
-        Item plant = new Item("plant", "A beautiful plant from Plantorama", "item");
+        Item plant = new Item("plant", "A beautiful plant from Plantorama", "item", "");
         lounge.addItemToRoom(plant);
-        Item mask = new Item("mask", "A mask to protect your face", "item");
+        Item mask = new Item("mask", "A mask to protect your face", "item", "");
         midHallway.addItemToRoom(mask);
 
         //add item to the itemList hashmap
@@ -101,7 +101,7 @@ public class Game
 
         // roomNumber.addNPCToRoom(< NPCName >, < quest >, < questItem >)
         reception.addNPCToRoom("Bo", "I forgot my mask, but i was told I can find one in another room. Would you fetch me a mask?", new Item("mask", "a mask to protect your face", "item", ""),"");
-        office.addNPCToRoom("Karen", "I need to talk to the manager", new Item("manager", "a manager to satisfy Karen", "item"), "");
+        office.addNPCToRoom("Karen", "I need to talk to the manager", new Item("manager", "a manager to satisfy Karen", "item", ""), "");
         northHallway.addNPCToRoom("Flemming", "I lost my inhaler and i can't remember in which room... Would you please help me find it?", new Item("inhaler","an inhaler for lung patients", "item", ""), "");
 
         currentRoom = lobby;
