@@ -1,5 +1,7 @@
 package pandemic;
 
+import javafx.scene.image.Image;
+
 import java.util.ArrayList;
 import java.util.Set;
 import java.util.HashMap;
@@ -13,6 +15,10 @@ public class Room
     private HashMap<String, NPC> NPCList;
     private int roomNumber;
     private Item key;
+
+    // Room graphics
+    private Image Background;
+    private Sprite itemSprite;
 
 
     // NPC attributes
@@ -122,6 +128,11 @@ public class Room
     public void addItemToRoom(Item item)
     {
         itemList.put(item.getName(), item);
+    }
+
+    public void setItemPosition(double x, double y)
+    {
+        this.itemSprite.setPosition(x, y);
     }
     
     public void removeItemFromRoom(String itemName)

@@ -11,7 +11,6 @@ public class Item {
     private String itemDescription;
     private String category;
     private Sprite sprite;
-    private String spriteName;
 
     /*
     public Item(String name, String itemDescription, String category) {
