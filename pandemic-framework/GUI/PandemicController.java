@@ -2,6 +2,7 @@ package GUI;
 
 import javafx.fxml.FXML;
 import pandemic.Player;
+import pandemic.Sprite;
 
 public class PandemicController {
 
@@ -14,5 +15,14 @@ public class PandemicController {
         this.player = player;
 
 
+    }
+
+    // Create sprite. spriteName, positionX and positionY
+    @FXML
+    public void createSprite(String imageName, double x, double y)
+    {
+        Sprite sprite = new Sprite();
+        sprite.setImage(imageName);
+        sprite.setPosition(x, y);
     }
 }
