@@ -26,7 +26,6 @@ public class Item {
         this.name = name;
         this.itemDescription = itemDescription;
         this.category = category;
-        this.spriteName = spriteName;
 
         this.sprite = new Sprite();
         sprite.setImage(spriteName);

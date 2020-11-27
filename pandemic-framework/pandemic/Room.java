@@ -17,8 +17,9 @@ public class Room
     private Item key;
 
     // Room graphics
-    private Image Background;
+    private Image background;
     private Sprite itemSprite;
+    private Sprite wall;
 
 
     // NPC attributes
@@ -40,6 +41,27 @@ public class Room
         this.NPCName = NPCName;
         this.quest = quest;
         this.questItem = questItem;
+    }
+
+    public Room(String description, int roomNumber, String backgroundName, String wallName, String itemSprite)
+    {
+        this.description = description;
+        exits = new HashMap<String, Room>();
+        itemList = new HashMap<String, Item>();
+        NPCList = new HashMap<String, NPC>();
+
+        this.roomNumber = roomNumber;
+
+        this.NPCName = NPCName;
+        this.quest = quest;
+        this.questItem = questItem;
+
+        this.background = new Image(backgroundName);
+        this.itemSprite = new Sprite();
+        this.wall = new Sprite();
+
+        this.itemSprite.setImage(itemSprite);
+        this.wall.setImage(wallName);
     }
     
     public Room(String description, int roomNumber, Item key)

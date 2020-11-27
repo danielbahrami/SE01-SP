@@ -74,6 +74,11 @@ public class Sprite {
         return s.getBoundary().intersects(this.getBoundary());
     }
 
+    public Image getImage()
+    {
+        return image;
+    }
+
     @Override
     public String toString()
     {
