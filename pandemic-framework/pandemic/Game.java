@@ -477,4 +477,9 @@ public class Game
     {
         return command.hasSecondWord() && command.getSecondWord().equals("handsanitizer");
     }
+
+    public Room getCurrentRoom()
+    {
+        return currentRoom;
+    }
 }

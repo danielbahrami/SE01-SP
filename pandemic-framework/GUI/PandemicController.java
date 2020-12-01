@@ -1,11 +1,18 @@
 package GUI;
 
 import javafx.animation.AnimationTimer;
+import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.image.Image;
-import pandemic.Player;
-import pandemic.Sprite;
+import javafx.stage.Stage;
+import pandemic.*;
+
+import java.io.IOException;
 
 public class PandemicController {
 
@@ -13,6 +20,10 @@ public class PandemicController {
     private Player player;
     private Sprite walls;
     private Sprite item;
+    private Button button;
+    private Room currentRoom;
+    private Command command;
+    Game game = new Game();
 
     @FXML
     public void createPlayer(Player player)
@@ -43,18 +54,38 @@ public class PandemicController {
         wall.setVelocity(0,0);
     }
 
-
-
     @FXML
     public void move()
     {
-        new AnimationTimer()
-        {
-            @Override
-            public void handle(long l)
-            {
 
-            }
-        }.start();
+    }
+
+    @FXML
+    public void goRoom(ActionEvent event) throws IOException
+    {
+        Stage stage;
+        Parent root;
+        String direction;
+
+        currentRoom = game.getCurrentRoom();
+        direction = button.getId();
+        Room nextRoom = currentRoom.getExit(direction);
+
+
+
+        if(event.getSource() == button)
+        {
+            stage = (Stage) button.getScene().getWindow();
+            root = FXMLLoader.load(getClass().getResource("Reception.fxml"));
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
+        }
+
+
+
+        /*currentRoom = game.getCurrentRoom();
+        String direction = button.getId();
+        String fullCommand = "go ";*/
     }
 }
