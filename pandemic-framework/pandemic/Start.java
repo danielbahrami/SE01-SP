@@ -21,8 +21,7 @@ public class Start extends Application {
 
     public static void main(String[] args)
     {
-        Game game = new Game();
         launch(args);
-        game.play();
+
     }
 }

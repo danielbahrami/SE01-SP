@@ -78,9 +78,20 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.propDebugger" />
+    <property name="settings.editor.selected.configurable" value="preferences.JavaFX" />
   </component>
   <component name="RunManager" selected="Application.Start">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Map" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pandemic.Map" />
       <module name="Pandemic" />
@@ -97,18 +108,7 @@
     <configuration name="Start" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pandemic.Start" />
       <module name="Pandemic" />
-      <option name="VM_PARAMETERS" value="--module-path C:\Users\nicol\javafxsdk15\javafx-sdk-15.0.1\lib --add-modules javafx.controls,javafx.fxml" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="--module-path C:\Users\mertz\Desktop\JavaFXSDK15\javafx-sdk-15.0.1\lib --add-modules javafx.controls,javafx.fxml" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -191,5 +191,61 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commit" />
     <option name="LAST_COMMIT_MESSAGE" value="Commit" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606942729731">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1606942729731" />
+    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser" timestamp="1606946379032">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1606946379032" />
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606946924655">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1606946924655" />
+    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1606942864057">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1606942864057" />
+    <state width="1877" height="130" key="GridCell.Tab.0.bottom" timestamp="1606950737380">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="130" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1606950737380" />
+    <state width="1877" height="130" key="GridCell.Tab.0.center" timestamp="1606950737380">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="130" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1606950737380" />
+    <state width="1877" height="130" key="GridCell.Tab.0.left" timestamp="1606950737380">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="130" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1606950737380" />
+    <state width="1877" height="130" key="GridCell.Tab.0.right" timestamp="1606950737380">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="130" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1606950737380" />
+    <state x="286" y="183" key="SettingsEditor" timestamp="1606942865558">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="286" y="183" key="SettingsEditor/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1606942865558" />
+    <state x="513" y="256" width="894" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1606945884311">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="513" y="256" width="894" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1606945884311" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1606951408521">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1606951408521" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.RuntimeException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

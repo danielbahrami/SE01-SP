@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.PandemicController">
+<AnchorPane fx:id="receptionRoot" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.ReceptionController">
    <children>
-      <Button fx:id="right" layoutX="333.0" layoutY="187.0" mnemonicParsing="false" onAction="#goRoom" text="Button" />
+      <Button fx:id="rightButton" layoutX="541.0" layoutY="175.0" mnemonicParsing="false" onMouseClicked="#buttonAction" text="Lobby" />
+      <Button fx:id="leftButton" layoutX="14.0" layoutY="175.0" mnemonicParsing="false" onMouseClicked="#buttonAction" text="Pharmacy" />
+      <Text layoutX="134.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reception" />
+      <Button fx:id="upButton" layoutX="274.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#buttonAction" text="Lounge" />
    </children>
 </AnchorPane>
