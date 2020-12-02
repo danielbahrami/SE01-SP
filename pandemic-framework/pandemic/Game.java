@@ -20,7 +20,7 @@ public class Game
 
     private void createRooms()
     {
-         Room lobby, reception, pharmacy, southHallway, lounge, cafeteria, midHallway, toilet, northHallway, office, secretRoom;
+        Room lobby, reception, pharmacy, southHallway, lounge, cafeteria, midHallway, toilet, northHallway, office, secretRoom;
 
         lobby = new Room("the lobby", 0);
         reception = new Room("the reception", 1);
@@ -185,7 +185,7 @@ public class Game
         parser.showCommands();
     }
 
-    private void goRoom(Command command)
+    public void goRoom(Command command)
     {
         if(!command.hasSecondWord()) {
             System.out.println("Go where?");

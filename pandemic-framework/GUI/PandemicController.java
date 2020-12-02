@@ -1,91 +1,145 @@
 package GUI;
 
-import javafx.animation.AnimationTimer;
 import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import pandemic.*;
-
-import java.io.IOException;
 
 public class PandemicController {
 
     @FXML
-    private Player player;
-    private Sprite walls;
-    private Sprite item;
-    private Button button;
-    private Room currentRoom;
-    private Command command;
-    Game game = new Game();
-
+    private Parent root;
     @FXML
-    public void createPlayer(Player player)
-    {
-        this.player = player;
+    private Stage stage;
+    @FXML
+    private Button leftButton, rightButton, upButton, downButton;
 
-
-    }
+    Game game = new Game();
+    private final Room currentRoom = game.getCurrentRoom();
+    String roomFXML = currentRoom.toString() + ".fxml";
 
     // Create sprite. spriteName, positionX and positionY
-    @FXML
+    /*@FXML
     public void createItem(String itemImage, double x, double y)
     {
         Sprite sprite = new Sprite();
         sprite.setImage(itemImage);
         sprite.setPosition(x, y);
         sprite.setVelocity(0,0);
-    }
+    }*/
 
     @FXML
-    public void createBackground(String backGroundImage, Sprite walls)
-    {
-        Image image = new Image(backGroundImage);
-        Sprite wall = new Sprite();
-        this.walls = walls;
-        wall.setImage(walls.toString());
-        wall.setPosition(0,0);
-        wall.setVelocity(0,0);
-    }
-
-    @FXML
-    public void move()
+    private void goLeft(ActionEvent event) throws Exception
     {
 
+
+        if (event.getSource() == leftButton && currentRoom.getRoomNumber() == 0)
+        {
+            stage = (Stage) leftButton.getScene().getWindow();
+            root = FXMLLoader.load(getClass().getResource("Reception.fxml"));
+        }
+        else if (event.getSource() == leftButton && currentRoom.getRoomNumber() == 1)
+        {
+            stage = (Stage) leftButton.getScene().getWindow();
+            root = FXMLLoader.load(getClass().getResource("Pharmacy.fxml"));
+        }
+        else if (event.getSource() == leftButton && currentRoom.getRoomNumber() == 3)
+        {
+            stage = (Stage) leftButton.getScene().getWindow();
+            root = FXMLLoader.load(getClass().getResource("Lounge.fxml"));
+        }
+        else if (event.getSource() == leftButton && currentRoom.getRoomNumber() == 4)
+        {
+            stage = (Stage) leftButton.getScene().getWindow();
+            root = FXMLLoader.load(getClass().getResource("Cafeteria.fxml"));
+        }
+        else if (event.getSource() == leftButton && currentRoom.getRoomNumber() == 8)
+        {
+            stage = (Stage) leftButton.getScene().getWindow();
+            root = FXMLLoader.load(getClass().getResource("Office.fxml"));
+        }
+        else
+        {
+            System.out.println(roomFXML);
+            stage = (Stage) leftButton.getScene().getWindow();
+            root = FXMLLoader.load(getClass().getResource("Lobby.fxml"));
+        }
+
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
     }
 
     @FXML
-    public void goRoom(ActionEvent event) throws IOException
+    private void goRight(ActionEvent event) throws Exception
+    {
+        if (event.getSource() == rightButton && currentRoom.getRoomNumber() == 1)
+        {
+            stage = (Stage) rightButton.getScene().getWindow();
+            root = FXMLLoader.load(getClass().getResource("Lobby.fxml"));
+        }
+        else if (event.getSource() == rightButton && currentRoom.getRoomNumber() == 2)
+        {
+            stage = (Stage) rightButton.getScene().getWindow();
+            root = FXMLLoader.load(getClass().getResource("Reception.fxml"));
+        }
+        else if (event.getSource() == rightButton && currentRoom.getRoomNumber() == 4)
+        {
+            stage = (Stage) rightButton.getScene().getWindow();
+            root = FXMLLoader.load(getClass().getResource("SouthHallway.fxml"));
+        }
+        else if (event.getSource() == rightButton && currentRoom.getRoomNumber() == 5)
+        {
+            stage = (Stage) rightButton.getScene().getWindow();
+            root = FXMLLoader.load(getClass().getResource("Lounge.fxml"));
+        }
+        else if (event.getSource() == rightButton && currentRoom.getRoomNumber() == 9)
+        {
+            stage = (Stage) rightButton.getScene().getWindow();
+            root = FXMLLoader.load(getClass().getResource("NorthHallway.fxml"));
+        }
+        else
+        {
+            stage = (Stage) rightButton.getScene().getWindow();
+            root = FXMLLoader.load(getClass().getResource("Reception.fxml"));
+        }
+
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    @FXML
+    private void goUp(ActionEvent event)
+    {
+
+    }
+
+    @FXML
+    private void goDown(ActionEvent event)
+    {
+
+    }
+
+    /*@FXML
+    public void moveRoom(ActionEvent event) throws IOException
     {
         Stage stage;
-        Parent root;
         String direction;
 
         currentRoom = game.getCurrentRoom();
+
+        String fullCommand = "go ";
         direction = button.getId();
         Room nextRoom = currentRoom.getExit(direction);
+        game.goRoom(command);
+        currentRoom = nextRoom;
 
+        Scene scene = new Scene(currentRoom);
 
-
-        if(event.getSource() == button)
-        {
-            stage = (Stage) button.getScene().getWindow();
-            root = FXMLLoader.load(getClass().getResource("Reception.fxml"));
-            Scene scene = new Scene(root);
-            stage.setScene(scene);
-            stage.show();
-        }
-
-
-
-        /*currentRoom = game.getCurrentRoom();
-        String direction = button.getId();
-        String fullCommand = "go ";*/
-    }
+    }*/
 }

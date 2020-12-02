@@ -3,9 +3,9 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.PandemicController">
    <children>
-      <Button fx:id="right" layoutX="333.0" layoutY="187.0" mnemonicParsing="false" onAction="#goRoom" text="Button" />
+      <Button fx:id="rightButton" layoutX="541.0" layoutY="175.0" mnemonicParsing="false" onAction="#goRight" text="Right" />
+      <Button fx:id="leftButton" layoutX="14.0" layoutY="175.0" mnemonicParsing="false" onAction="#goLeft" text="Left" />
    </children>
 </AnchorPane>
