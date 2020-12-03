@@ -10,10 +10,12 @@ import javafx.scene.chart.PieChart;
 import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
+import pandemic.NPC;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -23,8 +25,7 @@ public class ReceptionController{
     @FXML
     private Button rightButton,leftButton,upButton,downButton;
 
-
-
+    private NPC npc;
 
     @FXML
     void buttonAction(MouseEvent event) throws Exception {
@@ -46,7 +47,18 @@ public class ReceptionController{
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
-
     }
 
+    @FXML
+    void NPCFunc()
+    {
+        ImageView view = new ImageView();
+        view.setOnMouseClicked(event ->
+        {
+            if (event.getButton() == MouseButton.SECONDARY)
+            {
+
+            }
+        });
+    }
 }

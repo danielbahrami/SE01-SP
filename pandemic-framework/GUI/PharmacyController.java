@@ -12,7 +12,7 @@ public class PharmacyController {
 
 
     @FXML
-    private Button rightButton,leftButton,upButton,downButton;
+    private Button rightButton,upButton;
 
     @FXML
     void buttonAction(MouseEvent event) throws Exception {
