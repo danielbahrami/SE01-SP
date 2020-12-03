@@ -1,25 +1,19 @@
 package GUI;
 
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
-import java.awt.*;
 
 
 public class LobbyController{
 
     @FXML
-    private Button leftButton,helpButton;
+    private Button leftButton;
 
 
 
@@ -38,10 +32,4 @@ public class LobbyController{
 
 
     }
-
-    @FXML
-    void helpButtonClick(ActionEvent actionEvent) throws Exception{
-
-        
-        }
-    }
+}

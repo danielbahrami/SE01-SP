@@ -16,6 +16,15 @@ public class ToiletController extends Inventory{
     @FXML
     private Button leftButton,rightButton,downButton,upButton;
 
+    @FXML
+    private ImageView cake;
+
+    @FXML
+    private Room currentRoom;
+
+    @FXML
+    private Inventory inventory;
+
 
     @FXML
     void buttonAction(MouseEvent event) throws Exception {

@@ -71,21 +71,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-<<<<<<< Updated upstream
     <property name="last_opened_file_path" value="$USER_HOME$/javafxsdk15/javafx-sdk-15.0.1/lib" />
     <property name="project.structure.last.edited" value="Project" />
-=======
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pandemic-framework/Images" />
-    <property name="project.structure.last.edited" value="Libraries" />
->>>>>>> Stashed changes
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.JavaFX" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\mertz\Documents\GitHub\Pandemic\pandemic-framework\Images" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/pandemic-framework/Images" />
       <recent name="C:\Users\mertz\Documents\GitHub\Pandemic\pandemic-framework\Images" />
@@ -205,59 +197,6 @@
     <MESSAGE value="Commit" />
     <option name="LAST_COMMIT_MESSAGE" value="Commit" />
   </component>
-<<<<<<< Updated upstream
-=======
-  <component name="WindowStateProjectService">
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606942729731">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1606942729731" />
-    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser" timestamp="1606946379032">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1606946379032" />
-    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606946924655">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1606946924655" />
-    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1606942864057">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1606942864057" />
-    <state width="1877" height="229" key="GridCell.Tab.0.bottom" timestamp="1607005493679">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="229" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1607005493679" />
-    <state width="1877" height="229" key="GridCell.Tab.0.center" timestamp="1607005493679">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="229" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1607005493679" />
-    <state width="1877" height="229" key="GridCell.Tab.0.left" timestamp="1607005493679">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="229" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1607005493679" />
-    <state width="1877" height="229" key="GridCell.Tab.0.right" timestamp="1607005493679">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="229" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1607005493679" />
-    <state x="286" y="183" key="SettingsEditor" timestamp="1607002793597">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="286" y="183" key="SettingsEditor/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1607002793597" />
-    <state x="513" y="256" width="894" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1606945884311">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="513" y="256" width="894" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1606945884311" />
-    <state x="660" y="277" key="refactoring.ChangeSignatureDialog" timestamp="1606953608644">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="660" y="277" key="refactoring.ChangeSignatureDialog/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1606953608644" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1606956248803">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1606956248803" />
-  </component>
->>>>>>> Stashed changes
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
