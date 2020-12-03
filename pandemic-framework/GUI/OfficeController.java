@@ -7,6 +7,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
+import pandemic.Inventory;
 
 public class OfficeController {
 
@@ -25,5 +26,11 @@ public class OfficeController {
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
- }
+    }
+
+    @FXML
+    private void toInventory(MouseEvent event)
+    {
+
+    }
 }

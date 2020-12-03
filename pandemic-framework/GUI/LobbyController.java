@@ -1,19 +1,21 @@
 package GUI;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.input.MouseEvent;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
-
+import javafx.stage.StageStyle;
 
 
 public class LobbyController{
 
     @FXML
-    private Button leftButton;
+    private Button leftButton, inventoryButton;
 
 
 
@@ -29,7 +31,21 @@ public class LobbyController{
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
+    }
 
+    @FXML
+    void goToInventory(MouseEvent event) throws Exception
+    {
+        if (event.getSource() == inventoryButton) {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Inventory.fxml"));
+            Parent root = (Parent) fxmlLoader.load();
+            Stage stage = new Stage();
 
+            stage.initModality(Modality.APPLICATION_MODAL);
+            stage.initStyle(StageStyle.UNDECORATED);
+            stage.setTitle("Inventory");
+            stage.setScene(new Scene(root));
+            stage.show();
+        }
     }
 }
