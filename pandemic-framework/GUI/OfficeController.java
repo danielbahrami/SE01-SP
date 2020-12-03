@@ -25,5 +25,5 @@ public class OfficeController {
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
-}
+ }
 }

@@ -7,11 +7,24 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
+import pandemic.*;
+import javafx.scene.image.ImageView;
 
-public class ToiletController {
+
+public class ToiletController extends Inventory{
 
     @FXML
     private Button leftButton,rightButton,downButton,upButton;
+
+    @FXML
+    private ImageView cake;
+
+    @FXML
+    private Room currentRoom;
+
+    @FXML
+    private Inventory inventory;
+
 
     @FXML
     void buttonAction(MouseEvent event) throws Exception {
@@ -31,3 +44,5 @@ public class ToiletController {
         stage.show();
     }
 }
+
+

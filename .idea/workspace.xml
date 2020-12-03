@@ -80,6 +80,11 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.JavaFX" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\mertz\Documents\GitHub\Pandemic\pandemic-framework\Images" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.Start">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
@@ -209,22 +214,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1606942864057" />
-    <state width="1877" height="130" key="GridCell.Tab.0.bottom" timestamp="1606950737380">
+    <state width="1877" height="229" key="GridCell.Tab.0.bottom" timestamp="1606956627666">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="130" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1606950737380" />
-    <state width="1877" height="130" key="GridCell.Tab.0.center" timestamp="1606950737380">
+    <state width="1877" height="229" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1606956627666" />
+    <state width="1877" height="229" key="GridCell.Tab.0.center" timestamp="1606956627666">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="130" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1606950737380" />
-    <state width="1877" height="130" key="GridCell.Tab.0.left" timestamp="1606950737380">
+    <state width="1877" height="229" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1606956627666" />
+    <state width="1877" height="229" key="GridCell.Tab.0.left" timestamp="1606956627666">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="130" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1606950737380" />
-    <state width="1877" height="130" key="GridCell.Tab.0.right" timestamp="1606950737380">
+    <state width="1877" height="229" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1606956627666" />
+    <state width="1877" height="229" key="GridCell.Tab.0.right" timestamp="1606956627666">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="130" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1606950737380" />
+    <state width="1877" height="229" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1606956627666" />
     <state x="286" y="183" key="SettingsEditor" timestamp="1606942865558">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -233,10 +238,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="513" y="256" width="894" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1606945884311" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1606951408521">
+    <state x="660" y="277" key="refactoring.ChangeSignatureDialog" timestamp="1606953608644">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1606951408521" />
+    <state x="660" y="277" key="refactoring.ChangeSignatureDialog/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1606953608644" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1606956248803">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1606956248803" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

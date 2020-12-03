@@ -8,7 +8,7 @@
 <AnchorPane fx:id="mainRoot" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.LobbyController">
    <children>
       <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true" />
-      <Button fx:id="leftButton" layoutX="42.0" layoutY="173.0" mnemonicParsing="false" onMouseClicked="#goLeft" text="Reception" />
+      <Button fx:id="leftButton" layoutX="42.0" layoutY="173.0" mnemonicParsing="false" onMouseClicked="#buttonAction" text="Reception" />
       <TextField layoutX="67.0" layoutY="32.0" text="Lobby" />
    </children>
 </AnchorPane>
