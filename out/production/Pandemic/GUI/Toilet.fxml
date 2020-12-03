@@ -10,10 +10,5 @@
       <Button fx:id="upButton" layoutX="274.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#buttonAction" text="Secret Room" />
       <Button fx:id="downButton" layoutX="290.0" layoutY="361.0" mnemonicParsing="false" onMouseClicked="#buttonAction" text="Cafeteria" />
       <Text layoutX="289.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Toilet" />
-      <ImageView fx:id="cake" fitHeight="150.0" fitWidth="200.0" layoutX="26.0" layoutY="82.0" onMouseClicked="#pickUpSoap" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../Images/Old man.png" />
-         </image>
-      </ImageView>
    </children>
 </AnchorPane>

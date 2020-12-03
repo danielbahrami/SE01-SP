@@ -2,13 +2,18 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane fx:id="mainRoot" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.LobbyController">
+<AnchorPane fx:id="mainRoot" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.LobbyController">
    <children>
-      <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true" />
-      <Button fx:id="leftButton" layoutX="42.0" layoutY="173.0" mnemonicParsing="false" onMouseClicked="#buttonAction" text="Reception" />
+      <ImageView fitHeight="500.0" fitWidth="500.0" layoutX="3.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/Lobby.png" />
+         </image></ImageView>
+      <Button fx:id="leftButton" layoutX="14.0" layoutY="236.0" mnemonicParsing="false" onMouseClicked="#buttonAction" text="Reception" />
       <TextField layoutX="67.0" layoutY="32.0" text="Lobby" />
+      <Button fx:id="helpButton" layoutX="179.0" layoutY="200.0" mnemonicParsing="false" onAction="#helpButtonClick" text="Help" />
    </children>
 </AnchorPane>
