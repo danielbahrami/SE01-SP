@@ -21,7 +21,7 @@
       <Button fx:id="leftButton" layoutX="7.0" layoutY="235.0" mnemonicParsing="false" onMouseClicked="#buttonAction" text="Pharmacy" />
       <Text layoutX="41.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reception" />
       <Button fx:id="upButton" layoutX="223.0" layoutY="22.0" mnemonicParsing="false" onMouseClicked="#buttonAction" text="Lounge" />
-      <Label fx:id="questLabel" layoutX="173.0" layoutY="295.0" prefHeight="17.0" prefWidth="0.0" />
+      <Label fx:id="questLabel" layoutX="173.0" layoutY="295.0" />
       <Label fx:id="completeLabel" layoutX="172.0" layoutY="304.0" />
    </children>
 </AnchorPane>
