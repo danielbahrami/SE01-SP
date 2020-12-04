@@ -158,7 +158,7 @@ public class Room
         Sprite sprite = new Sprite();
         sprite.setImage(NPCSprite);
 
-        this.NPCList.put(NPCName, new NPC(NPCName, quest, questItem, NPCSprite));
+        this.NPCList.put(NPCName, new NPC(NPCName, quest, questItem));
     }
 
     public String getQuest()

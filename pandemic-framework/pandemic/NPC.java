@@ -17,10 +17,10 @@ public class NPC {
         this.quest = quest;
         this.questItem = questItem;
         this.NPCList = new HashMap<String, NPC>();
-        this.spriteName = spriteName;
+        //this.spriteName = spriteName;
 
-        this.sprite = new Sprite();
-        sprite.setImage(spriteName);
+        //this.sprite = new Sprite();
+        //sprite.setImage(spriteName);
     }
 
     public void addNPCs()
