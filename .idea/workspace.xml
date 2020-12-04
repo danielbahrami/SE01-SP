@@ -23,16 +23,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d8010f4-f255-4f34-99d3-a610e16ed2e4" name="Default Changelist" comment="Commit">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Pandemic/GUI/PandemicController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pandemic/GUI/PandemicController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Pandemic/pandemic/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pandemic/pandemic/Game.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Pandemic/pandemic/Start.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pandemic/pandemic/Start.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pandemic-framework/GUI/Lobby.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/pandemic-framework/GUI/Lobby.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pandemic-framework/GUI/PandemicController.java" beforeDir="false" afterPath="$PROJECT_DIR$/pandemic-framework/GUI/PandemicController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pandemic-framework/GUI/Reception.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/pandemic-framework/GUI/Reception.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pandemic-framework/pandemic/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/pandemic-framework/pandemic/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pandemic-framework/pandemic/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/pandemic-framework/pandemic/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pandemic-framework/pandemic/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/pandemic-framework/pandemic/Start.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pandemic-framework/GUI/Cafeteria.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/pandemic-framework/GUI/Cafeteria.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,10 +68,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/javafxsdk15/javafx-sdk-15.0.1/lib" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.JavaFX" />
@@ -86,17 +83,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.Start">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Map" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pandemic.Map" />
       <module name="Pandemic" />
@@ -113,7 +99,20 @@
     <configuration name="Start" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pandemic.Start" />
       <module name="Pandemic" />
-      <option name="VM_PARAMETERS" value="--module-path C:\Users\mertz\Desktop\JavaFXSDK15\javafx-sdk-15.0.1\lib --add-modules javafx.controls,javafx.fxml" />
+      <option name="VM_PARAMETERS" value="--module-path $PROJECT_DIR$/../javafx-sdk-15.0.1/lib --add-modules javafx.controls,javafx.fxml" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -160,6 +159,7 @@
       <workItem from="1606819665392" duration="891000" />
       <workItem from="1606821315213" duration="2137000" />
       <workItem from="1606905099359" duration="7275000" />
+      <workItem from="1607102905114" duration="862000" />
     </task>
     <task id="LOCAL-00001" summary="Commit">
       <created>1606468870869</created>
@@ -196,56 +196,6 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commit" />
     <option name="LAST_COMMIT_MESSAGE" value="Commit" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606942729731">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1606942729731" />
-    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser" timestamp="1606946379032">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1606946379032" />
-    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606946924655">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1606946924655" />
-    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1606942864057">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1606942864057" />
-    <state width="1877" height="229" key="GridCell.Tab.0.bottom" timestamp="1606956627666">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="229" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1606956627666" />
-    <state width="1877" height="229" key="GridCell.Tab.0.center" timestamp="1606956627666">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="229" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1606956627666" />
-    <state width="1877" height="229" key="GridCell.Tab.0.left" timestamp="1606956627666">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="229" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1606956627666" />
-    <state width="1877" height="229" key="GridCell.Tab.0.right" timestamp="1606956627666">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="229" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1606956627666" />
-    <state x="286" y="183" key="SettingsEditor" timestamp="1606942865558">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="286" y="183" key="SettingsEditor/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1606942865558" />
-    <state x="513" y="256" width="894" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1606945884311">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="513" y="256" width="894" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1606945884311" />
-    <state x="660" y="277" key="refactoring.ChangeSignatureDialog" timestamp="1606953608644">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="660" y="277" key="refactoring.ChangeSignatureDialog/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1606953608644" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1606956248803">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1606956248803" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
