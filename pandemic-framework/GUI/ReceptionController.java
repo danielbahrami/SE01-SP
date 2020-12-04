@@ -73,33 +73,5 @@ public class ReceptionController{
         {
             System.out.println("Not in inventory");
         }
-
-        /*Stage stage = new Stage();
-        String message = npc.getQuest();
-
-        Popup popup = new Popup();
-        popup.setAutoFix(true);
-        popup.setAutoHide(true);
-        popup.setHideOnEscape(true);
-
-        Label label = new Label(message);
-
-        label.setOnMouseReleased(new EventHandler<MouseEvent>() {
-            @Override
-            public void handle(MouseEvent mouseEvent) {
-                popup.hide();
-            }
-        });
-
-        popup.setOnShown(new EventHandler<WindowEvent>() {
-            @Override
-            public void handle(WindowEvent windowEvent) {
-                popup.setX(stage.getX() + stage.getWidth() / 2 - popup.getWidth() / 2);
-                popup.setY(stage.getY() + stage.getWidth() / 2 - popup.getWidth() / 2);
-            }
-        });
-
-        popup.show(stage);
-*/
     }
 }
