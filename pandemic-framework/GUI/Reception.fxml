@@ -5,23 +5,23 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane fx:id="receptionRoot" prefHeight="406.0" prefWidth="402.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.ReceptionController">
+<AnchorPane fx:id="receptionRoot" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.ReceptionController">
    <children>
-      <ImageView fitHeight="409.0" fitWidth="406.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="500.0" fitWidth="500.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../Images/Reception.png" />
          </image></ImageView>
-      <ImageView fx:id="imageView" fitHeight="70.0" fitWidth="49.0" layoutX="58.0" layoutY="247.0" onMouseClicked="#talkToNpc" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="imageView" fitHeight="70.0" fitWidth="49.0" layoutX="70.0" layoutY="312.0" onMouseClicked="#talkToNpc" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../Images/Nurse_done.png" />
          </image>
       </ImageView>
-      <Button fx:id="npcButton" layoutX="58.0" layoutY="247.0" onMousePressed="#talkToNpc" opacity="0" prefHeight="65.0" prefWidth="49.0" />
-      <Button fx:id="rightButton" layoutX="358.0" layoutY="191.0" mnemonicParsing="false" onMouseClicked="#buttonAction" text="Lobby" />
-      <Button fx:id="leftButton" layoutY="188.0" mnemonicParsing="false" onMouseClicked="#buttonAction" text="Pharmacy" />
+      <Button fx:id="npcButton" layoutX="70.0" layoutY="312.0" onMousePressed="#talkToNpc" opacity="0" prefHeight="65.0" prefWidth="49.0" />
+      <Button fx:id="rightButton" layoutX="438.0" layoutY="235.0" mnemonicParsing="false" onMouseClicked="#buttonAction" text="Lobby" />
+      <Button fx:id="leftButton" layoutX="7.0" layoutY="235.0" mnemonicParsing="false" onMouseClicked="#buttonAction" text="Pharmacy" />
       <Text layoutX="41.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reception" />
-      <Button fx:id="upButton" layoutX="176.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#buttonAction" text="Lounge" />
-      <Label fx:id="questLabel" layoutX="19.0" layoutY="174.0" opacity="10" prefHeight="82.0" prefWidth="164.0" />
-      <Label fx:id="completeLabel" layoutX="57.0" layoutY="239.0" prefHeight="17.0" prefWidth="68.0" />
+      <Button fx:id="upButton" layoutX="223.0" layoutY="22.0" mnemonicParsing="false" onMouseClicked="#buttonAction" text="Lounge" />
+      <Label fx:id="questLabel" layoutX="173.0" layoutY="295.0" prefHeight="17.0" prefWidth="0.0" />
+      <Label fx:id="completeLabel" layoutX="172.0" layoutY="304.0" />
    </children>
 </AnchorPane>

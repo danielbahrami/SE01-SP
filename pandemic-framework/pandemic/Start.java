@@ -12,6 +12,7 @@ public class Start extends Application {
     @Override
     public void start(Stage stage) throws Exception
     {
+        stage.setTitle("Pandemic Game");
         Parent root = FXMLLoader.load(getClass().getResource("/GUI/Lobby.fxml"));
 
         Scene scene = new Scene(root);

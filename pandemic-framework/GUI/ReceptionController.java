@@ -61,8 +61,8 @@ public class ReceptionController{
         String css = this.getClass().getResource("Stylesheet.css").toExternalForm();
         questLabel.getStylesheets().add(css);
 
-        completeLabel.setText("");
         completeLabel.setVisible(false);
+        completeLabel.getStylesheets().add(css);
 
         if (event.isPrimaryButtonDown())
         {
@@ -75,7 +75,8 @@ public class ReceptionController{
         }
         else if (event.isSecondaryButtonDown() && !inventory.isInInventory(npc.getQuestItem()))
         {
-            System.out.println("Not in inventory");
+            completeLabel.setText("Seems like you haven't\n found the mask yet.");
+            completeLabel.setVisible(true);
         }
     }
 }
