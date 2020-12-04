@@ -1,31 +1,26 @@
 package GUI;
 
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.fxml.Initializable;
-import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.chart.PieChart;
 import javafx.scene.control.Button;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
-import javafx.scene.input.MouseButton;
+import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.Pane;
+import javafx.stage.Popup;
 import javafx.stage.Stage;
+import javafx.stage.WindowEvent;
+import pandemic.Item;
 import pandemic.NPC;
 
-import java.net.URL;
-import java.util.ResourceBundle;
 
 public class ReceptionController{
 
     @FXML
-    private Button rightButton,leftButton,upButton,downButton;
+    private Button rightButton,leftButton,upButton;
 
-    private NPC npc;
+    private NPC npc = new NPC("Bo", "I forgot my mask, but i was told I can find one in another room. Would you fetch me a mask?", new Item("mask", "a mask to protect your face", "item", ""));
 
     @FXML
     void buttonAction(MouseEvent event) throws Exception {
@@ -49,16 +44,40 @@ public class ReceptionController{
         stage.show();
     }
 
-    @FXML
-    void NPCFunc()
+    public Popup createPopup()
     {
-        ImageView view = new ImageView();
-        view.setOnMouseClicked(event ->
-        {
-            if (event.getButton() == MouseButton.SECONDARY)
-            {
-
+        String message = npc.getQuest();
+        final Popup popup = new Popup();
+        popup.setAutoFix(true);
+        popup.setAutoHide(true);
+        popup.setHideOnEscape(true);
+        Label label = new Label(message);
+        label.setOnMouseReleased(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent mouseEvent) {
+                popup.hide();
             }
         });
+
+        // Set styles
+
+        popup.getContent().add(label);
+
+        return popup;
+    }
+
+    @FXML
+    public void showPopup(Stage stage)
+    {
+        Popup popup = createPopup();
+        popup.setOnShown(new EventHandler<WindowEvent>() {
+            @Override
+            public void handle(WindowEvent windowEvent) {
+                popup.setX(stage.getX() + stage.getWidth() / 2 - popup.getWidth() / 2);
+                popup.setY(stage.getY() + stage.getWidth() / 2 - popup.getWidth() / 2);
+            }
+        });
+
+        popup.show(stage);
     }
 }

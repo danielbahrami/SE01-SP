@@ -11,7 +11,7 @@ public class NPC {
     private Sprite sprite;
     private String spriteName;
 
-    public NPC(String name, String quest, Item questItem, String spriteName)
+    public NPC(String name, String quest, Item questItem)
     {
         this.name = name;
         this.quest = quest;
@@ -25,7 +25,7 @@ public class NPC {
 
     public void addNPCs()
     {
-        this.NPCList.put(this.name, new NPC(this.name, this.quest, getQuestItem(), this.spriteName));
+        this.NPCList.put(this.name, new NPC(this.name, this.quest, getQuestItem()));
     }
 
     public String getQuest()
