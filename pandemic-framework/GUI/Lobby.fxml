@@ -4,11 +4,14 @@
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane fx:id="mainRoot" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.LobbyController">
+<AnchorPane fx:id="mainRoot" prefHeight="400.0" prefWidth="398.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.LobbyController">
    <children>
-      <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true" />
-      <Button fx:id="leftButton" layoutX="42.0" layoutY="173.0" mnemonicParsing="false" onMouseClicked="#buttonAction" text="Reception" />
-      <Button fx:id="inventoryButton" layoutX="520.0" layoutY="361.0" mnemonicParsing="false" onMouseClicked="#goToInventory" text="Inventory" />
+      <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/Lobby.png" />
+         </image></ImageView>
+      <Button fx:id="leftButton" layoutX="14.0" layoutY="188.0" mnemonicParsing="false" onMouseClicked="#buttonAction" text="Reception" />
+      <Button fx:id="inventoryButton" layoutX="317.0" layoutY="353.0" mnemonicParsing="false" onMouseClicked="#goToInventory" text="Inventory" />
       <TextField layoutX="67.0" layoutY="32.0" text="Lobby" />
    </children>
 </AnchorPane>

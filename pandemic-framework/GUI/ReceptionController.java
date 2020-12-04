@@ -57,6 +57,10 @@ public class ReceptionController{
     {
         questLabel.setText(npc.getQuest());
         questLabel.setVisible(false);
+
+        String css = this.getClass().getResource("Stylesheet.css").toExternalForm();
+        questLabel.getStylesheets().add(css);
+
         completeLabel.setText("");
         completeLabel.setVisible(false);
 
