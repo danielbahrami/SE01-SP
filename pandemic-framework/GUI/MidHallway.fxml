@@ -12,6 +12,16 @@
             <Image url="@../Images/Midhallway.png" />
          </image>
       </ImageView>
+      <ImageView fitHeight="98.0" fitWidth="57.0" layoutX="193.0" layoutY="201.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/Table.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="27.0" fitWidth="29.0" layoutX="204.0" layoutY="184.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/Mask.png" />
+         </image>
+      </ImageView>
       <Button fx:id="upButton" layoutX="203.0" layoutY="47.0" mnemonicParsing="false" onMouseClicked="#buttonAction" text="North Hallway" />
       <Button fx:id="downButton" layoutX="203.0" layoutY="405.0" mnemonicParsing="false" onMouseClicked="#buttonAction" prefHeight="27.0" prefWidth="95.0" text="South Hallway" />
    </children>

@@ -23,29 +23,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d8010f4-f255-4f34-99d3-a610e16ed2e4" name="Default Changelist" comment="Commit">
-      <change afterPath="$PROJECT_DIR$/pandemic-framework/Images/Pills.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pandemic-framework/Images/Plant.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pandemic-framework/Images/Sandwich.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pandemic-framework/Images/Soap.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pandemic-framework/Images/Mask.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pandemic-framework/Images/Sanitizer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pandemic-framework/Images/Table.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Pandemic/GUI/Cafeteria.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pandemic/GUI/Cafeteria.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Pandemic/GUI/Lobby.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pandemic/GUI/Lobby.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Pandemic/GUI/Lounge.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pandemic/GUI/Lounge.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Pandemic/GUI/MidHallway.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pandemic/GUI/MidHallway.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Pandemic/GUI/Pharmacy.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pandemic/GUI/Pharmacy.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Pandemic/GUI/Reception.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pandemic/GUI/Reception.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Pandemic/GUI/SecretRoom.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pandemic/GUI/SecretRoom.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Pandemic/GUI/SouthHallway.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pandemic/GUI/SouthHallway.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Pandemic/GUI/Toilet.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pandemic/GUI/Toilet.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pandemic-framework/GUI/Cafeteria.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/pandemic-framework/GUI/Cafeteria.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pandemic-framework/GUI/Lobby.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/pandemic-framework/GUI/Lobby.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pandemic-framework/GUI/Lounge.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/pandemic-framework/GUI/Lounge.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pandemic-framework/GUI/MidHallway.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/pandemic-framework/GUI/MidHallway.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pandemic-framework/GUI/Pharmacy.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/pandemic-framework/GUI/Pharmacy.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pandemic-framework/GUI/Reception.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/pandemic-framework/GUI/Reception.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pandemic-framework/GUI/SecretRoom.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/pandemic-framework/GUI/SecretRoom.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pandemic-framework/GUI/SouthHallway.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/pandemic-framework/GUI/SouthHallway.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pandemic-framework/GUI/Toilet.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/pandemic-framework/GUI/Toilet.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +76,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pandemic-framework/Images" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.JavaFX" />
@@ -184,6 +169,8 @@
       <workItem from="1607102905114" duration="862000" />
       <workItem from="1607122927566" duration="3472000" />
       <workItem from="1607126423768" duration="746000" />
+      <workItem from="1607128151599" duration="1720000" />
+      <workItem from="1607129889866" duration="436000" />
     </task>
     <task id="LOCAL-00001" summary="Commit">
       <created>1606468870869</created>
