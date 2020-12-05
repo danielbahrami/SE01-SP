@@ -11,7 +11,7 @@ import javafx.stage.Stage;
 public class LoungeController {
 
     @FXML
-    private Button rightButton,leftButton,upButton,downButton;
+    private Button rightButton,leftButton,downButton;
 
     @FXML
     void buttonAction(MouseEvent event) throws Exception {
