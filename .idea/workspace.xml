@@ -23,14 +23,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d8010f4-f255-4f34-99d3-a610e16ed2e4" name="Default Changelist" comment="Commit">
-      <change afterPath="$PROJECT_DIR$/pandemic-framework/Images/Mask.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pandemic-framework/Images/Sanitizer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pandemic-framework/Images/Table.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pandemic-framework/Images/Door.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Pandemic/GUI/LoungeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pandemic/GUI/LoungeController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Pandemic/GUI/Reception.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pandemic/GUI/Reception.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Pandemic/GUI/SouthHallway.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pandemic/GUI/SouthHallway.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pandemic-framework/GUI/Lobby.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/pandemic-framework/GUI/Lobby.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pandemic-framework/GUI/Reception.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/pandemic-framework/GUI/Reception.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pandemic-framework/GUI/SouthHallway.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/pandemic-framework/GUI/SouthHallway.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,6 +169,8 @@
       <workItem from="1607126423768" duration="746000" />
       <workItem from="1607128151599" duration="1720000" />
       <workItem from="1607129889866" duration="436000" />
+      <workItem from="1607187410423" duration="972000" />
+      <workItem from="1607188391670" duration="1806000" />
     </task>
     <task id="LOCAL-00001" summary="Commit">
       <created>1606468870869</created>
