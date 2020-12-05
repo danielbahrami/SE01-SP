@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
 
 <AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.LoungeController">
    <children>
@@ -12,9 +12,13 @@
             <Image url="@../Images/Lounge.png" />
          </image>
       </ImageView>
-      <Button fx:id="leftButton" layoutX="14.0" layoutY="237.0" mnemonicParsing="false" onMouseClicked="#buttonAction" text="Cafeteria" />
-      <Button fx:id="downButton" layoutX="215.0" layoutY="450.0" mnemonicParsing="false" onMouseClicked="#buttonAction" text="Reception" />
-      <Button fx:id="rightButton" layoutX="398.0" layoutY="238.0" mnemonicParsing="false" onMouseClicked="#buttonAction" text="South Hallway" />
-      <Text layoutX="26.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lounge" />
+      <ImageView fitHeight="62.0" fitWidth="61.0" layoutX="414.0" layoutY="280.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/Plant.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="leftButton" layoutX="3.0" layoutY="219.0" mnemonicParsing="false" onMouseClicked="#buttonAction" prefHeight="62.0" prefWidth="29.0" text="Cafeteria" />
+      <Button fx:id="downButton" layoutX="220.0" layoutY="468.0" mnemonicParsing="false" onMouseClicked="#buttonAction" prefHeight="29.0" prefWidth="61.0" text="Reception" />
+      <Button fx:id="rightButton" layoutX="470.0" layoutY="220.0" mnemonicParsing="false" onMouseClicked="#buttonAction" prefHeight="60.0" prefWidth="28.0" text="South Hallway" />
    </children>
 </AnchorPane>

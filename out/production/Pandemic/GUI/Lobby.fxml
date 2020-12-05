@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
 
 <AnchorPane fx:id="mainRoot" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.LobbyController">
    <children>
@@ -11,8 +11,7 @@
          <image>
             <Image url="@../Images/Lobby.png" />
          </image></ImageView>
-      <Button fx:id="leftButton" layoutX="14.0" layoutY="236.0" mnemonicParsing="false" onMouseClicked="#buttonAction" text="Reception" />
+      <Button fx:id="leftButton" layoutX="5.0" layoutY="218.0" mnemonicParsing="false" onMouseClicked="#buttonAction" prefHeight="59.0" prefWidth="28.0" text="Reception" />
       <Button fx:id="inventoryButton" layoutX="403.0" layoutY="438.0" mnemonicParsing="false" onMouseClicked="#goToInventory" text="Inventory" />
-      <Text layoutX="40.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lobby" />
    </children>
 </AnchorPane>
