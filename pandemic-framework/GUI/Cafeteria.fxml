@@ -4,7 +4,6 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.Text?>
 
 <AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.CafeteriaController">
    <children>
@@ -13,9 +12,13 @@
             <Image url="@../Images/Cafeteria.png" />
          </image>
       </ImageView>
+      <ImageView fitHeight="28.0" fitWidth="26.0" layoutX="129.0" layoutY="220.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/Sandwich.png" />
+         </image>
+      </ImageView>
       <Button fx:id="rightButton" layoutX="471.0" layoutY="219.0" mnemonicParsing="false" onMouseClicked="#buttonAction" prefHeight="62.0" prefWidth="27.0" text="Lounge" />
       <Button fx:id="upButton" layoutX="220.0" layoutY="3.0" mnemonicParsing="false" onMouseClicked="#buttonAction" prefHeight="27.0" prefWidth="62.0" text="Toilet" />
       <Button fx:id="downButton" layoutX="219.0" layoutY="470.0" mnemonicParsing="false" onMouseClicked="#buttonAction" prefHeight="22.0" prefWidth="63.0" text="Pharmacy" />
-      <Text layoutX="82.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cafeteria" />
    </children>
 </AnchorPane>

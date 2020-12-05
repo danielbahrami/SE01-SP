@@ -23,12 +23,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d8010f4-f255-4f34-99d3-a610e16ed2e4" name="Default Changelist" comment="Commit">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pandemic-framework/Images/Pills.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pandemic-framework/Images/Plant.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pandemic-framework/Images/Sandwich.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pandemic-framework/Images/Soap.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Pandemic/GUI/PandemicController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pandemic/GUI/PandemicController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Pandemic/pandemic/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pandemic/pandemic/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Pandemic/pandemic/Start.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pandemic/pandemic/Start.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Pandemic/GUI/Cafeteria.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pandemic/GUI/Cafeteria.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Pandemic/GUI/Lobby.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pandemic/GUI/Lobby.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Pandemic/GUI/Lounge.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pandemic/GUI/Lounge.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Pandemic/GUI/MidHallway.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pandemic/GUI/MidHallway.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Pandemic/GUI/Pharmacy.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pandemic/GUI/Pharmacy.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Pandemic/GUI/Reception.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pandemic/GUI/Reception.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Pandemic/GUI/SecretRoom.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pandemic/GUI/SecretRoom.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Pandemic/GUI/SouthHallway.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pandemic/GUI/SouthHallway.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Pandemic/GUI/Toilet.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pandemic/GUI/Toilet.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pandemic-framework/GUI/Cafeteria.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/pandemic-framework/GUI/Cafeteria.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pandemic-framework/GUI/Lobby.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/pandemic-framework/GUI/Lobby.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pandemic-framework/GUI/Lounge.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/pandemic-framework/GUI/Lounge.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pandemic-framework/GUI/MidHallway.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/pandemic-framework/GUI/MidHallway.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pandemic-framework/GUI/Pharmacy.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/pandemic-framework/GUI/Pharmacy.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pandemic-framework/GUI/Reception.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/pandemic-framework/GUI/Reception.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pandemic-framework/GUI/SecretRoom.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/pandemic-framework/GUI/SecretRoom.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pandemic-framework/GUI/SouthHallway.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/pandemic-framework/GUI/SouthHallway.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pandemic-framework/GUI/Toilet.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/pandemic-framework/GUI/Toilet.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +78,9 @@
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1jgbLZyj8a87dtuOvb45k2l2Vsf" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -71,13 +90,16 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pandemic-framework/Images" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.JavaFX" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pandemic-framework/Images" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\mertz\Documents\GitHub\Pandemic\pandemic-framework\Images" />
     </key>
@@ -160,6 +182,8 @@
       <workItem from="1606821315213" duration="2137000" />
       <workItem from="1606905099359" duration="7275000" />
       <workItem from="1607102905114" duration="862000" />
+      <workItem from="1607122927566" duration="3472000" />
+      <workItem from="1607126423768" duration="746000" />
     </task>
     <task id="LOCAL-00001" summary="Commit">
       <created>1606468870869</created>
