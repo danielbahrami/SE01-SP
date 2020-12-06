@@ -17,8 +17,8 @@
             <Image url="@../Images/Sandwich.png" />
          </image>
       </ImageView>
-      <Button fx:id="rightButton" layoutX="471.0" layoutY="219.0" mnemonicParsing="false" onMouseClicked="#buttonAction" prefHeight="62.0" prefWidth="27.0" text="Lounge" />
-      <Button fx:id="upButton" layoutX="220.0" layoutY="3.0" mnemonicParsing="false" onMouseClicked="#buttonAction" prefHeight="27.0" prefWidth="62.0" text="Toilet" />
-      <Button fx:id="downButton" layoutX="219.0" layoutY="470.0" mnemonicParsing="false" onMouseClicked="#buttonAction" prefHeight="22.0" prefWidth="63.0" text="Pharmacy" />
+      <Button fx:id="rightButton" layoutX="471.0" layoutY="219.0" mnemonicParsing="false" onMouseClicked="#buttonAction" opacity="0.0" prefHeight="62.0" prefWidth="27.0" text="Lounge" />
+      <Button fx:id="upButton" layoutX="220.0" layoutY="3.0" mnemonicParsing="false" onMouseClicked="#buttonAction" opacity="0.0" prefHeight="27.0" prefWidth="62.0" text="Toilet" />
+      <Button fx:id="downButton" layoutX="219.0" layoutY="470.0" mnemonicParsing="false" onMouseClicked="#buttonAction" opacity="0.0" prefHeight="22.0" prefWidth="63.0" text="Pharmacy" />
    </children>
 </AnchorPane>

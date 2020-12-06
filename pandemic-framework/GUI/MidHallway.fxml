@@ -22,7 +22,7 @@
             <Image url="@../Images/Mask.png" />
          </image>
       </ImageView>
-      <Button fx:id="upButton" layoutX="203.0" layoutY="47.0" mnemonicParsing="false" onMouseClicked="#buttonAction" text="North Hallway" />
-      <Button fx:id="downButton" layoutX="203.0" layoutY="405.0" mnemonicParsing="false" onMouseClicked="#buttonAction" prefHeight="27.0" prefWidth="95.0" text="South Hallway" />
+      <Button fx:id="upButton" layoutX="217.0" mnemonicParsing="false" onMouseClicked="#buttonAction" opacity="0.0" prefHeight="34.0" prefWidth="63.0" text="North Hallway" />
+      <Button fx:id="downButton" layoutX="218.0" layoutY="437.0" mnemonicParsing="false" onMouseClicked="#buttonAction" opacity="0.0" prefHeight="27.0" prefWidth="63.0" text="South Hallway" />
    </children>
 </AnchorPane>

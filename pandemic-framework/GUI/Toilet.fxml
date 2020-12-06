@@ -17,7 +17,7 @@
             <Image url="@../Images/Soap.png" />
          </image>
       </ImageView>
-      <Button fx:id="upButton" layoutX="220.0" layoutY="1.0" mnemonicParsing="false" onMouseClicked="#buttonAction" prefHeight="30.0" prefWidth="60.0" text="Secret Room" />
-      <Button fx:id="downButton" layoutX="219.0" layoutY="470.0" mnemonicParsing="false" onMouseClicked="#buttonAction" prefHeight="28.0" prefWidth="62.0" text="Cafeteria" />
+      <Button fx:id="upButton" layoutX="220.0" layoutY="1.0" mnemonicParsing="false" onMouseClicked="#buttonAction" opacity="0.0" prefHeight="30.0" prefWidth="60.0" text="Secret Room" />
+      <Button fx:id="downButton" layoutX="219.0" layoutY="470.0" mnemonicParsing="false" onMouseClicked="#buttonAction" opacity="0.0" prefHeight="28.0" prefWidth="62.0" text="Cafeteria" />
    </children>
 </AnchorPane>

@@ -17,8 +17,8 @@
             <Image url="@../Images/Plant.png" />
          </image>
       </ImageView>
-      <Button fx:id="leftButton" layoutX="3.0" layoutY="219.0" mnemonicParsing="false" onMouseClicked="#buttonAction" prefHeight="62.0" prefWidth="29.0" text="Cafeteria" />
-      <Button fx:id="downButton" layoutX="220.0" layoutY="468.0" mnemonicParsing="false" onMouseClicked="#buttonAction" prefHeight="29.0" prefWidth="61.0" text="Reception" />
-      <Button fx:id="rightButton" layoutX="470.0" layoutY="220.0" mnemonicParsing="false" onMouseClicked="#buttonAction" prefHeight="60.0" prefWidth="28.0" text="South Hallway" />
+      <Button fx:id="leftButton" layoutX="3.0" layoutY="219.0" mnemonicParsing="false" onMouseClicked="#buttonAction" opacity="0.0" prefHeight="62.0" prefWidth="29.0" text="Cafeteria" />
+      <Button fx:id="downButton" layoutX="220.0" layoutY="468.0" mnemonicParsing="false" onMouseClicked="#buttonAction" opacity="0.0" prefHeight="29.0" prefWidth="61.0" text="Reception" />
+      <Button fx:id="rightButton" layoutX="470.0" layoutY="220.0" mnemonicParsing="false" onMouseClicked="#buttonAction" opacity="0.0" prefHeight="60.0" prefWidth="28.0" text="South Hallway" />
    </children>
 </AnchorPane>
