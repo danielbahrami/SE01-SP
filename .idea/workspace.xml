@@ -23,8 +23,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d8010f4-f255-4f34-99d3-a610e16ed2e4" name="Default Changelist" comment="Commit">
-      <change afterPath="$PROJECT_DIR$/pandemic-framework/pandemic/GameMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pandemic-framework/pandemic/BGCafe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pandemic-framework/pandemic/GameMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/pandemic-framework/pandemic/GameMenu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,13 +119,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -181,6 +184,7 @@
       <workItem from="1607187410423" duration="972000" />
       <workItem from="1607188391670" duration="1806000" />
       <workItem from="1607274036754" duration="384000" />
+      <workItem from="1607274697883" duration="733000" />
     </task>
     <task id="LOCAL-00001" summary="Commit">
       <created>1606468870869</created>

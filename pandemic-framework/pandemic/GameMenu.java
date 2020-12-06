@@ -33,7 +33,7 @@ public class GameMenu extends Application {
         root.setPrefSize(1280, 720);
 
         Image bgImage = new Image(
-                getClass().getResource("BGCafe.png").toExternalForm(),
+                getClass().getResource("BG.png").toExternalForm(),
                 1280, 720,
                 false, true
         );
