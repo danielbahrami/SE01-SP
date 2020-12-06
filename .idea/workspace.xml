@@ -23,12 +23,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d8010f4-f255-4f34-99d3-a610e16ed2e4" name="Default Changelist" comment="Commit">
-      <change afterPath="$PROJECT_DIR$/pandemic-framework/Images/Door.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pandemic-framework/pandemic/GameMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Pandemic/GUI/LoungeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pandemic/GUI/LoungeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Pandemic/GUI/Reception.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pandemic/GUI/Reception.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pandemic-framework/GUI/Lobby.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/pandemic-framework/GUI/Lobby.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pandemic-framework/GUI/Reception.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/pandemic-framework/GUI/Reception.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,14 +76,27 @@
     <property name="settings.editor.selected.configurable" value="preferences.JavaFX" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/pandemic-framework/Images" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\mertz\Documents\GitHub\Pandemic\pandemic-framework\Images" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pandemic-framework/Images" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.Start">
+  <component name="RunManager" selected="Application.GameMenu">
+    <configuration name="GameMenu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pandemic.GameMenu" />
+      <module name="Pandemic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pandemic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Map" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pandemic.Map" />
       <module name="Pandemic" />
@@ -109,15 +118,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -125,9 +132,11 @@
     <list>
       <item itemvalue="Application.Map" />
       <item itemvalue="Application.Start" />
+      <item itemvalue="Application.GameMenu" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GameMenu" />
         <item itemvalue="Application.Start" />
         <item itemvalue="Application.Map" />
       </list>
@@ -171,6 +180,7 @@
       <workItem from="1607129889866" duration="436000" />
       <workItem from="1607187410423" duration="972000" />
       <workItem from="1607188391670" duration="1806000" />
+      <workItem from="1607274036754" duration="384000" />
     </task>
     <task id="LOCAL-00001" summary="Commit">
       <created>1606468870869</created>
@@ -207,6 +217,28 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commit" />
     <option name="LAST_COMMIT_MESSAGE" value="Commit" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1638" height="277" key="GridCell.Tab.0.bottom" timestamp="1607274421100">
+      <screen x="0" y="25" width="1680" height="1025" />
+    </state>
+    <state width="1638" height="277" key="GridCell.Tab.0.bottom/0.25.1680.1025@0.25.1680.1025" timestamp="1607274421100" />
+    <state width="1638" height="277" key="GridCell.Tab.0.center" timestamp="1607274421100">
+      <screen x="0" y="25" width="1680" height="1025" />
+    </state>
+    <state width="1638" height="277" key="GridCell.Tab.0.center/0.25.1680.1025@0.25.1680.1025" timestamp="1607274421100" />
+    <state width="1638" height="277" key="GridCell.Tab.0.left" timestamp="1607274421099">
+      <screen x="0" y="25" width="1680" height="1025" />
+    </state>
+    <state width="1638" height="277" key="GridCell.Tab.0.left/0.25.1680.1025@0.25.1680.1025" timestamp="1607274421099" />
+    <state width="1638" height="277" key="GridCell.Tab.0.right" timestamp="1607274421100">
+      <screen x="0" y="25" width="1680" height="1025" />
+    </state>
+    <state width="1638" height="277" key="GridCell.Tab.0.right/0.25.1680.1025@0.25.1680.1025" timestamp="1607274421100" />
+    <state x="328" y="116" key="SettingsEditor" timestamp="1607274135650">
+      <screen x="0" y="25" width="1680" height="1025" />
+    </state>
+    <state x="328" y="116" key="SettingsEditor/0.25.1680.1025@0.25.1680.1025" timestamp="1607274135650" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
