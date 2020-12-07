@@ -16,11 +16,10 @@ import pandemic.Item;
 public class PharmacyController {
 
     InventoryController ic = new InventoryController();
+    Item item = new Item("Pills", "Pills to treat pain and fever.");
 
     @FXML
     private Button rightButton,upButton;
-
-    Item item = new Item("Pills", "Pills to treat pain and fever.");
 
     @FXML
     private Button inventoryButton;
@@ -68,8 +67,9 @@ public class PharmacyController {
     {
         if (event.getSource() == itemButton)
         {
-            Item item = ic.newItem(this.item);
+            Item item = this.item;
             ic.addToInventory(item);
+            System.out.println(ic.getInventory());
         }
     }
 }

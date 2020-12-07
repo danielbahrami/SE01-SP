@@ -4,6 +4,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -15,7 +16,10 @@ import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 import pandemic.Item;
 
-public class InventoryController
+import java.net.URL;
+import java.util.ResourceBundle;
+
+public class InventoryController implements Initializable
 {
     @FXML
     private Button closeButton;
@@ -39,16 +43,6 @@ public class InventoryController
         }
     }
 
-    private void initData(Item item)
-    {
-        this.item = item;
-
-        itemName.setCellValueFactory(new PropertyValueFactory<Item, String>("Name"));
-        itemDescription.setCellValueFactory(new PropertyValueFactory<Item, String>("Description"));
-
-        tableView.getItems();
-    }
-
     /*
     public ObservableList<Item> addToInventory(Item item)
     {
@@ -63,6 +57,23 @@ public class InventoryController
 
     public void addToInventory(Item item)
     {
+        this.items.add(item);
+    }
 
+    @FXML
+    public ObservableList<Item> getInventory()
+    {
+        return items;
+    }
+
+    @Override
+    public void initialize(URL url, ResourceBundle rb)
+    {
+        tableView = new TableView<>();
+        itemName.setCellValueFactory(new PropertyValueFactory<>("Name"));
+        itemDescription.setCellValueFactory(new PropertyValueFactory<>("Description"));
+
+        tableView.setItems(getInventory());
+        tableView.getColumns().addAll(itemName, itemDescription);
     }
 }
