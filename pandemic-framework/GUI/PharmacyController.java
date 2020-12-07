@@ -5,14 +5,28 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
+import org.w3c.dom.css.ElementCSSInlineStyle;
+import pandemic.Item;
 
 public class PharmacyController {
 
+    InventoryController ic = new InventoryController();
 
     @FXML
     private Button rightButton,upButton;
+
+    Item item = new Item("Pills", "Pills to treat pain and fever.");
+
+    @FXML
+    private Button inventoryButton;
+
+    @FXML
+    private Button itemButton;
 
     @FXML
     void buttonAction(MouseEvent event) throws Exception {
@@ -30,5 +44,32 @@ public class PharmacyController {
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
+    }
+
+    @FXML
+    private void openInventory(MouseEvent event) throws Exception
+    {
+        if (event.getSource() == inventoryButton)
+        {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Inventory.fxml"));
+            Parent root = fxmlLoader.load();
+            Stage stage = new Stage();
+
+            stage.initModality(Modality.APPLICATION_MODAL);
+            stage.initStyle(StageStyle.UNDECORATED);
+            stage.setTitle("Inventory");
+            stage.setScene(new Scene(root));
+            stage.show();
+        }
+    }
+
+    @FXML
+    private void takeItem(MouseEvent event) throws Exception
+    {
+        if (event.getSource() == itemButton)
+        {
+            Item item = ic.newItem(this.item);
+            ic.addToInventory(item);
+        }
     }
 }

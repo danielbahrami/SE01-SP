@@ -48,10 +48,4 @@ public class LobbyController{
             stage.show();
         }
     }
-
-    @FXML
-    public static void takeItem(MouseEvent event)
-    {
-
-    }
 }

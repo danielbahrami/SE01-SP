@@ -2,3 +2,7 @@
     -fx-text-fill: #ffffff;
     -fx-background-color: #564c4c;
 }
+
+.table-view {
+    -fx-background-color: blue;
+}
