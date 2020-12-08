@@ -11,7 +11,7 @@
          <image>
             <Image url="@../Images/Lobby.png" />
          </image></ImageView>
-      <Button fx:id="leftButton" layoutX="5.0" layoutY="218.0" mnemonicParsing="false" onMouseClicked="#buttonAction" opacity="0.0" prefHeight="59.0" prefWidth="28.0" text="Reception" />
+      <Button fx:id="leftButton" layoutY="218.0" mnemonicParsing="false" onMouseClicked="#buttonAction" opacity="0.0" prefHeight="59.0" prefWidth="33.0" text="Reception" />
       <Button fx:id="inventoryButton" layoutX="403.0" layoutY="438.0" mnemonicParsing="false" onMouseClicked="#goToInventory" text="Inventory" />
    </children>
 </AnchorPane>
