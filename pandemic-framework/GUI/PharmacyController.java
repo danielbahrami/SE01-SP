@@ -70,7 +70,7 @@ public class PharmacyController {
         if (event.getSource() == itemButton)
         {
             Item item = this.item;
-            ic.addToInventory(item);
+            ic.addItemToInventory(item);
             System.out.println(ic.getInventory());
 
             if (ic.getInventory().contains(item)) {

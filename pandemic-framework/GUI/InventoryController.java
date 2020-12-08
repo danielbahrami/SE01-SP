@@ -14,6 +14,7 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
+import pandemic.Inventory;
 import pandemic.Item;
 
 import java.net.URL;
@@ -21,6 +22,8 @@ import java.util.ResourceBundle;
 
 public class InventoryController implements Initializable
 {
+    private static Inventory inventory = new Inventory();
+
     @FXML
     private Button closeButton;
 
@@ -30,7 +33,6 @@ public class InventoryController implements Initializable
     @FXML
     private TableColumn<Item, String> itemName, itemDescription;
 
-    ObservableList<Item> items = FXCollections.observableArrayList();
     Item item;
 
     @FXML
@@ -55,23 +57,23 @@ public class InventoryController implements Initializable
     }
     */
 
-    public void addToInventory(Item item)
+    public void addItemToInventory(Item item)
     {
-        this.items.add(item);
+        inventory.addToInventory(item);
     }
 
     @FXML
     public ObservableList<Item> getInventory()
     {
-        return items;
+        return FXCollections.observableArrayList(inventory.getItemsInInventory());
     }
 
     @Override
     public void initialize(URL url, ResourceBundle rb)
     {
         tableView = new TableView<>();
-        itemName.setCellValueFactory(new PropertyValueFactory<>("Name"));
-        itemDescription.setCellValueFactory(new PropertyValueFactory<>("Description"));
+        itemName.setCellValueFactory(new PropertyValueFactory<>("name"));
+        itemDescription.setCellValueFactory(new PropertyValueFactory<>("itemDescription"));
 
         tableView.setItems(getInventory());
         tableView.getColumns().addAll(itemName, itemDescription);
