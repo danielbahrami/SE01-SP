@@ -10,6 +10,7 @@ import javafx.scene.input.MouseEvent;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+import pandemic.Inventory;
 import pandemic.Item;
 
 public class PharmacyController {
@@ -28,6 +29,11 @@ public class PharmacyController {
 
     @FXML
     private ImageView imgView;
+
+    public PharmacyController()
+    {
+
+    }
 
     @FXML
     void buttonAction(MouseEvent event) throws Exception {
@@ -79,5 +85,4 @@ public class PharmacyController {
             }
         }
     }
-
 }

@@ -4,7 +4,9 @@ import javafx.animation.FillTransition;
         import javafx.application.Application;
         import javafx.application.Platform;
         import javafx.beans.binding.Bindings;
-        import javafx.geometry.Pos;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.geometry.Pos;
         import javafx.scene.Parent;
         import javafx.scene.Scene;
         import javafx.scene.image.Image;
@@ -19,6 +21,8 @@ import javafx.animation.FillTransition;
         import javafx.scene.text.Text;
         import javafx.stage.Stage;
         import javafx.util.Duration;
+
+import java.io.IOException;
 
 
 public class GameMenu extends Application {
@@ -38,6 +42,7 @@ public class GameMenu extends Application {
                 false, true
         );
 
+
         VBox box = new VBox(
                 4,
                 new MenuItem("PLAY", () -> {}),
@@ -45,6 +50,7 @@ public class GameMenu extends Application {
                 new MenuItem("SETTINGS", () -> {}),
                 new MenuItem("QUIT", () -> Platform.exit())
         );
+
         box.setBackground(new Background(
                 new BackgroundFill(Color.web("black", 0.6), null, null)
         ));

@@ -11,7 +11,7 @@ import javafx.stage.Stage;
 public class CafeteriaController {
 
     @FXML
-    private Button rightButton,leftButton,upButton,downButton;
+    private Button rightButton,upButton,downButton;
 
 
     @FXML

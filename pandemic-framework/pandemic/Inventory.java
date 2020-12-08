@@ -1,5 +1,8 @@
 package pandemic;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+
 import java.util.ArrayList;
 
 public class Inventory {
@@ -13,8 +16,8 @@ public class Inventory {
 
     public Inventory()
     {
-    }
 
+    }
 
     public void addToInventory(Item item)
     {
@@ -56,8 +59,14 @@ public class Inventory {
         return this.inventory.contains(item);
     }
 
-    public ArrayList<Item> getItemsInInventory()
+    public Item getItemsInInventory()
     {
-        return inventory;
+        Item item = null;
+        for (int i = 0; i < inventory.size(); i++)
+        {
+            item = inventory.get(i);
+
+        }
+        return item;
     }
 }
