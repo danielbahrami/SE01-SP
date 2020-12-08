@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
@@ -24,6 +25,9 @@ public class PharmacyController {
 
     @FXML
     private Button itemButton;
+
+    @FXML
+    private ImageView imgView;
 
     @FXML
     void buttonAction(MouseEvent event) throws Exception {
@@ -69,10 +73,7 @@ public class PharmacyController {
             ic.addToInventory(item);
             System.out.println(ic.getInventory());
             itemButton.setDisable(true);
-
-            if (ic.getInventory().contains(item)) {
-
-            }
+            imgView.setOpacity(0.0);
         }
     }
 

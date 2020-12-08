@@ -11,7 +11,7 @@
          <image>
             <Image url="@../Images/Pharmacy.png" />
          </image></ImageView>
-      <ImageView fitHeight="39.0" fitWidth="29.0" layoutX="190.0" layoutY="184.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="imgView" fitHeight="39.0" fitWidth="29.0" layoutX="190.0" layoutY="184.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../Images/Pills.png" />
          </image>
