@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.OfficeController">
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.OfficeController">
    <children>
-      <Button fx:id="rightButton" layoutX="494.0" layoutY="188.0" mnemonicParsing="false" onMouseClicked="#buttonAction" text="North Hallway" />
-      <Text layoutX="284.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Office" />
+      <ImageView fitHeight="500.0" fitWidth="500.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/Office.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="95.0" fitWidth="74.0" layoutX="348.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/Karen.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="rightButton" layoutX="471.0" layoutY="218.0" mnemonicParsing="false" onMouseClicked="#buttonAction" opacity="0.0" prefHeight="62.0" prefWidth="28.0" text="North Hallway" />
    </children>
 </AnchorPane>
