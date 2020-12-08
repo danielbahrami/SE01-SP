@@ -72,8 +72,11 @@ public class PharmacyController {
             Item item = this.item;
             ic.addToInventory(item);
             System.out.println(ic.getInventory());
-            itemButton.setDisable(true);
-            imgView.setOpacity(0.0);
+
+            if (ic.getInventory().contains(item)) {
+                itemButton.setDisable(true);
+                imgView.setImage(null);
+            }
         }
     }
 
