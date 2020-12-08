@@ -5,12 +5,10 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
-import org.w3c.dom.css.ElementCSSInlineStyle;
 import pandemic.Item;
 
 public class PharmacyController {
@@ -70,8 +68,10 @@ public class PharmacyController {
             Item item = this.item;
             ic.addToInventory(item);
             System.out.println(ic.getInventory());
+            itemButton.setDisable(true);
+
             if (ic.getInventory().contains(item)) {
-                Pharmacy.fxml.getChildren().remove(Pills.png);
+
             }
         }
     }
