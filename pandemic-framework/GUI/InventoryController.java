@@ -20,20 +20,31 @@ import pandemic.Item;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class InventoryController implements Initializable
+public class InventoryController
 {
-    private static Inventory inventory = new Inventory();
+    private final Inventory inventory;
 
     @FXML
     private Button closeButton;
 
     @FXML
-    private TableView<Item> tableView;
+    private final TableView<Item> tableView;
 
     @FXML
-    private TableColumn<Item, String> itemName, itemDescription;
+    private final TableColumn<Item, String> itemName, itemDescription;
 
-    Item item;
+    public InventoryController()
+    {
+        this.inventory = new Inventory();
+        tableView = new TableView<>();
+
+        itemName = new TableColumn<>();
+        itemDescription = new TableColumn<>();
+        itemName.setCellValueFactory(new PropertyValueFactory<>("name"));
+        itemDescription.setCellValueFactory(new PropertyValueFactory<>("itemDescription"));
+
+        tableView.setItems(getInventory());
+    }
 
     @FXML
     private void closeInventory(MouseEvent event) throws Exception
@@ -45,18 +56,6 @@ public class InventoryController implements Initializable
         }
     }
 
-    /*
-    public ObservableList<Item> addToInventory(Item item)
-    {
-        ObservableList<Item> items = FXCollections.observableArrayList();
-        item = new Item(null, null);
-        this.item = item;
-        items.add(newItem(item));
-
-        return items;
-    }
-    */
-
     public void addItemToInventory(Item item)
     {
         inventory.addToInventory(item);
@@ -66,16 +65,5 @@ public class InventoryController implements Initializable
     public ObservableList<Item> getInventory()
     {
         return FXCollections.observableArrayList(inventory.getItemsInInventory());
-    }
-
-    @Override
-    public void initialize(URL url, ResourceBundle rb)
-    {
-        tableView = new TableView<>();
-        itemName.setCellValueFactory(new PropertyValueFactory<>("name"));
-        itemDescription.setCellValueFactory(new PropertyValueFactory<>("itemDescription"));
-
-        tableView.setItems(getInventory());
-        tableView.getColumns().addAll(itemName, itemDescription);
     }
 }
