@@ -1,6 +1,8 @@
 .label {
     -fx-text-fill: #ffffff;
     -fx-background-color: #564c4c;
+    -fx-font-size: 14pt;
+    -fx-font-family: Papyrus;
 }
 
 .table-view {
