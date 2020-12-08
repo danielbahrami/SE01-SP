@@ -5,13 +5,13 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane fx:id="mainRoot" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.LobbyController">
+<AnchorPane fx:id="mainRoot" prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.LobbyController">
    <children>
-      <ImageView fitHeight="500.0" fitWidth="500.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="800.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../Images/Lobby.png" />
          </image></ImageView>
-      <Button fx:id="leftButton" layoutX="5.0" layoutY="218.0" mnemonicParsing="false" onMouseClicked="#buttonAction" opacity="0.0" prefHeight="59.0" prefWidth="28.0" text="Reception" />
-      <Button fx:id="inventoryButton" layoutX="403.0" layoutY="438.0" mnemonicParsing="false" onMouseClicked="#goToInventory" text="Inventory" />
+      <Button fx:id="leftButton" layoutX="2.0" layoutY="350.0" mnemonicParsing="false" onMouseClicked="#buttonAction" opacity="0.0" prefHeight="100.0" prefWidth="49.0" text="Reception" />
+      <Button fx:id="inventoryButton" layoutX="660.0" layoutY="700.0" mnemonicParsing="false" onMouseClicked="#goToInventory" prefHeight="37.0" prefWidth="83.0" text="Inventory" />
    </children>
 </AnchorPane>
