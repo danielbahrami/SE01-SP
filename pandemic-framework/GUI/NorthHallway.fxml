@@ -14,14 +14,14 @@
          </image>
       </ImageView>
       
-      <ImageView layoutX="228.0" layoutY="195.0">
+      <ImageView fitHeight="85.0" fitWidth="72.0" layoutX="364.0" layoutY="340.0">
          <image>
             <Image url="@../Images/Old man.png" />
          </image>
       </ImageView>
-      <Button fx:id="NPCButton" layoutX="233.0" layoutY="195.0" mnemonicParsing="false" onMousePressed="#talkToNpc" opacity="0" prefHeight="60.0" prefWidth="34.0" />
-      <Label fx:id="questLabel" layoutX="249.0" layoutY="111.0" />
-      <Label fx:id="completeLabel" layoutX="248.0" layoutY="149.0" />
+      <Button fx:id="NPCButton" layoutX="377.0" layoutY="341.0" mnemonicParsing="false" onMousePressed="#talkToNpc" opacity="0" prefHeight="85.0" prefWidth="52.0" />
+      <Label fx:id="questLabel" layoutX="435.0" layoutY="204.0" />
+      <Label fx:id="completeLabel" layoutX="435.0" layoutY="303.0" />
       <Button fx:id="leftButton" layoutX="-1.0" layoutY="350.0" mnemonicParsing="false" onMouseClicked="#buttonAction" opacity="0.0" prefHeight="102.0" prefWidth="52.0" text="Office" />
       <Button fx:id="downButton" layoutX="349.0" layoutY="748.0" mnemonicParsing="false" onMouseClicked="#buttonAction" opacity="0.0" prefHeight="53.0" prefWidth="102.0" text="Mid hallway" />
    </children>
