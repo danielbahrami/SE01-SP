@@ -12,7 +12,7 @@
             <Image url="@../Images/Midhallway.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="27.0" fitWidth="29.0" layoutX="338.0" layoutY="316.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="36.0" fitWidth="40.0" layoutX="333.0" layoutY="309.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../Images/Mask.png" />
          </image>
