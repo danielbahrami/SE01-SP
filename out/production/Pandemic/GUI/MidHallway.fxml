@@ -5,19 +5,19 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.MidHallwayController">
+<AnchorPane prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.MidHallwayController">
    <children>
-      <ImageView fitHeight="500.0" fitWidth="500.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="800.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../Images/Midhallway.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="27.0" fitWidth="29.0" layoutX="205.0" layoutY="190.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="27.0" fitWidth="29.0" layoutX="338.0" layoutY="316.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../Images/Mask.png" />
          </image>
       </ImageView>
-      <Button fx:id="upButton" layoutX="217.0" mnemonicParsing="false" onMouseClicked="#buttonAction" opacity="0.0" prefHeight="34.0" prefWidth="63.0" text="North Hallway" />
-      <Button fx:id="downButton" layoutX="218.0" layoutY="437.0" mnemonicParsing="false" onMouseClicked="#buttonAction" opacity="0.0" prefHeight="63.0" prefWidth="63.0" text="South Hallway" />
+      <Button fx:id="upButton" layoutX="351.0" mnemonicParsing="false" onMouseClicked="#buttonAction" opacity="0.0" prefHeight="48.0" prefWidth="97.0" text="North Hallway" />
+      <Button fx:id="downButton" layoutX="351.0" layoutY="699.0" mnemonicParsing="false" onMouseClicked="#buttonAction" opacity="0.0" prefHeight="103.0" prefWidth="97.0" text="South Hallway" />
    </children>
 </AnchorPane>

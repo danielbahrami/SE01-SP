@@ -5,19 +5,19 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.ToiletController">
+<AnchorPane prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.ToiletController">
    <children>
-      <ImageView fitHeight="500.0" fitWidth="500.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="800.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../Images/Toilet.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="17.0" fitWidth="15.0" layoutX="425.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="17.0" fitWidth="15.0" layoutX="650.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../Images/Soap.png" />
          </image>
       </ImageView>
-      <Button fx:id="upButton" layoutX="220.0" layoutY="1.0" mnemonicParsing="false" onMouseClicked="#buttonAction" opacity="0.0" prefHeight="30.0" prefWidth="60.0" text="Secret Room" />
-      <Button fx:id="downButton" layoutX="219.0" layoutY="470.0" mnemonicParsing="false" onMouseClicked="#buttonAction" opacity="0.0" prefHeight="28.0" prefWidth="62.0" text="Cafeteria" />
+      <Button fx:id="upButton" layoutX="347.0" layoutY="1.0" mnemonicParsing="false" onMouseClicked="#buttonAction" opacity="0.0" prefHeight="49.0" prefWidth="103.0" text="Secret Room" />
+      <Button fx:id="downButton" layoutX="347.0" layoutY="750.0" mnemonicParsing="false" onMouseClicked="#buttonAction" opacity="0.0" prefHeight="49.0" prefWidth="103.0" text="Cafeteria" />
    </children>
 </AnchorPane>
