@@ -24,9 +24,11 @@
   <component name="ChangeListManager">
     <list default="true" id="8d8010f4-f255-4f34-99d3-a610e16ed2e4" name="Default Changelist" comment="Commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Pandemic/GUI/Lobby.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pandemic/GUI/Lobby.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Pandemic/pandemic/GameMenu.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pandemic-framework/GUI/Lobby.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/pandemic-framework/GUI/Lobby.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Pandemic/pandemic/GameMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pandemic/pandemic/GameMenu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Pandemic/pandemic/Space.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pandemic-framework/pandemic/GameMenu.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pandemic-framework/pandemic/GameMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/pandemic-framework/pandemic/GameMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pandemic-framework/pandemic/Space.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +87,7 @@
       <recent name="$PROJECT_DIR$/pandemic-framework/Images" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Start">
+  <component name="RunManager" selected="Application.GameMenu">
     <configuration name="GameMenu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pandemic.GameMenu" />
       <module name="Pandemic" />
@@ -116,18 +118,20 @@
     <configuration name="Start" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pandemic.Start" />
       <module name="Pandemic" />
-      <option name="VM_PARAMETERS" value="--module-path &quot;$USER_HOME$/Desktop/javafx-sdk-15.0.1 2/lib&quot; --add-modules javafx.controls,javafx.fxml" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;C:\Users\Daniel Bahrami\Desktop\javafx-sdk-15.0.1\lib&quot; --add-modules javafx.controls,javafx.fxml" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -139,8 +143,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Start" />
         <item itemvalue="Application.GameMenu" />
+        <item itemvalue="Application.Start" />
         <item itemvalue="Application.Map" />
       </list>
     </recent_temporary>
@@ -188,7 +192,6 @@
       <workItem from="1607281839952" duration="505000" />
       <workItem from="1607306101133" duration="379000" />
       <workItem from="1607306593143" duration="210000" />
-      <workItem from="1607358236716" duration="4292000" />
     </task>
     <task id="LOCAL-00001" summary="Commit">
       <created>1606468870869</created>
@@ -227,35 +230,35 @@
     <option name="LAST_COMMIT_MESSAGE" value="Commit" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="362" y="197" width="1071" height="706" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607418620024">
+    <state x="362" y="197" width="1071" height="706" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607306701990">
       <screen x="0" y="25" width="1680" height="1025" />
     </state>
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607282036451" />
-    <state x="362" y="197" width="1071" height="706" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1680.1025@0.25.1680.1025" timestamp="1607418620024" />
+    <state x="362" y="197" width="1071" height="706" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1680.1025@0.25.1680.1025" timestamp="1607306701990" />
     <state x="601" y="259" key="FileChooserDialogImpl" timestamp="1607281906165">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="601" y="259" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607281906165" />
-    <state width="1638" height="222" key="GridCell.Tab.0.bottom" timestamp="1607423258131">
+    <state width="1523" height="277" key="GridCell.Tab.0.bottom" timestamp="1607306804026">
       <screen x="0" y="25" width="1680" height="1025" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607287659712" />
-    <state width="1638" height="222" key="GridCell.Tab.0.bottom/0.25.1680.1025@0.25.1680.1025" timestamp="1607423258131" />
-    <state width="1638" height="222" key="GridCell.Tab.0.center" timestamp="1607423258130">
+    <state width="1523" height="277" key="GridCell.Tab.0.bottom/0.25.1680.1025@0.25.1680.1025" timestamp="1607306804026" />
+    <state width="1523" height="277" key="GridCell.Tab.0.center" timestamp="1607306804026">
       <screen x="0" y="25" width="1680" height="1025" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607287659711" />
-    <state width="1638" height="222" key="GridCell.Tab.0.center/0.25.1680.1025@0.25.1680.1025" timestamp="1607423258130" />
-    <state width="1638" height="222" key="GridCell.Tab.0.left" timestamp="1607423258130">
+    <state width="1523" height="277" key="GridCell.Tab.0.center/0.25.1680.1025@0.25.1680.1025" timestamp="1607306804026" />
+    <state width="1523" height="277" key="GridCell.Tab.0.left" timestamp="1607306804025">
       <screen x="0" y="25" width="1680" height="1025" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607287659711" />
-    <state width="1638" height="222" key="GridCell.Tab.0.left/0.25.1680.1025@0.25.1680.1025" timestamp="1607423258130" />
-    <state width="1638" height="222" key="GridCell.Tab.0.right" timestamp="1607423258131">
+    <state width="1523" height="277" key="GridCell.Tab.0.left/0.25.1680.1025@0.25.1680.1025" timestamp="1607306804025" />
+    <state width="1523" height="277" key="GridCell.Tab.0.right" timestamp="1607306804026">
       <screen x="0" y="25" width="1680" height="1025" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607287659712" />
-    <state width="1638" height="222" key="GridCell.Tab.0.right/0.25.1680.1025@0.25.1680.1025" timestamp="1607423258131" />
+    <state width="1523" height="277" key="GridCell.Tab.0.right/0.25.1680.1025@0.25.1680.1025" timestamp="1607306804026" />
     <state x="328" y="116" key="SettingsEditor" timestamp="1607306625173">
       <screen x="0" y="25" width="1680" height="1025" />
     </state>
