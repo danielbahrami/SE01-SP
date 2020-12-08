@@ -71,7 +71,7 @@ public class PharmacyController {
             ic.addToInventory(item);
             System.out.println(ic.getInventory());
             if (ic.getInventory().contains(item)) {
-                
+                Pharmacy.fxml.getChildren().remove(Pills.png);
             }
         }
     }
