@@ -10,8 +10,7 @@ import javafx.scene.input.MouseEvent;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
-import pandemic.Inventory;
-import pandemic.Item;
+import Pandemic.Item;
 
 public class PharmacyController {
 

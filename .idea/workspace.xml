@@ -79,21 +79,22 @@
     <property name="settings.editor.selected.configurable" value="preferences.JavaFX" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\mertz\Documents\GitHub\Pandemic\pandemic-framework\Images" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/pandemic-framework/Images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Daniel Bahrami\Desktop\Pandemic\pandemic-framework\Images" />
+      <recent name="C:\Users\mertz\Documents\GitHub\Pandemic\pandemic-framework\Images" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Start">
     <configuration name="GameMenu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="pandemic.GameMenu" />
+      <option name="MAIN_CLASS_NAME" value="Pandemic.GameMenu" />
       <module name="Pandemic" />
       <option name="VM_PARAMETERS" value="--module-path &quot;C:\Users\Daniel Bahrami\Desktop\javafx-sdk-15.0.1\lib&quot; --add-modules javafx.controls,javafx.fxml" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pandemic.*" />
+          <option name="PATTERN" value="Pandemic.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -106,7 +107,7 @@
       <module name="Pandemic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pandemic.*" />
+          <option name="PATTERN" value="Pandemic.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -115,7 +116,7 @@
       </method>
     </configuration>
     <configuration name="Start" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="pandemic.Start" />
+      <option name="MAIN_CLASS_NAME" value="Pandemic.Start" />
       <module name="Pandemic" />
       <option name="VM_PARAMETERS" value="--module-path &quot;C:\Users\Daniel Bahrami\Desktop\javafx-sdk-15.0.1\lib&quot; --add-modules javafx.controls,javafx.fxml" />
       <method v="2">
@@ -192,6 +193,9 @@
       <workItem from="1607418349349" duration="4636000" />
       <workItem from="1607427515408" duration="123000" />
       <workItem from="1607459375941" duration="1827000" />
+      <workItem from="1607553464581" duration="757000" />
+      <workItem from="1607554225026" duration="2000" />
+      <workItem from="1607554229348" duration="1906000" />
     </task>
     <task id="LOCAL-00001" summary="Commit">
       <created>1606468870869</created>
@@ -238,22 +242,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="666" y="261" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607459387540" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1607461060315">
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1607556137351">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607461060315" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1607461060315">
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607556137351" />
+    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1607556137351">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607461060315" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1607461060315">
+    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607556137351" />
+    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1607556137351">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607461060315" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1607461060315">
+    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607556137351" />
+    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1607556137351">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607461060315" />
+    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607556137351" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1607556137351">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607556137351" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1607556137351">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607556137351" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1607556137351">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607556137351" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1607556137351">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607556137351" />
     <state x="440" y="94" key="SettingsEditor" timestamp="1607459390788">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

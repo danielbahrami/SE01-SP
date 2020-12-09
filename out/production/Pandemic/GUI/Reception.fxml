@@ -14,7 +14,7 @@
          </image></ImageView>
       <ImageView fx:id="imageView" fitHeight="80.0" fitWidth="61.0" layoutX="134.0" layoutY="517.0" onMouseClicked="#talkToNpc" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../Images/Nurse_done.png" />
+            <Image url="@../Images/Nurse.png" />
          </image>
       </ImageView>
       <Button fx:id="npcButton" layoutX="134.0" layoutY="517.0" onMousePressed="#talkToNpc" opacity="0" prefHeight="80.0" prefWidth="60.0" />
