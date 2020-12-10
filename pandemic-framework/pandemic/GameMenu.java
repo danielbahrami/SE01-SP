@@ -40,7 +40,7 @@ public class GameMenu extends Application {
 
 
         VBox box = new VBox(
-                4,
+                3,
                 new MenuItem("PLAY", () -> {}),
                 new MenuItem("TUTORIAL", () -> {}),
                 new MenuItem("QUIT", () -> Platform.exit())
