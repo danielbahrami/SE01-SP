@@ -8,10 +8,10 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
-import Pandemic.Game;
-import Pandemic.Inventory;
-import Pandemic.Item;
-import Pandemic.NPC;
+import pandemic.Game;
+import pandemic.Inventory;
+import pandemic.Item;
+import pandemic.NPC;
 
 
 public class ReceptionController{

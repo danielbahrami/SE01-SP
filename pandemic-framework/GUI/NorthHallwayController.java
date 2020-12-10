@@ -8,9 +8,9 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
-import Pandemic.Inventory;
-import Pandemic.Item;
-import Pandemic.NPC;
+import pandemic.Inventory;
+import pandemic.Item;
+import pandemic.NPC;
 
 public class NorthHallwayController {
 
@@ -20,7 +20,7 @@ public class NorthHallwayController {
     @FXML
     private Label questLabel, completeLabel;
 
-    private NPC npc = new NPC("Flemming", "I lost my inhaler and\nI can't remember in which room.\n Would you please help me\n find it?", new Item("inhaler","an inhaler for lung patients", "item", ""));
+    private NPC npc = new NPC("Flemming", "I lost my inhaler and\nI can't remember in which room...\n Would you please help\n me find it?", new Item("inhaler","an inhaler for lung patients", "item", ""));
     private Inventory inventory = new Inventory();
 
     @FXML

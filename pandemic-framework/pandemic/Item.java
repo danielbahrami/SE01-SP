@@ -1,4 +1,4 @@
-package Pandemic;
+package pandemic;
 
 /* This is the class for an item.
     The function of this is to let the game know

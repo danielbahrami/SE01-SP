@@ -1,4 +1,4 @@
-package Pandemic;
+package pandemic;
 
 import javafx.geometry.Rectangle2D;
 import javafx.scene.canvas.GraphicsContext;
