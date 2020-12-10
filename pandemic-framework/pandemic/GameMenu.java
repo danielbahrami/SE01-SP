@@ -30,15 +30,18 @@ public class GameMenu extends Application {
     }
 
 
-    private void newPage(){
+    private void newPage() {
         try {
             Parent root1 = FXMLLoader.load(getClass().getResource("/GUI/Lobby.fxml"));
             Scene scene = new Scene(root1);
             Stage stage = new Stage();
             stage.setScene(scene);
             stage.show();
-        }catch (Exception e){
+        } catch (Exception e) {
             System.err.println(e.getMessage());
+        }
+        finally {
+            createContent().setDisable(true);
         }
     }
 

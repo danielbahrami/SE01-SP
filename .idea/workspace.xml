@@ -80,7 +80,7 @@
       <recent name="$PROJECT_DIR$/pandemic-framework/Images" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Start">
+  <component name="RunManager" selected="Application.GameMenu">
     <configuration name="GameMenu" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Pandemic.GameMenu" />
       <module name="Pandemic" />
@@ -220,25 +220,25 @@
     </state>
     <state x="666" y="263" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607623338492" />
     <state x="666" y="263" key="FileChooserDialogImpl/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1607617312597" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1607635232531">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1607639439686">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607635232531" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607639439686" />
     <state width="1860" height="204" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1607622092083" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1607635232531">
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1607639439686">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607635232531" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607639439686" />
     <state width="1860" height="204" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1607622092082" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1607635232531">
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1607639439686">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607635232531" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607639439686" />
     <state width="1860" height="204" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1607622092082" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1607635232531">
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1607639439686">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607635232531" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607639439686" />
     <state width="1860" height="204" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1607622092082" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1607633789963">
       <screen x="0" y="0" width="1920" height="1040" />
