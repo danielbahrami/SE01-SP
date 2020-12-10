@@ -1,4 +1,4 @@
-package pandemic;
+package Pandemic;
 
 public enum CommandWord
 {

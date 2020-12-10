@@ -1,30 +1,9 @@
-package pandemic;
+package Pandemic;
 
-    import javafx.animation.FillTransition;
-    import javafx.application.Application;
-    import javafx.application.Platform;
-    import javafx.beans.binding.Bindings;
-    import javafx.geometry.Pos;
-    import javafx.scene.Parent;
-    import javafx.scene.Scene;
-    import javafx.scene.image.Image;
-    import javafx.scene.image.ImageView;
-    import javafx.scene.layout.*;
-    import javafx.scene.paint.Color;
-    import javafx.scene.paint.CycleMethod;
-    import javafx.scene.paint.LinearGradient;
-    import javafx.scene.paint.Stop;
-    import javafx.scene.shape.Rectangle;
-    import javafx.scene.text.Font;
-    import javafx.scene.text.Text;
-    import javafx.stage.Stage;
-    import javafx.util.Duration;
 import javafx.animation.FillTransition;
         import javafx.application.Application;
         import javafx.application.Platform;
         import javafx.beans.binding.Bindings;
-import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.geometry.Pos;
         import javafx.scene.Parent;
         import javafx.scene.Scene;
@@ -41,8 +20,6 @@ import javafx.geometry.Pos;
         import javafx.stage.Stage;
         import javafx.util.Duration;
 
-import java.io.IOException;
-
 
 public class GameMenu extends Application {
     @Override
@@ -56,7 +33,7 @@ public class GameMenu extends Application {
         root.setPrefSize(1280, 720);
 
         Image bgImage = new Image(
-                getClass().getResource("A.gif").toExternalForm(),
+                getClass().getResource("Menu.gif").toExternalForm(),
                 1280, 720,
                 false, true
         );
@@ -66,7 +43,6 @@ public class GameMenu extends Application {
                 4,
                 new MenuItem("PLAY", () -> {}),
                 new MenuItem("TUTORIAL", () -> {}),
-                new MenuItem("SETTINGS", () -> {}),
                 new MenuItem("QUIT", () -> Platform.exit())
         );
 

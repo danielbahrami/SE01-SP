@@ -1,4 +1,4 @@
-package pandemic;
+package Pandemic;
 
 
 /* This class makes the player in the game.
