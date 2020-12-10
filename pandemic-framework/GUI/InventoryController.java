@@ -25,6 +25,9 @@ public class InventoryController
     @FXML
     private final TableColumn<Item, String> itemName, itemDescription;
 
+    @FXML
+    public ObservableList<Item> items = FXCollections.observableArrayList();
+
     public InventoryController()
     {
         this.inventory = new Inventory();
@@ -48,14 +51,15 @@ public class InventoryController
         }
     }
 
+
     public void addItemToInventory(Item item)
     {
-        inventory.addToInventory(item);
+        items.add(item);
     }
 
-    @FXML
+
     public ObservableList<Item> getInventory()
     {
-        return FXCollections.observableArrayList(inventory.getItemsInInventory());
+        return items;
     }
 }

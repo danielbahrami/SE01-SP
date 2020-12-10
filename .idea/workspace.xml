@@ -109,7 +109,7 @@
       </method>
     </configuration>
     <configuration name="Start" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="pandemic.Start" />
+      <option name="MAIN_CLASS_NAME" value="Pandemic.Start" />
       <module name="Pandemic" />
       <option name="VM_PARAMETERS" value="--module-path C:\Users\mertz\Desktop\JavaFXSDK15\javafx-sdk-15.0.1\lib --add-modules javafx.controls,javafx.fxml" />
       <method v="2">
@@ -215,34 +215,34 @@
     <option name="LAST_COMMIT_MESSAGE" value="Commit" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="414" y="177" width="1092" height="738" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607617418639">
+    <state x="414" y="177" width="1092" height="786" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607620833248">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="414" y="177" width="1092" height="738" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1607617418639" />
+    <state x="414" y="177" width="1092" height="786" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1607620833248" />
     <state x="666" y="263" key="FileChooserDialogImpl" timestamp="1607617312597">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="666" y="263" key="FileChooserDialogImpl/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1607617312597" />
-    <state width="1860" height="204" key="GridCell.Tab.0.bottom" timestamp="1607617874030">
+    <state width="1860" height="204" key="GridCell.Tab.0.bottom" timestamp="1607622092083">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="204" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1607617874030" />
-    <state width="1860" height="204" key="GridCell.Tab.0.center" timestamp="1607617874029">
+    <state width="1860" height="204" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1607622092083" />
+    <state width="1860" height="204" key="GridCell.Tab.0.center" timestamp="1607622092082">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="204" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1607617874029" />
-    <state width="1860" height="204" key="GridCell.Tab.0.left" timestamp="1607617874029">
+    <state width="1860" height="204" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1607622092082" />
+    <state width="1860" height="204" key="GridCell.Tab.0.left" timestamp="1607622092082">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="204" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1607617874029" />
-    <state width="1860" height="204" key="GridCell.Tab.0.right" timestamp="1607617874030">
+    <state width="1860" height="204" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1607622092082" />
+    <state width="1860" height="204" key="GridCell.Tab.0.right" timestamp="1607622092082">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="204" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1607617874030" />
-    <state x="440" y="96" key="SettingsEditor" timestamp="1607617316342">
+    <state width="1860" height="204" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1607622092082" />
+    <state x="440" y="96" key="SettingsEditor" timestamp="1607620805448">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="440" y="96" key="SettingsEditor/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1607617316342" />
+    <state x="440" y="96" key="SettingsEditor/0.0.1920.1040/-1920.36.1920.1040@0.0.1920.1040" timestamp="1607620805448" />
     <state x="667" y="255" width="585" height="534" key="find.popup" timestamp="1607617959480">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
