@@ -1,4 +1,4 @@
-package pandemic;
+package Pandemic;
 
 import javafx.scene.image.Image;
 

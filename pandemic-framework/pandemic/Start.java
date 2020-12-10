@@ -1,4 +1,4 @@
-package pandemic;
+package Pandemic;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

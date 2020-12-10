@@ -1,7 +1,4 @@
-package pandemic;
-
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
+package Pandemic;
 
 import java.util.ArrayList;
 
