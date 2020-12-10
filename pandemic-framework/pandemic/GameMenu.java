@@ -1,24 +1,24 @@
 package Pandemic;
 
-import javafx.animation.FillTransition;
-        import javafx.application.Application;
-        import javafx.application.Platform;
-        import javafx.beans.binding.Bindings;
-import javafx.geometry.Pos;
-        import javafx.scene.Parent;
-        import javafx.scene.Scene;
-        import javafx.scene.image.Image;
-        import javafx.scene.image.ImageView;
-        import javafx.scene.layout.*;
-        import javafx.scene.paint.Color;
-        import javafx.scene.paint.CycleMethod;
-        import javafx.scene.paint.LinearGradient;
-        import javafx.scene.paint.Stop;
-        import javafx.scene.shape.Rectangle;
-        import javafx.scene.text.Font;
-        import javafx.scene.text.Text;
-        import javafx.stage.Stage;
-        import javafx.util.Duration;
+    import javafx.animation.FillTransition;
+    import javafx.application.Application;
+    import javafx.application.Platform;
+    import javafx.beans.binding.Bindings;
+    import javafx.geometry.Pos;
+    import javafx.scene.Parent;
+    import javafx.scene.Scene;
+    import javafx.scene.image.Image;
+    import javafx.scene.image.ImageView;
+    import javafx.scene.layout.*;
+    import javafx.scene.paint.Color;
+    import javafx.scene.paint.CycleMethod;
+    import javafx.scene.paint.LinearGradient;
+    import javafx.scene.paint.Stop;
+    import javafx.scene.shape.Rectangle;
+    import javafx.scene.text.Font;
+    import javafx.scene.text.Text;
+    import javafx.stage.Stage;
+    import javafx.util.Duration;
 
 
 public class GameMenu extends Application {
