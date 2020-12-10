@@ -10,7 +10,7 @@ import javafx.stage.Stage;
 
 public class MidHallwayController {
     @FXML
-    private Button rightButton,leftButton,upButton,downButton;
+    private Button upButton,downButton;
 
     @FXML
     void buttonAction(MouseEvent event) throws Exception {

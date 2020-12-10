@@ -11,12 +11,12 @@ import javafx.stage.Stage;
 public class SouthHallwayController {
 
     @FXML
-    private Button rightButton, leftButton, upButton, downButton;
+    private Button leftButton, upButton;
 
     @FXML
     void buttonAction(MouseEvent event) throws Exception {
-        Stage stage = null;
-        Parent root = null;
+        Stage stage;
+        Parent root;
 
         if (event.getSource() == leftButton) {
             stage = (Stage) leftButton.getScene().getWindow();
