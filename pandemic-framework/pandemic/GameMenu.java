@@ -49,8 +49,8 @@ public class GameMenu extends Application {
         box.setBackground(new Background(
                 new BackgroundFill(Color.web("black", 0.6), null, null)
         ));
-        box.setTranslateX(1280 - 300);
-        box.setTranslateY(720 - 300);
+        box.setTranslateX(320);
+        box.setTranslateY(450);
 
         root.getChildren().addAll(
                 new ImageView(bgImage),
