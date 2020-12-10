@@ -1,6 +1,5 @@
 package pandemic;
 
-<<<<<<< HEAD
     import javafx.animation.FillTransition;
     import javafx.application.Application;
     import javafx.application.Platform;
@@ -20,7 +19,6 @@ package pandemic;
     import javafx.scene.text.Text;
     import javafx.stage.Stage;
     import javafx.util.Duration;
-=======
 import javafx.animation.FillTransition;
         import javafx.application.Application;
         import javafx.application.Platform;
@@ -42,7 +40,6 @@ import javafx.geometry.Pos;
         import javafx.scene.text.Text;
         import javafx.stage.Stage;
         import javafx.util.Duration;
->>>>>>> parent of 0cc623e... Update
 
 import java.io.IOException;
 
