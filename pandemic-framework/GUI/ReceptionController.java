@@ -12,7 +12,7 @@ import Pandemic.Game;
 import Pandemic.Inventory;
 import Pandemic.Item;
 import Pandemic.NPC;
-
+import GUI.InventoryController;
 
 public class ReceptionController{
 

@@ -4,6 +4,7 @@ import javafx.animation.FillTransition;
         import javafx.application.Application;
         import javafx.application.Platform;
         import javafx.beans.binding.Bindings;
+import javafx.fxml.FXMLLoader;
 import javafx.geometry.Pos;
         import javafx.scene.Parent;
         import javafx.scene.Scene;
@@ -28,6 +29,19 @@ public class GameMenu extends Application {
         stage.show();
     }
 
+
+    private void newPage(){
+        try {
+            Parent root1 = FXMLLoader.load(getClass().getResource("/GUI/Lobby.fxml"));
+            Scene scene = new Scene(root1);
+            Stage stage = new Stage();
+            stage.setScene(scene);
+            stage.show();
+        }catch (Exception e){
+            System.err.println(e.getMessage());
+        }
+    }
+
     private Parent createContent() {
         Pane root = new Pane();
         root.setPrefSize(1280, 720);
@@ -41,7 +55,7 @@ public class GameMenu extends Application {
 
         VBox box = new VBox(
                 3,
-                new MenuItem("PLAY", () -> {}),
+                new MenuItem("PLAY", () -> newPage()),
                 new MenuItem("TUTORIAL", () -> {}),
                 new MenuItem("QUIT", () -> Platform.exit())
         );
