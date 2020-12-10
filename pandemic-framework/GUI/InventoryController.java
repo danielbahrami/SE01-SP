@@ -9,8 +9,8 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
-import Pandemic.Inventory;
-import Pandemic.Item;
+import pandemic.Inventory;
+import pandemic.Item;
 
 
 public class InventoryController
@@ -25,6 +25,7 @@ public class InventoryController
 
     @FXML
     private final TableColumn<Item, String> itemName, itemDescription;
+
 
     public InventoryController()
     {

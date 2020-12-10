@@ -10,7 +10,7 @@ import javafx.scene.input.MouseEvent;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
-import Pandemic.Item;
+import pandemic.Item;
 
 public class PharmacyController {
 
@@ -77,11 +77,7 @@ public class PharmacyController {
             Item item = this.item;
             ic.addItemToInventory(item);
             System.out.println(ic.getInventory());
-
-            if (ic.getInventory().contains(item)) {
-                itemButton.setDisable(true);
-                imgView.setImage(null);
             }
         }
     }
-}
+
