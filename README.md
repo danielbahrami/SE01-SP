@@ -13,5 +13,5 @@ Add these VM options if you are using a Windows machine:
 --module-path "\path\to\javafx-sdk-15.0.1\lib" --add-modules javafx.controls,javafx.fxml
 
 
-To run the application, run GameMenu.main() located here:
+To run the application, run "GameMenu.main()" through your IDE located here:
 1T2-4 Javaprojekt > Pandemic-master > Pandemic-framework > Pandemic > GameMenu.java
