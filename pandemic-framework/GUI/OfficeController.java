@@ -11,7 +11,9 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 public class OfficeController {
 
@@ -24,7 +26,7 @@ public class OfficeController {
     Label questLabel, completeLabel;
 
     @FXML
-    private Button rightButton;
+    private Button rightButton, inventoryButton;
 
     @FXML
     void buttonAction(MouseEvent event) throws Exception {
@@ -39,6 +41,22 @@ public class OfficeController {
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
+    }
+
+    @FXML
+    void openInventory(MouseEvent event) throws Exception {
+        if (event.getSource() == inventoryButton) {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Inventory.fxml"));
+            Parent root = fxmlLoader.load();
+            Stage stage = new Stage();
+            Scene scene = new Scene(root);
+
+            stage.initModality(Modality.APPLICATION_MODAL);
+            stage.initStyle(StageStyle.UNDECORATED);
+            stage.setTitle("Inventory");
+            stage.setScene(scene);
+            stage.show();
+        }
     }
 
     @FXML
