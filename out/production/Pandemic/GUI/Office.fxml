@@ -18,5 +18,6 @@
          </image>
       </ImageView>
       <Button fx:id="rightButton" layoutX="750.0" layoutY="349.0" mnemonicParsing="false" onMouseClicked="#buttonAction" opacity="0.0" prefHeight="102.0" prefWidth="51.0" text="North Hallway" />
+      <Button fx:id="inventoryButton" layoutX="660.0" layoutY="705.0" mnemonicParsing="false" onMouseClicked="#openInventory" prefHeight="37.0" prefWidth="83.0" text="Inventory" />
    </children>
 </AnchorPane>

@@ -20,5 +20,6 @@
       <Button fx:id="rightButton" layoutX="750.0" layoutY="350.0" mnemonicParsing="false" onMouseClicked="#buttonAction" opacity="0.0" prefHeight="101.0" prefWidth="50.0" text="Lounge" />
       <Button fx:id="upButton" layoutX="348.0" layoutY="1.0" mnemonicParsing="false" onMouseClicked="#buttonAction" opacity="0.0" prefHeight="49.0" prefWidth="104.0" text="Toilet" />
       <Button fx:id="downButton" layoutX="348.0" layoutY="751.0" mnemonicParsing="false" onMouseClicked="#buttonAction" opacity="0.0" prefHeight="49.0" prefWidth="104.0" text="Pharmacy" />
+      <Button fx:id="inventoryButton" layoutX="660.0" layoutY="700.0" mnemonicParsing="false" onMouseClicked="#openInventory" prefHeight="37.0" prefWidth="83.0" text="Inventory" />
    </children>
 </AnchorPane>

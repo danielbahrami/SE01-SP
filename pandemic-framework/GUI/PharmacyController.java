@@ -56,7 +56,7 @@ public class PharmacyController {
     }
 
     @FXML
-    private void openInventory(MouseEvent event) throws Exception {
+    void openInventory(MouseEvent event) throws Exception {
         if (event.getSource() == inventoryButton) {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Inventory.fxml"));
             Parent root = fxmlLoader.load();
@@ -82,4 +82,3 @@ public class PharmacyController {
         }
     }
 }
-

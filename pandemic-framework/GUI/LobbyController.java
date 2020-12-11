@@ -34,7 +34,7 @@ public class LobbyController{
     }
 
     @FXML
-    void goToInventory(MouseEvent event) throws Exception
+    private void openInventory(MouseEvent event) throws Exception
     {
         if (event.getSource() == inventoryButton) {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Inventory.fxml"));

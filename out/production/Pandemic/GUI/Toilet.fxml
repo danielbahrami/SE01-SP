@@ -19,5 +19,6 @@
       </ImageView>
       <Button fx:id="upButton" layoutX="347.0" layoutY="1.0" mnemonicParsing="false" onMouseClicked="#buttonAction" opacity="0.0" prefHeight="49.0" prefWidth="103.0" text="Secret Room" />
       <Button fx:id="downButton" layoutX="347.0" layoutY="750.0" mnemonicParsing="false" onMouseClicked="#buttonAction" opacity="0.0" prefHeight="49.0" prefWidth="103.0" text="Cafeteria" />
+      <Button fx:id="inventoryButton" layoutX="660.0" layoutY="700.0" mnemonicParsing="false" onMouseClicked="#openInventory" prefHeight="37.0" prefWidth="83.0" text="Inventory" />
    </children>
 </AnchorPane>

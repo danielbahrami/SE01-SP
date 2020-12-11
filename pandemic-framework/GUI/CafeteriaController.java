@@ -10,7 +10,9 @@ import javafx.scene.control.Button;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 
+import javafx.stage.Modality;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 public class CafeteriaController {
 
@@ -25,7 +27,7 @@ public class CafeteriaController {
     }
 
     @FXML
-    private Button rightButton,upButton,downButton;
+    private Button rightButton,upButton,downButton,inventoryButton;
 
     @FXML
     private ImageView sandwich;
@@ -51,6 +53,22 @@ public class CafeteriaController {
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
+    }
+
+    @FXML
+    private void openInventory(MouseEvent event) throws Exception
+    {
+        if (event.getSource() == inventoryButton) {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Inventory.fxml"));
+            Parent root = (Parent) fxmlLoader.load();
+            Stage stage = new Stage();
+
+            stage.initModality(Modality.APPLICATION_MODAL);
+            stage.initStyle(StageStyle.UNDECORATED);
+            stage.setTitle("Inventory");
+            stage.setScene(new Scene(root));
+            stage.show();
+        }
     }
 
     @FXML
