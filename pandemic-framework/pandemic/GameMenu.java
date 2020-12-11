@@ -23,8 +23,11 @@ import javafx.geometry.Pos;
 
 
 public class GameMenu extends Application {
+    Stage stage = new Stage();
+
     @Override
     public void start(Stage stage) throws Exception {
+        this.stage = stage;
         stage.setScene(new Scene(createContent()));
         stage.show();
     }
@@ -32,6 +35,7 @@ public class GameMenu extends Application {
 
     private void newPage() {
         try {
+            stage.close();
             Parent root1 = FXMLLoader.load(getClass().getResource("/GUI/Lobby.fxml"));
             Scene scene = new Scene(root1);
             Stage stage = new Stage();
