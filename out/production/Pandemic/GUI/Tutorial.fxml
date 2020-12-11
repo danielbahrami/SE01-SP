@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<<<<<<< Updated upstream
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
@@ -8,4 +9,24 @@
 
 <AnchorPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="GUI.TutorialController" prefHeight="400.0" prefWidth="600.0">
     <TextArea fx:id="tutorialText" />
+=======
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.TutorialController">
+    <Label fx:id="tutorialLabel" alignment="CENTER" prefHeight="82.0" prefWidth="600.0" style="-fx-background-color: #000000; -fx-text-fill: #FFFFFF;" text="Tutorial">
+      <font>
+         <Font size="48.0" />
+      </font></Label>
+    <Label fx:id="tutorialText" layoutY="81.0" prefHeight="278.0" prefWidth="600.0" style="-fx-background-color: #000000; -fx-text-fill: #FFFFFF;" stylesheets="Stylesheet.css">
+      <padding>
+         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+      </padding></Label>
+    <Button fx:id="exitButton" layoutX="14.0" layoutY="361.0" onMousePressed="#exitTutorial" prefHeight="29.0" prefWidth="107.0" style="-fx-background-color: #363636; -fx-text-fill: #FFFFFF;" text="Exit">
+      <padding>
+         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+      </padding></Button>
+>>>>>>> Stashed changes
 </AnchorPane>
