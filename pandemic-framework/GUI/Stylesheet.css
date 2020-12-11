@@ -5,6 +5,9 @@
     -fx-font-family: Papyrus;
 }
 
-.table-view {
-    -fx-background-color: blue;
+.text-area {
+    -fx-background-color: #000000;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 14pt;
+    -fx-font-family: Papyrus;
 }

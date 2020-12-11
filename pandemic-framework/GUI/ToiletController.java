@@ -6,9 +6,11 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.input.MouseEvent;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 import Pandemic.*;
 import javafx.scene.image.ImageView;
+import javafx.stage.StageStyle;
 
 
 public class ToiletController extends Inventory{
@@ -25,7 +27,7 @@ public class ToiletController extends Inventory{
 
 
     @FXML
-    private Button leftButton,rightButton,downButton,upButton;
+    private Button downButton,upButton,inventoryButton;
 
     @FXML
     private ImageView soap;
@@ -58,6 +60,22 @@ public class ToiletController extends Inventory{
     }
 
     @FXML
+    void openInventory(MouseEvent event) throws Exception
+    {
+        if (event.getSource() == inventoryButton) {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Inventory.fxml"));
+            Parent root = (Parent) fxmlLoader.load();
+            Stage stage = new Stage();
+
+            stage.initModality(Modality.APPLICATION_MODAL);
+            stage.initStyle(StageStyle.UNDECORATED);
+            stage.setTitle("Inventory");
+            stage.setScene(new Scene(root));
+            stage.show();
+        }
+    }
+
+    @FXML
     private void takeItem(MouseEvent event) throws Exception {
         if (event.getSource() == soap) {
             ic.addItemToInventory(item);
@@ -68,5 +86,3 @@ public class ToiletController extends Inventory{
         }
     }
 }
-
-

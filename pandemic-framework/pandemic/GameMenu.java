@@ -4,7 +4,8 @@ package Pandemic;
         import javafx.application.Application;
         import javafx.application.Platform;
         import javafx.beans.binding.Bindings;
-import javafx.fxml.FXMLLoader;
+        import javafx.fxml.FXML;
+        import javafx.fxml.FXMLLoader;
 import javafx.geometry.Pos;
         import javafx.scene.Parent;
         import javafx.scene.Scene;
@@ -33,7 +34,7 @@ public class GameMenu extends Application {
     }
 
 
-    private void newPage() {
+    private void gameRun() {
         try {
             stage.close();
             Parent root1 = FXMLLoader.load(getClass().getResource("/GUI/Lobby.fxml"));
@@ -41,6 +42,21 @@ public class GameMenu extends Application {
             Stage stage = new Stage();
             stage.setScene(scene);
             stage.setTitle("Lobby");
+            stage.show();
+        } catch (Exception e) {
+            System.err.println(e.getMessage());
+        }
+        finally {
+            createContent().setDisable(true);
+        }
+    }
+
+    private void tutorial() {
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("/GUI/Tutorial.fxml"));
+            Scene scene = new Scene(root);
+            Stage stage = new Stage();
+            stage.setScene(scene);
             stage.show();
         } catch (Exception e) {
             System.err.println(e.getMessage());
@@ -63,8 +79,8 @@ public class GameMenu extends Application {
 
         VBox box = new VBox(
                 3,
-                new MenuItem("PLAY", () -> newPage()),
-                new MenuItem("TUTORIAL", () -> {}),
+                new MenuItem("PLAY", () -> gameRun()),
+                new MenuItem("TUTORIAL", () -> tutorial()),
                 new MenuItem("QUIT", () -> Platform.exit())
         );
 

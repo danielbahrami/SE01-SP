@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<<<<<<< Updated upstream
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="GUI.TutorialController" prefHeight="400.0" prefWidth="600.0">
+    <TextArea fx:id="tutorialText" />
+=======
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
@@ -10,7 +20,7 @@
       <font>
          <Font size="48.0" />
       </font></Label>
-    <Label fx:id="tutorialText" layoutY="81.0" prefHeight="278.0" prefWidth="600.0" style="-fx-background-color: #000000; -fx-text-fill: #FFFFFF;">
+    <Label fx:id="tutorialText" layoutY="81.0" prefHeight="278.0" prefWidth="600.0" style="-fx-background-color: #000000; -fx-text-fill: #FFFFFF;" stylesheets="Stylesheet.css">
       <padding>
          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
       </padding></Label>
@@ -18,4 +28,5 @@
       <padding>
          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
       </padding></Button>
+>>>>>>> Stashed changes
 </AnchorPane>

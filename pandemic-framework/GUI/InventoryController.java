@@ -47,7 +47,7 @@ public class InventoryController
     }
 
     @FXML
-    private void closeInventory(MouseEvent event) throws Exception
+    private void closeInventory(MouseEvent event)
     {
         if (event.getSource() == closeButton)
         {
