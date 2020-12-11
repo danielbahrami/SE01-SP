@@ -1,7 +1,5 @@
 package Pandemic;
 
-import javafx.scene.image.Image;
-
 import java.util.ArrayList;
 import java.util.Set;
 import java.util.HashMap;
