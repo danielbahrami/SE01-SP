@@ -14,4 +14,4 @@ Add these VM options if you are using a Windows machine:
 
 
 To run the application, run GameMenu.main() located here:
-1T2-4 Javaprojekt > Pandemic-framework > Pandemic > GameMenu.java
+1T2-4 Javaprojekt > Pandemic-master > Pandemic-framework > Pandemic > GameMenu.java
