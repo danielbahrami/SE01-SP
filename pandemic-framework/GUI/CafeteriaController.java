@@ -41,14 +41,17 @@ public class CafeteriaController {
         if(event.getSource() == upButton){
             stage = (Stage) upButton.getScene().getWindow();
             root = FXMLLoader.load(getClass().getResource("Toilet.fxml"));
+            stage.setTitle("Toilet");
         }
         else if(event.getSource() == downButton){
             stage = (Stage) downButton.getScene().getWindow();
             root = FXMLLoader.load(getClass().getResource("Pharmacy.fxml"));
+            stage.setTitle("Pharmacy");
         }
         else{
             stage = (Stage) rightButton.getScene().getWindow();
             root = FXMLLoader.load(getClass().getResource("Lounge.fxml"));
+            stage.setTitle("Lounge");
         }
         Scene scene = new Scene(root);
         stage.setScene(scene);

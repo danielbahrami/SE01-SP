@@ -40,6 +40,7 @@ public class GameMenu extends Application {
             Scene scene = new Scene(root1);
             Stage stage = new Stage();
             stage.setScene(scene);
+            stage.setTitle("Lobby");
             stage.show();
         } catch (Exception e) {
             System.err.println(e.getMessage());

@@ -40,10 +40,12 @@ public class SouthHallwayController {
         if (event.getSource() == leftButton) {
             stage = (Stage) leftButton.getScene().getWindow();
             root = FXMLLoader.load(getClass().getResource("Lounge.fxml"));
+            stage.setTitle("lounge");
         }
         else{
             stage = (Stage) upButton.getScene().getWindow();
             root = FXMLLoader.load(getClass().getResource("MidHallway.fxml"));
+            stage.setTitle("Mid Hallway");
         }
         Scene scene = new Scene(root);
         stage.setScene(scene);

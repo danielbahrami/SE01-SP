@@ -27,6 +27,7 @@ public class LobbyController{
         if(event.getSource() == leftButton){
             stage = (Stage) leftButton.getScene().getWindow();
             root = FXMLLoader.load(getClass().getResource("Reception.fxml"));
+            stage.setTitle("Reception");
         }
         Scene scene = new Scene(root);
         stage.setScene(scene);

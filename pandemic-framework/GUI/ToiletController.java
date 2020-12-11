@@ -47,10 +47,12 @@ public class ToiletController extends Inventory{
         if (event.getSource() == downButton) {
             stage = (Stage) downButton.getScene().getWindow();
             root = FXMLLoader.load(getClass().getResource("Cafeteria.fxml"));
+            stage.setTitle("Cafeteria");
         }
         else{
             stage = (Stage) upButton.getScene().getWindow();
             root = FXMLLoader.load(getClass().getResource("SecretRoom.fxml"));
+            stage.setTitle("Secret Room");
         }
         Scene scene = new Scene(root);
         stage.setScene(scene);
