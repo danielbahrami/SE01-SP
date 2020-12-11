@@ -12,14 +12,7 @@ public class Item {
     private String category;
     private Sprite sprite;
 
-    /*
-    public Item(String name, String itemDescription, String category) {
-        this.function = getItemFunction();
-        this.name = name;
-        this.itemDescription = itemDescription;
-        this.category = category;
-    }
-    */
+
     public Item(String name, String itemDescription, String category)
     {
         this.name = name;

@@ -26,7 +26,7 @@ public class ReceptionController{
 
     Inventory inventory = new Inventory();
 
-    private NPC npc = new NPC("Bo", "I forgot my mask,\nbut i was told I can find\none in another room.\nWould you fetch me a mask?", new Item("mask", "a mask to protect your face", "item", ""));
+    private NPC npc = new NPC("Bo", "I forgot my mask,\nbut i was told that I can find\none in another room.\nWould you fetch me a mask?", new Item("mask", "a mask to protect your face", "item", ""));
     private Game game;
 
     @FXML

@@ -17,7 +17,7 @@ import javafx.stage.StageStyle;
 
 public class OfficeController {
 
-    private NPC npc = new NPC("Karen", "My father is lying sick in his room\nWould you go to the pharmacy\nand get his medicine?", new Item("pills", "Medicine", "item", ""));
+    private NPC npc = new NPC("Karen", "My father is lying sick with a fever in his room.\nWould you go to the pharmacy\nand get some medicine for him?", new Item("pills", "Medicine", "item", ""));
     private Game game;
 
     Inventory inventory = new Inventory();
@@ -82,7 +82,7 @@ public class OfficeController {
         }
         else if (event.isSecondaryButtonDown() && !inventory.isInInventory(npc.getQuestItem()))
         {
-            completeLabel.setText("Seems like you haven't\n found his pills yet.");
+            completeLabel.setText("Seems like you haven't\n found the medicine yet.");
             completeLabel.setVisible(true);
         }
     }

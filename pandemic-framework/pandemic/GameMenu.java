@@ -46,9 +46,6 @@ public class GameMenu extends Application {
         } catch (Exception e) {
             System.err.println(e.getMessage());
         }
-        finally {
-            createContent().setDisable(true);
-        }
     }
 
     private void tutorial() {

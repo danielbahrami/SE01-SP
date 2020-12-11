@@ -22,7 +22,7 @@ public class NorthHallwayController {
     @FXML
     private Label questLabel, completeLabel;
 
-    private NPC npc = new NPC("Flemming", "I can't find the handsanitizer\nbut it's important when facing a pandemic.\nCould you please find the handsanitizer for me?", new Item("Handsanitizer","an inhaler for lung patients", "item", ""));
+    private NPC npc = new NPC("Flemming", "I can't find the handsanitizer,\nbut it's important when facing a pandemic.\nCould you please find the handsanitizer for me?", new Item("Handsanitizer","an inhaler for lung patients", "item", ""));
     private Inventory inventory = new Inventory();
 
     @FXML
