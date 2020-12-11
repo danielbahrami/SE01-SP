@@ -12,7 +12,7 @@
             <Image url="@../Images/Lounge.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="86.0" fitWidth="106.0" layoutX="671.0" layoutY="464.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="plant" fitHeight="86.0" fitWidth="106.0" layoutX="671.0" layoutY="464.0" onMouseClicked="#takeItem" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../Images/Plant.png" />
          </image>

@@ -80,8 +80,8 @@ public class Game
         office.addItemToRoom(inhaler);
         Item manager = new Item("manager", "A manager to satisfy Karen", "item", "");
         secretRoom.addItemToRoom(manager);
-        Item lemoncake = new Item("lemoncake", "A delicious cake made by Dan Cake", "food", "");
-        cafeteria.addItemToRoom(lemoncake);
+        Item sandwich = new Item("sandwich", "A delicious sandwich made with love", "food", "");
+        cafeteria.addItemToRoom(sandwich);
         Item plant = new Item("plant", "A beautiful plant from Plantorama", "item", "");
         lounge.addItemToRoom(plant);
         Item mask = new Item("mask", "A mask to protect your face", "item", "");
@@ -94,7 +94,7 @@ public class Game
         this.itemList.put(handsanitizer.getName(), handsanitizer);
         this.itemList.put(inhaler.getName(), inhaler);
         this.itemList.put(manager.getName(), inhaler);
-        this.itemList.put(lemoncake.getName(), lemoncake);
+        this.itemList.put(sandwich.getName(), sandwich);
         this.itemList.put(plant.getName(), plant);
         this.itemList.put(mask.getName(), mask);
 

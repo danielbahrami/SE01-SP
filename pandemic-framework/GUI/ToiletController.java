@@ -13,11 +13,22 @@ import javafx.scene.image.ImageView;
 
 public class ToiletController extends Inventory{
 
+    InventoryController ic = new InventoryController();
+    Game game = new Game();
+    Room room;
+    Item item;
+
+    public ToiletController() {
+        this.room = game.getCurrentRoom();
+        this.item = room.getThisItem();
+    }
+
+
     @FXML
     private Button leftButton,rightButton,downButton,upButton;
 
     @FXML
-    private ImageView cake;
+    private ImageView soap;
 
     @FXML
     private Room currentRoom;
@@ -42,6 +53,17 @@ public class ToiletController extends Inventory{
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
+    }
+
+    @FXML
+    private void takeItem(MouseEvent event) throws Exception {
+        if (event.getSource() == soap) {
+            ic.addItemToInventory(item);
+            System.out.println(ic.getInventory());
+            soap.setImage(null);
+            soap.setDisable(true);
+            this.room.removeItemFromRoom("soap");
+        }
     }
 }
 
