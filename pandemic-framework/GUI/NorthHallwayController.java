@@ -15,12 +15,12 @@ import Pandemic.NPC;
 public class NorthHallwayController {
 
     @FXML
-    private Button rightButton,leftButton,upButton,downButton, NPCButton;
+    private Button leftButton,downButton;
 
     @FXML
     private Label questLabel, completeLabel;
 
-    private NPC npc = new NPC("Flemming", "I lost my inhaler and\nI can't remember in which room.\n Would you please help me\n find it?", new Item("inhaler","an inhaler for lung patients", "item", ""));
+    private NPC npc = new NPC("Flemming", "I can't find the handsanitizer\nbut it's important when facing a pandemic.\ncould you please find the handsanitizer for me?", new Item("inhaler","an inhaler for lung patients", "item", ""));
     private Inventory inventory = new Inventory();
 
     @FXML
@@ -31,10 +31,12 @@ public class NorthHallwayController {
         if(event.getSource() == leftButton){
             stage = (Stage) leftButton.getScene().getWindow();
             root = FXMLLoader.load(getClass().getResource("Office.fxml"));
+            stage.setTitle("Office");
         }
         else{
             stage = (Stage) downButton.getScene().getWindow();
             root = FXMLLoader.load(getClass().getResource("MidHallway.fxml"));
+            stage.setTitle("Mid Hallway");
         }
         Scene scene = new Scene(root);
         stage.setScene(scene);

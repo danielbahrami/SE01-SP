@@ -21,6 +21,7 @@ public class SecretRoomController {
         if (event.getSource() == downButton) {
             stage = (Stage) downButton.getScene().getWindow();
             root = FXMLLoader.load(getClass().getResource("Toilet.fxml"));
+            stage.setTitle("Toilet");
         }
         Scene scene = new Scene(root);
         stage.setScene(scene);

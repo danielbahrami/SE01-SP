@@ -38,14 +38,17 @@ public class LoungeController {
         if(event.getSource() == leftButton){
             stage = (Stage) leftButton.getScene().getWindow();
             root = FXMLLoader.load(getClass().getResource("Cafeteria.fxml"));
+            stage.setTitle("Cafeteria");
         }
         else if(event.getSource() == rightButton){
             stage = (Stage) rightButton.getScene().getWindow();
             root = FXMLLoader.load(getClass().getResource("SouthHallway.fxml"));
+            stage.setTitle("South Hallway");
         }
         else{
             stage = (Stage) downButton.getScene().getWindow();
             root = FXMLLoader.load(getClass().getResource("Reception.fxml"));
+            stage.setTitle("Reception");
         }
         Scene scene = new Scene(root);
         stage.setScene(scene);

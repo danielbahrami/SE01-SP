@@ -38,14 +38,17 @@ public class ReceptionController{
         if(event.getSource() == leftButton){
             stage = (Stage) leftButton.getScene().getWindow();
             root = FXMLLoader.load(getClass().getResource("Pharmacy.fxml"));
+            stage.setTitle("Pharmacy");
         }
         else if (event.getSource() == rightButton){
             stage = (Stage) rightButton.getScene().getWindow();
             root = FXMLLoader.load(getClass().getResource("Lobby.fxml"));
+            stage.setTitle("lobby");
         }
         else{
             stage = (Stage) upButton.getScene().getWindow();
             root = FXMLLoader.load(getClass().getResource("Lounge.fxml"));
+            stage.setTitle("Lounge");
         }
         Scene scene = new Scene(root);
         stage.setScene(scene);

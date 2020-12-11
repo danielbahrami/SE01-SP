@@ -13,8 +13,10 @@ import Pandemic.*;
 
         @FXML
         private Parent root;
+
         @FXML
         private Stage stage;
+
         @FXML
         private Button leftButton, rightButton, upButton, downButton;
 
