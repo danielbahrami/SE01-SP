@@ -20,7 +20,7 @@ public class NorthHallwayController {
     @FXML
     private Label questLabel, completeLabel;
 
-    private NPC npc = new NPC("Flemming", "I can't find the handsanitizer\nbut it's important when facing a pandemic.\ncould you please find the handsanitizer for me?", new Item("inhaler","an inhaler for lung patients", "item", ""));
+    private NPC npc = new NPC("Flemming", "I can't find the handsanitizer\nbut it's important when facing a pandemic.\nCould you please find the handsanitizer for me?", new Item("Handsanitizer","an inhaler for lung patients", "item", ""));
     private Inventory inventory = new Inventory();
 
     @FXML
@@ -66,7 +66,7 @@ public class NorthHallwayController {
         }
         else if (event.isSecondaryButtonDown() && !inventory.isInInventory(npc.getQuestItem()))
         {
-            completeLabel.setText("Seems like you haven't\nfound my inhaler yet.");
+            completeLabel.setText("Seems like you haven't\nfound the handsanitizer yet.");
             completeLabel.setVisible(true);
         }
     }
