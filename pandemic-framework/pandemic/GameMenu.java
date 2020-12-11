@@ -1,6 +1,6 @@
 package Pandemic;
 
-import javafx.animation.FillTransition;
+        import javafx.animation.FillTransition;
         import javafx.application.Application;
         import javafx.application.Platform;
         import javafx.beans.binding.Bindings;

@@ -14,31 +14,36 @@ import Pandemic.Item;
 
 public class InventoryController
 {
-    private final Inventory inventory;
+    Inventory inventory;
+    public ObservableList<Inventory> items;
 
     @FXML
     private Button closeButton;
 
     @FXML
-    private final TableView<Item> tableView;
+    private final TableView<Inventory> tableView;
 
     @FXML
     private final TableColumn<Item, String> itemName, itemDescription;
 
-    @FXML
-    public ObservableList<Item> items = FXCollections.observableArrayList();
 
     public InventoryController()
     {
         this.inventory = new Inventory();
-        tableView = new TableView<>();
+        for (Item i : inventory.getInventory())
+        {
+            inventory.addToInventory(i);
+        }
 
+        this.items = FXCollections.observableArrayList(inventory);
+
+        tableView = new TableView<>();
         itemName = new TableColumn<>();
         itemDescription = new TableColumn<>();
         itemName.setCellValueFactory(new PropertyValueFactory<>("name"));
         itemDescription.setCellValueFactory(new PropertyValueFactory<>("itemDescription"));
 
-        tableView.setItems(getInventory());
+        tableView.setItems(items);
     }
 
     @FXML
@@ -54,11 +59,11 @@ public class InventoryController
 
     public void addItemToInventory(Item item)
     {
-        items.add(item);
+        inventory.addToInventory(item);
     }
 
 
-    public ObservableList<Item> getInventory()
+    public ObservableList<Inventory> getInventory()
     {
         return items;
     }

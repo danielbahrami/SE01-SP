@@ -20,10 +20,11 @@ public class Item {
         this.category = category;
     }
     */
-    public Item(String name, String itemDescription)
+    public Item(String name, String itemDescription, String category)
     {
         this.name = name;
         this.itemDescription = itemDescription;
+        this.category = category;
     }
 
     public Item(String name, String itemDescription, String category, String spriteName) {

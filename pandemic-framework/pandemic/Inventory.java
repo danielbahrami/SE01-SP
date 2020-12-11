@@ -66,4 +66,9 @@ public class Inventory {
         }
         return item;
     }
+
+    public ArrayList<Item> getInventory()
+    {
+        return this.inventory;
+    }
 }

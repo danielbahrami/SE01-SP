@@ -16,17 +16,11 @@ public class Room
     private int roomNumber;
     private Item key;
 
-    // Room graphics
-    private Image background;
-    private Sprite itemSprite;
-    private Sprite wall;
-
 
     // NPC attributes
     private String NPCName;
     private String quest;
     private Item questItem;
-    private String NPCSprite;
 
     // Create rooms
     public Room(String description, int roomNumber)
@@ -130,33 +124,38 @@ public class Room
     {
         itemList.put(item.getName(), item);
     }
-
-    public void setItemPosition(double x, double y)
-    {
-        this.itemSprite.setPosition(x, y);
-    }
     
     public void removeItemFromRoom(String itemName)
     {
         itemList.remove(itemName);
     }
 
-    
+    public void removeItem(Item item)
+    {
+        itemList.remove(item.getName());
+    }
+
     public ArrayList<Item> getItemInRoom() {
         return new ArrayList<>(itemList.values());
     }
 
+    public Item getThisItem() {
+        Item item = null;
+
+        for (int i = 0; i < getItemInRoom().size(); i++)
+        {
+            item = getItemInRoom().get(i);
+        }
+        return item;
+    }
+
 
     // NPC methods to Room
-    public void addNPCToRoom(String NPCName, String quest, Item questItem, String NPCSprite)
+    public void addNPCToRoom(String NPCName, String quest, Item questItem)
     {
         this.NPCName = NPCName;
         this.quest = quest;
         this.questItem = questItem;
-        this.NPCSprite = NPCSprite;
-        
-        Sprite sprite = new Sprite();
-        sprite.setImage(NPCSprite);
 
         this.NPCList.put(NPCName, new NPC(NPCName, quest, questItem));
     }

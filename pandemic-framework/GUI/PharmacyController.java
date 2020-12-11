@@ -10,15 +10,18 @@ import javafx.scene.input.MouseEvent;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
-import Pandemic.Item;
+import Pandemic.*;
 
-public class PharmacyController{
+
+public class PharmacyController {
 
     InventoryController ic = new InventoryController();
-    Item item = new Item("Pills", "Pills to treat pain and fever.");
+    Game game = new Game();
+    Room room;
+    Item item;
 
     @FXML
-    private Button rightButton,upButton;
+    private Button rightButton, upButton;
 
     @FXML
     private Button inventoryButton;
@@ -31,7 +34,8 @@ public class PharmacyController{
 
     public PharmacyController()
     {
-
+        this.room = game.getCurrentRoom();
+        this.item = room.getThisItem();
     }
 
     @FXML
@@ -39,11 +43,10 @@ public class PharmacyController{
         Stage stage = null;
         Parent root = null;
 
-        if(event.getSource() == rightButton){
+        if (event.getSource() == rightButton) {
             stage = (Stage) rightButton.getScene().getWindow();
             root = FXMLLoader.load(getClass().getResource("Reception.fxml"));
-        }
-        else{
+        } else {
             stage = (Stage) upButton.getScene().getWindow();
             root = FXMLLoader.load(getClass().getResource("Cafeteria.fxml"));
         }
@@ -53,31 +56,30 @@ public class PharmacyController{
     }
 
     @FXML
-    private void openInventory(MouseEvent event) throws Exception
-    {
-        if (event.getSource() == inventoryButton)
-        {
+    private void openInventory(MouseEvent event) throws Exception {
+        if (event.getSource() == inventoryButton) {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Inventory.fxml"));
             Parent root = fxmlLoader.load();
             Stage stage = new Stage();
+            Scene scene = new Scene(root);
 
             stage.initModality(Modality.APPLICATION_MODAL);
             stage.initStyle(StageStyle.UNDECORATED);
             stage.setTitle("Inventory");
-            stage.setScene(new Scene(root));
+            stage.setScene(scene);
             stage.show();
         }
     }
 
     @FXML
-    private void takeItem(MouseEvent event) throws Exception
-    {
-        if (event.getSource() == itemButton)
-        {
+    private void takeItem(MouseEvent event) throws Exception {
+        if (event.getSource() == itemButton) {
             ic.addItemToInventory(item);
             System.out.println(ic.getInventory());
             imgView.setImage(null);
-            }
+            itemButton.setDisable(true);
+            this.room.removeItemFromRoom("Pills");
         }
     }
+}
 

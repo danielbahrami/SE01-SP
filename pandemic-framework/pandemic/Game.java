@@ -100,9 +100,9 @@ public class Game
 
 
         // roomNumber.addNPCToRoom(< NPCName >, < quest >, < questItem >)
-        reception.addNPCToRoom("Bo", "I forgot my mask, but i was told I can find one in another room. Would you fetch me a mask?", new Item("mask", "a mask to protect your face", "item", ""),"");
-        office.addNPCToRoom("Karen", "I need to talk to the manager", new Item("manager", "a manager to satisfy Karen", "item", ""), "");
-        northHallway.addNPCToRoom("Flemming", "I lost my inhaler and i can't remember in which room... Would you please help me find it?", new Item("inhaler","an inhaler for lung patients", "item", ""), "");
+        reception.addNPCToRoom("Bo", "I forgot my mask, but i was told I can find one in another room. Would you fetch me a mask?", new Item("mask", "a mask to protect your face", "item"));
+        office.addNPCToRoom("Karen", "I need to talk to the manager", new Item("manager", "a manager to satisfy Karen", "item"));
+        northHallway.addNPCToRoom("Flemming", "I lost my inhaler and i can't remember in which room... Would you please help me find it?", new Item("inhaler","an inhaler for lung patients", "item"));
 
         currentRoom = lobby;
     }
